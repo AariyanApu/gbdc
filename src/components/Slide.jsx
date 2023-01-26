@@ -1,4 +1,5 @@
 'use client';
+import SlideDetails from '../assets/videoDetails';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import required modules
@@ -30,48 +31,37 @@ export default function Slide() {
         loopFillGroupWithBlank={true}
         lazy={true}
         pagination={{ clickable: true, dynamicBullets: true }}
-        modules={[EffectFade, Pagination, Autoplay, Lazy,Navigation]}
-        className="mySwiper w-full px-2 pt-2 pb-10 md:pt-5 "
+        modules={[EffectFade, Pagination, Autoplay, Lazy, Navigation]}
+        className="mySwiper w-full px-2  pb-10 mt-0.5"
       >
-        <SwiperSlide className="w-full bg-cover  bg-center ">
-          <a href="/">
-            <img
-              src={'/banner1.jpg'}
-              className="swiper-lazy h-96  w-full rounded-lg drop-shadow-xl "
-            />
-          </a>
-          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        </SwiperSlide>
 
-        <SwiperSlide className="w-full bg-cover  bg-center  ">
-          <a href="/">
-            <img
-              src={'/banner2.jpg'}
-              className="swiper-lazy h-96  w-full rounded-lg drop-shadow-xl "
-            />
-          </a>
-          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        </SwiperSlide>
 
-        <SwiperSlide className="w-full bg-cover  bg-center  ">
-          <a href="/">
+
+{SlideDetails?.map((i,idx)=>
+
+
+
+
+
+
+
+
+        <SwiperSlide key={idx}>
+          <div className="relative h-[540px]">
             <img
               src={'/banner3.jpg'}
-              className="swiper-lazy h-96  w-full rounded-lg drop-shadow-xl 	"
-            />
-          </a>
+              className="swiper-lazy h-[540px] absolute object-cover rounded w-full drop-shadow-xl "
+              />
+
+            <div className="absolute inset-96   text-white">
+              <div className='text-4xl'>{i.title}</div>
+              <div className='text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sed, delectus officia itaque labore unde soluta illo? Enim, doloribus quae.</div>
+            </div>
+          </div>
           <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
         </SwiperSlide>
 
-        <SwiperSlide className="w-full bg-cover  bg-center  ">
-          <a href="/">
-            <img
-              src={'/banner4.jpg'}
-              className="swiper-lazy h-96 w-full rounded-lg drop-shadow-xl 	"
-            />
-          </a>
-          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        </SwiperSlide>
+              )}
       </Swiper>
     </>
   );

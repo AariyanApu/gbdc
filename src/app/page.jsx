@@ -5,7 +5,7 @@ import 'swiper/css/bundle';
 const inter = Inter({ subsets: ['latin'] });
 export default function Home() {
   return (
-    <div className='max-w-screen-2xl'>
+    <div className='max-w-screen-2xl  bg-violet-200  '>
       <NavBar />
       <Slide />
     </div>
