@@ -1,12 +1,11 @@
 'use client';
+import { motion } from 'framer-motion';
 import SlideDetails from '../assets/videoDetails';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import required modules
 
-import { Autoplay, EffectFade, Lazy, Navigation, Pagination } from 'swiper';
+import { Autoplay, EffectFade, Lazy, Pagination } from 'swiper';
 
-// Import Swiper styles
 import 'swiper/css/effect-fade';
 import 'swiper/css/lazy';
 import 'swiper/css/pagination';
@@ -18,7 +17,6 @@ export default function Slide() {
     <>
       <Swiper
         effect={'fade'}
-        navigation={true}
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={'auto'}
@@ -31,37 +29,31 @@ export default function Slide() {
         loopFillGroupWithBlank={true}
         lazy={true}
         pagination={{ clickable: true, dynamicBullets: true }}
-        modules={[EffectFade, Pagination, Autoplay, Lazy, Navigation]}
+        modules={[EffectFade, Pagination, Autoplay, Lazy]}
         className="mySwiper w-full px-2  pb-10 mt-0.5"
       >
-
-
-
-{SlideDetails?.map((i,idx)=>
-
-
-
-
-
-
-
-
-        <SwiperSlide key={idx}>
-          <div className="relative h-[540px]">
-            <img
-              src={'/banner3.jpg'}
-              className="swiper-lazy h-[540px] absolute object-cover rounded w-full drop-shadow-xl "
+        {SlideDetails?.map((i, idx) => (
+          <SwiperSlide key={idx}>
+            <div className="relative h-[540px]">
+              <img
+                src={'/banner3.jpg'}
+                className="swiper-lazy h-[540px] absolute object-cover rounded w-full drop-shadow-xl "
               />
 
-            <div className="absolute inset-96   text-white">
-              <div className='text-4xl'>{i.title}</div>
-              <div className='text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sed, delectus officia itaque labore unde soluta illo? Enim, doloribus quae.</div>
+              <motion.div
+                animate={{ y: 100 }}
+                transition={{ ease: 'easeOut', duration: 1 }}
+                className="absolute inset-60  text-center  text-white"
+              >
+                <div className="text-4xl bg-black bg-opacity-5">{i.title}</div>
+                <div className="text-lg bg-black bg-opacity-5">
+                  {i.description}
+                </div>
+              </motion.div>
             </div>
-          </div>
-          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        </SwiperSlide>
-
-              )}
+            <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );
