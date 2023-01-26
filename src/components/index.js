@@ -1,2 +1,3 @@
-import NavBar from "./NavBar";
-export {NavBar}
+import NavBar from './NavBar';
+import Slide from './Slide';
+export { NavBar, Slide };
