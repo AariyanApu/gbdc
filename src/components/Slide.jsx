@@ -1,6 +1,5 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Autoplay, EffectFade, Pagination } from 'swiper';
 import 'swiper/css/effect-fade';
@@ -25,27 +24,25 @@ const Slide = () => (
     loopFillGroupWithBlank
     pagination={{ clickable: true, dynamicBullets: true }}
     modules={[EffectFade, Pagination, Autoplay]}
-    className="mySwiper mt-0.5 w-full "
+    className="mySwiper mt-1 w-full "
   >
     {/* Here Swiper Card goes on */}
     {SlideDetails?.map((i, idx) => (
       <SwiperSlide key={idx}>
-        <div className="relative h-[600px]  px-4 pt-1">
+        <div className="relative h-[600px]">
           <Image
             alt="banner Image"
             height={1000}
             width={1000}
             src={i.imgUrl}
-            className=" h-[570px] w-full rounded object-cover drop-shadow-lg "
+            className=" h-[570px] w-full rounded object-cover   "
           />
+          <div className="absolute inset-0 h-[573px] w-[800] rounded  bg-gradient-to-t  from-black via-transparent to-transparent opacity-90" />
 
-          <motion.div
-
-            className="absolute inset-60  text-center  text-white"
-          >
-            <div className="text-4xl">{i.title}</div>
-            <div className="text-lg">{i.description}</div>
-          </motion.div>
+          <div className="absolute inset-y-96 mx-auto w-[800px] pl-5 text-left text-white">
+            <div className="text-4xl ">{i.title}</div>
+            <div className="text-lg backdrop-blur-sm">{i.description}</div>
+          </div>
         </div>
       </SwiperSlide>
     ))}
