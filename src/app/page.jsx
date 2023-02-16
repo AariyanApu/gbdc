@@ -1,13 +1,14 @@
 'use client';
-import { NavBar, Slide } from '@/components';
+
+import Hero from '@/sections/Hero';
 import { Inter } from '@next/font/google';
 import 'swiper/css/bundle';
+
 const inter = Inter({ subsets: ['latin'] });
 export default function Home() {
   return (
-    <div className='max-w-screen-2xl  bg-violet-200  '>
-      <NavBar />
-      <Slide />
+    <div className="mx-auto  max-w-screen-2xl bg-violet-200  ">
+      <Hero />
     </div>
   );
 }

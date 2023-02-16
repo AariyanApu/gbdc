@@ -34,11 +34,11 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'jsx-a11y/no-noninteractive-element-interactions': 'off',
     'react/function-component-definition': [
-      2,
-      {
-        namedComponents: 'arrow-function',
-        unnamedComponents: 'arrow-function',
-      },
+      0,
+      // {
+      //   namedComponents: 'arrow-function',
+      //   unnamedComponents: 'arrow-function',
+      // },
     ],
     'max-len': [2, 1050],
     'no-multiple-empty-lines': [
