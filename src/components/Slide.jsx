@@ -25,23 +25,22 @@ const Slide = () => (
     loopFillGroupWithBlank
     pagination={{ clickable: true, dynamicBullets: true }}
     modules={[EffectFade, Pagination, Autoplay]}
-    className="mySwiper mt-0.5 mb-10 w-full "
+    className="mySwiper mt-0.5 w-full "
   >
     {/* Here Swiper Card goes on */}
     {SlideDetails?.map((i, idx) => (
       <SwiperSlide key={idx}>
-        <div className="relative h-[540px]  p-5">
+        <div className="relative h-[600px]  px-4 pt-1">
           <Image
             alt="banner Image"
             height={1000}
             width={1000}
             src={i.imgUrl}
-            className=" h-[510px] w-full rounded object-cover drop-shadow-lg "
+            className=" h-[570px] w-full rounded object-cover drop-shadow-lg "
           />
 
           <motion.div
-            animate={{ y: 100 }}
-            transition={{ ease: 'easeOut', duration: 1 }}
+
             className="absolute inset-60  text-center  text-white"
           >
             <div className="text-4xl">{i.title}</div>
