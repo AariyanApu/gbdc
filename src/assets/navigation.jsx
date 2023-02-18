@@ -1,4 +1,5 @@
- export const  navigation = {
+/* eslint-disable max-len */
+export const navigation = {
   solutions: [
     { name: 'Marketing', href: '#' },
     { name: 'Analytics', href: '#' },
@@ -86,4 +87,4 @@
       ),
     },
   ],
-}
+};
