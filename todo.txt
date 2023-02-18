@@ -1,0 +1,6 @@
+add real photo and text
+make hero text larger and compact
+//!  add animation to hero section text
+
+//@ add animation to NavBar
+

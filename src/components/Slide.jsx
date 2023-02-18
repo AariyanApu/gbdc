@@ -32,8 +32,8 @@ const Slide = () => (
         <div className="relative h-[600px]">
           <Image
             alt="banner Image"
-            height={1000}
-            width={1000}
+            height={1600}
+            width={1600}
             src={i.imgUrl}
             className=" h-[570px] w-full rounded object-cover   "
           />
