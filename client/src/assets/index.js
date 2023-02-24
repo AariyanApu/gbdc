@@ -1,3 +1,3 @@
 import loader from './loader.gif';
-\
-export {  loader };
+
+export { loader };

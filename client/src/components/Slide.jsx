@@ -41,7 +41,7 @@ const Slide = () => (
 
           <div className="absolute inset-y-96 mx-auto w-[800px] pl-5 text-left text-white">
             <div className="text-4xl ">{i.title}</div>
-            <div className="text-lg text-base backdrop-blur-sm">{i.description}</div>
+            <div className="text-lg backdrop-blur-sm">{i.description}</div>
           </div>
         </div>
       </SwiperSlide>

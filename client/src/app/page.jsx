@@ -1,5 +1,6 @@
 'use client';
 
+// eslint-disable-next-line camelcase
 import { Nunito_Sans } from '@next/font/google';
 import Hero from '@/sections/Hero';
 
