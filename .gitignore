@@ -93,3 +93,5 @@ yarn-error.log*
 # vercel
 .vercel
 .directory
+.next
+/**.next
