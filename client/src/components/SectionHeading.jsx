@@ -1,8 +1,8 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import { DonateBloodIcon } from '@/utils/icons';
 import { zoomIn } from '@/utils/motion';
-import { motion } from 'framer-motion';
 import DashLIne from './DashLIne';
 
 export default function SectionHeading() {

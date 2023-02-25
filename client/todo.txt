@@ -6,7 +6,22 @@ make hero text larger and compact
 
 গৌরনদী ব্লাড ডোনার্স ক্লাব (GBDC) - Gournadi Blood Donor's Club (GBDC)
 
-Add animation to Section Heading
+// Add animation to Section Heading
+
+add animation to hero slide 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 গৌরনদী ব্লাড ডোনার্স ক্লাব GBDCপরিবারে আপনাকে স্বাগতম 😍😍
 গৌরনদী ব্লাড ডোনার্স ক্লাব GBDC

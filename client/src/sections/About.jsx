@@ -35,7 +35,7 @@ export default function About() {
             textStyles="mb-3 text-[23px] sm:mt-7 sm:text-left"
           />
           <motion.div
-            variants={fadeIn('up', 'tween', 1.2, 1)}
+            variants={fadeIn('up', 'tween', 1, 0.7)}
             className=" text-justify text-lg sm:w-[450px] "
           >
             গৌরনদী ব্লাড ডোনার্স ক্লাব GBDC একটি অরাজনৈতিক ও অলাভজনক সেচছাসেবী
@@ -44,7 +44,7 @@ export default function About() {
             পাশে দাঁড়াই গরিব দুস্হ-অসহায় অতি দরিদ্র শ্রেণীর মানুষের পাশে।
           </motion.div>
         </div>
-        <motion.div variants={fadeIn('up', 'tween', 1.5, 1)} className="w-96">
+        <motion.div variants={fadeIn('up', 'tween', 1.2, 0.7)} className="w-96 mx-auto sm:mx-0 mt-5 sm:mt-0">
           {' '}
           <Image
             src={groupPhoto}
