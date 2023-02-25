@@ -5,6 +5,7 @@ import { Nunito_Sans } from '@next/font/google';
 import Hero from '@/sections/Hero';
 
 import 'swiper/css/bundle';
+import About from '@/sections/About';
 
 const inter = Nunito_Sans({
   subsets: ['latin'],
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <main className={`${inter.variable} font-sans mx-auto max-w-screen-2xl text-gray-50`}>
       <Hero />
+      <About />
     </main>
   );
 }
