@@ -7,3 +7,7 @@ export const inter = Nunito({
   subsets: ['latin'],
   variable: '--font-inter',
 });
+
+export const banglaFont = localFont({
+  src: './BalooDa2-Regular.ttf',
+});
