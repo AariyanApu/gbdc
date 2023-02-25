@@ -29,7 +29,7 @@ const Slide = () => (
     {/* Here Swiper Card goes on */}
     {SlideDetails?.map((i, idx) => (
       <SwiperSlide key={idx}>
-        <div className="relative h-[600px]">
+        <div className="relative h-[570px]">
           <Image
             alt="banner Image"
             height={1600}

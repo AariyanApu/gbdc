@@ -1,9 +1,9 @@
 'use client';
 
+import Image from 'next/image';
 import { groupPhoto } from '@/assets';
 import SectionHeading from '@/components/SectionHeading';
-import { banglaFont, titleFont } from '@/utils/fonts';
-import Image from 'next/image';
+import { titleFont } from '@/utils/fonts';
 
 export default function About() {
   return (
@@ -16,14 +16,10 @@ export default function About() {
       <SectionHeading />
       <div className="mt-10 flex flex-col justify-evenly sm:flex-row ">
         <div className=" w-full px-5 sm:w-[500px] sm:px-0">
-          <h1
-            className={`mb-3 sm:text-left text-[23px] sm:mt-7 ${banglaFont.className}`}
-          >
+          <h1 className="mb-3 text-[23px] sm:mt-7 sm:text-left ">
             গৌরনদী ব্লাড ডোনার্স ক্লাব পরিবারে আপনাকে স্বাগতম।{' '}
           </h1>
-          <div
-            className={` text-justify text-lg sm:w-[450px] ${banglaFont.className}`}
-          >
+          <div className=" text-justify text-lg sm:w-[450px] ">
             গৌরনদী ব্লাড ডোনার্স ক্লাব GBDC একটি অরাজনৈতিক ও অলাভজনক সেচছাসেবী
             সংগঠন। "নতুন প্রজন্মের নতুন পৃথিবী" এই স্লোগানকে আঁকড়ে ধরে এগিয়ে
             চলা। তাই আপনিও আসুন আমাদের সাথে, আসুন মানবতার কাজে, ঐক্যবদ্ধ হয়ে
