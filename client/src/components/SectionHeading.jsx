@@ -8,7 +8,7 @@ export default function SectionHeading() {
     <div className="mx-auto flex justify-center">
       <DashLIne />
 
-      <div className="px-2 text-2xl text-red-700 ">
+      <div className="px-2 text-xl text-red-700 ">
         <DonateBloodIcon />
       </div>
       <DashLIne />
