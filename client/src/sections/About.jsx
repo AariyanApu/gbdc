@@ -1,11 +1,11 @@
 'use client';
 
+import Image from 'next/image';
+import { motion } from 'framer-motion';
 import { groupPhoto } from '@/assets';
 import { TypingText, TypingTitle } from '@/components/CustomTexts';
 import SectionHeading from '@/components/SectionHeading';
 import { fadeIn, staggerContainer } from '@/utils/motion';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
 
 export default function About() {
   return (
@@ -32,7 +32,7 @@ export default function About() {
               ' আপনাকে',
               ' স্বাগতম।',
             ]}
-            textStyles="mb-3 text-[23px] sm:mt-7 sm:text-left"
+            textStyles="mb-3 text-[23px] sm:mt-7 text-center sm:text-left"
           />
           <motion.div
             variants={fadeIn('up', 'tween', 1, 0.7)}

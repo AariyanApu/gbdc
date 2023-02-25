@@ -1,11 +1,12 @@
 'use client';
 
-import { regularFont } from '@/utils/fonts';
-import { staggerContainer, textContainer, textVariant2 } from '@/utils/motion';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+
+import { staggerContainer, textContainer, textVariant2 } from '@/utils/motion';
+import { regularFont } from '@/utils/fonts';
 
 const navigation = [
   { name: 'ABOUT US', href: '#', current: false },
