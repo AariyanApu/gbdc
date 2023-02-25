@@ -15,7 +15,7 @@ const inter = Nunito_Sans({
 
 export default function Home() {
   return (
-    <main className={`${inter.variable} font-sans mx-auto max-w-screen-2xl text-gray-50`}>
+    <main className={`${inter.variable} font-sans mx-auto max-w-screen-2xl text-gray-50 bg-violet-200`}>
       <Hero />
       <About />
     </main>
