@@ -4,7 +4,7 @@ import localFont from '@next/font/local';
 
 export const titleFont = localFont({ src: './balivia.ttf' });
 
-export const inter = Nunito({
+export const regularFont = Nunito({
   subsets: ['latin'],
   variable: '--font-inter',
 });

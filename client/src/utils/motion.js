@@ -71,6 +71,15 @@ export const textContainer = {
     transition: { staggerChildren: 0.1, delayChildren: i * 0.1 },
   }),
 };
+export const textContainer2 = {
+  hidden: {
+    opacity: 0,
+  },
+  show: (i = 1) => ({
+    opacity: 1,
+    transition: { staggerChildren: 0.1, delayChildren: i * 1 },
+  }),
+};
 
 export const textVariant2 = {
   hidden: {

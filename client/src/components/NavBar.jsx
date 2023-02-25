@@ -1,13 +1,16 @@
 'use client';
 
+import { regularFont } from '@/utils/fonts';
+import { staggerContainer, textContainer, textVariant2 } from '@/utils/motion';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const navigation = [
   { name: 'ABOUT US', href: '#', current: false },
-  { name: 'ACTIVITIS', href: '#', current: false },
-  { name: 'ACHIVMENT', href: '#', current: false },
+  { name: 'ACTIVITIES', href: '#', current: false },
+  { name: 'ACHIEVEMENTS', href: '#', current: false },
   { name: 'TESTIMONIAL', href: '#', current: false },
   { name: 'FEATURE', href: '#', current: false },
   { name: 'ADMIN PANEL', href: '#', current: false },
@@ -22,7 +25,13 @@ export default function NavBar() {
     <Disclosure as="nav" className="bg-violet-500 shadow-md">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.25 }}
+            className={`lg:px-8" mx-auto max-w-7xl px-2 sm:px-6 ${regularFont.className}`}
+          >
             <div className="relative flex h-16 items-center justify-between">
               {/* Mobile menu button */}
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -59,10 +68,14 @@ export default function NavBar() {
 
                 {/* Here Nav LINK */}
 
-                <div className="hidden sm:ml-6 sm:block">
+                <motion.div
+                  variants={textContainer}
+                  className="hidden sm:ml-6 sm:block"
+                >
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <motion.a
+                        variants={textVariant2}
                         key={item.name}
                         href={item.href}
                         className={classNames(
@@ -74,13 +87,13 @@ export default function NavBar() {
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
-                      </a>
+                      </motion.a>
                     ))}
                   </div>
-                </div>
+                </motion.div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* NavLink for Mobile */}
 
