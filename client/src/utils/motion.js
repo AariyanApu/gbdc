@@ -68,7 +68,7 @@ export const textContainer = {
   },
   show: (i = 1) => ({
     opacity: 1,
-    transition: { staggerChildren: 0.1, delayChildren: i * 0.1 },
+    transition: { staggerChildren: 0.1, delayChildren: i * 0.09 },
   }),
 };
 export const textContainer2 = {
@@ -77,7 +77,7 @@ export const textContainer2 = {
   },
   show: (i = 1) => ({
     opacity: 1,
-    transition: { staggerChildren: 0.1, delayChildren: i * 1 },
+    transition: { staggerChildren: 0.1, delayChildren: i * 0.9 },
   }),
 };
 
