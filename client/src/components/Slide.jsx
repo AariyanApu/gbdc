@@ -1,5 +1,7 @@
 'use client';
 
+import { fadeIn, staggerContainer } from '@/utils/motion';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Autoplay, EffectFade, Pagination } from 'swiper';
 import 'swiper/css/effect-fade';
@@ -29,7 +31,13 @@ const Slide = () => (
     {/* Here Swiper Card goes on */}
     {SlideDetails?.map((i, idx) => (
       <SwiperSlide key={idx}>
-        <div className="relative h-[570px]">
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className="relative h-[570px]"
+        >
           <Image
             alt="banner Image"
             height={1600}
@@ -39,11 +47,14 @@ const Slide = () => (
           />
           <div className="absolute inset-0 h-[573px] w-[800] rounded  bg-gradient-to-t  from-black via-transparent to-transparent opacity-90" />
 
-          <div className="absolute inset-y-96 mx-auto w-[800px] pl-5 text-left text-white">
+          <motion.div
+            variants={fadeIn('up', 'tween', 1, 0.5)}
+            className="absolute inset-y-96 mx-auto w-[800px] pl-5 text-left text-white"
+          >
             <div className="text-4xl ">{i.title}</div>
             <div className="text-lg backdrop-blur-sm">{i.description}</div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </SwiperSlide>
     ))}
   </Swiper>
