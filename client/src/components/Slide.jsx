@@ -48,7 +48,7 @@ const Slide = () => (
           <div className="absolute inset-0 h-[573px] w-[800] rounded  bg-gradient-to-t  from-black via-transparent to-transparent opacity-90" />
 
           <motion.div
-            variants={fadeIn('up', 'tween', 1, 0.5)}
+            variants={fadeIn('up', 'tween', 1, 0.7)}
             className="absolute inset-y-96 mx-auto w-[800px] pl-5 text-left text-white"
           >
             <div className="text-4xl ">{i.title}</div>
