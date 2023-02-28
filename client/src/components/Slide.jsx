@@ -1,6 +1,5 @@
 'use client';
 
-import { fadeIn, staggerContainer } from '@/utils/motion';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Autoplay, EffectFade, Pagination } from 'swiper';
@@ -9,6 +8,8 @@ import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.min.css';
+
+import { fadeIn, staggerContainer } from '@/utils/motion';
 import SlideDetails from '../assets/videoDetails';
 
 const Slide = () => (
