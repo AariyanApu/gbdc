@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 import banner from '@/assets/banner.jpg';
+import banner1 from '@/assets/banner1.jpg';
+import banner2 from '@/assets/banner2.jpg';
 import { TypingText, TypingTitle } from '@/components/CustomTexts';
 import SectionHeading from '@/components/SectionHeading';
 import { fadeIn, staggerContainer } from '@/utils/motion';
@@ -17,7 +19,7 @@ export default function Work() {
       viewport={{ once: false, amount: 0.25 }}
       className="bg-gray-50 pt-20"
     >
-      <TypingTitle title="Our Activities" />
+      <TypingTitle title={['Our', ' Acti', 'vit', 'ies']} />
       <SectionHeading />
       <div className="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <div className="sm:flex sm:items-baseline sm:justify-between">
@@ -26,7 +28,7 @@ export default function Work() {
             textStyles="text-2xl font-bold tracking-tight"
           />
           <motion.a
-            variants={fadeIn('left', 'tween', 2, 0.7)}
+            variants={fadeIn('left', 'tween', 1.1, 0.6)}
             href="#"
             className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block"
           >
@@ -37,7 +39,7 @@ export default function Work() {
 
         <div className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">
           <motion.div
-            variants={fadeIn('right', 'tween', 1.1, 0.7)}
+            variants={fadeIn('right', 'tween', 0.8, 0.7)}
             className="group aspect-w-2 aspect-h-1 overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2"
           >
             <Image
@@ -68,11 +70,11 @@ export default function Work() {
           </motion.div>
 
           <motion.div
-            variants={fadeIn('left', 'tween', 1.8, 0.7)}
+            variants={fadeIn('left', 'tween', 1.1, 0.6)}
             className="group aspect-w-2 aspect-h-1 overflow-hidden rounded-lg sm:aspect-none sm:relative sm:h-full"
           >
             <Image
-              src={banner}
+              src={banner1}
               height={800}
               width={800}
               alt="Wooden shelf with gray and olive drab green baseball caps, next to wooden clothes hanger with sweaters."
@@ -98,11 +100,11 @@ export default function Work() {
           </motion.div>
 
           <motion.div
-            variants={fadeIn('left', 'tween', 2.2, 0.7)}
+            variants={fadeIn('left', 'tween', 1.5, 0.7)}
             className="group aspect-w-2 aspect-h-1 overflow-hidden rounded-lg sm:aspect-none sm:relative sm:h-full"
           >
             <Image
-              src={banner}
+              src={banner2}
               height={800}
               width={800}
               alt="Walnut desk organizer set with white modular trays, next to porcelain mug on wooden desk."
