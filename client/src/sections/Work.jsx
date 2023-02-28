@@ -49,18 +49,19 @@ export default function Work() {
             />
             <div
               aria-hidden="true"
-              className="bg-gradient-to-b from-transparent to-black opacity-50"
+              className="bg-gradient-to-b from-transparent to-black opacity-80"
             />
             <div className="flex items-end p-6">
               <div>
-                <h3 className="font-semibold text-white">
+                <h3 className="text-2xl font-semibold text-white">
                   <a href="#">
                     <span className="absolute inset-0" />
-                    New Arrivals
+                    বিনামূল্যে রক্তের গ্রুপ নির্ণয়
                   </a>
                 </h3>
                 <p aria-hidden="true" className="mt-1 text-sm text-white">
-                  Shop now
+                  আমরা বিভিন্ন সময়ে, বিভিন্ন স্থানে ক্যাম্পেইং করে বিনামূল্যে
+                  রক্তের গ্রুপ নির্ণয় করে থাকি।
                 </p>
               </div>
             </div>
@@ -79,24 +80,27 @@ export default function Work() {
             />
             <div
               aria-hidden="true"
-              className="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0"
+              className="bg-gradient-to-b from-transparent to-black opacity-80 sm:absolute sm:inset-0"
             />
             <div className="flex items-end p-6 sm:absolute sm:inset-0">
               <div>
                 <h3 className="font-semibold text-white">
                   <a href="#">
                     <span className="absolute inset-0" />
-                    Accessories
+                    রক্ত দান করে থাকি।
                   </a>
                 </h3>
                 <p aria-hidden="true" className="mt-1 text-sm text-white">
-                  Shop now
+                  অসহায় রোগীকে রক্ত দান করা বা অন্যকে রক্তদানে আগ্রহী করে তোলা।
                 </p>
               </div>
             </div>
           </motion.div>
 
-          <motion.div variants={fadeIn('left', 'tween', 2.2, 0.7)} className="group aspect-w-2 aspect-h-1 overflow-hidden rounded-lg sm:aspect-none sm:relative sm:h-full">
+          <motion.div
+            variants={fadeIn('left', 'tween', 2.2, 0.7)}
+            className="group aspect-w-2 aspect-h-1 overflow-hidden rounded-lg sm:aspect-none sm:relative sm:h-full"
+          >
             <Image
               src={banner}
               height={800}
@@ -106,18 +110,19 @@ export default function Work() {
             />
             <div
               aria-hidden="true"
-              className="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0"
+              className="bg-gradient-to-b from-transparent to-black opacity-80 sm:absolute sm:inset-0"
             />
             <div className="flex items-end p-6 sm:absolute sm:inset-0">
               <div>
-                <h3 className="font-semibold text-white">
+                <h3 className="text-2xl font-semibold text-white">
                   <a href="#">
                     <span className="absolute inset-0" />
-                    Workspace
+                    বস্ত্র এবং শীতবস্ত্র বিতান
                   </a>
                 </h3>
                 <p aria-hidden="true" className="mt-1 text-sm text-white">
-                  Shop now
+                  শীতে কষ্ট পাওয়া ফুটপাতের মানুষগুলোর জন্য শীতের কাপড় প্রদান
+                  করে তাদের জন্য একটু উষ্ণতার ব্যবস্থা করে দেওয়া।
                 </p>
               </div>
             </div>
