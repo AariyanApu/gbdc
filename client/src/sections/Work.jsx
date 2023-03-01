@@ -86,7 +86,7 @@ export default function Work() {
             />
             <div className="flex items-end p-6 sm:absolute sm:inset-0">
               <div>
-                <h3 className="font-semibold text-white">
+                <h3 className="font-semibold text-2xl text-white">
                   <a href="#">
                     <span className="absolute inset-0" />
                     রক্ত দান করে থাকি।

@@ -46,14 +46,18 @@ const Slide = () => (
             src={i.imgUrl}
             className=" h-[570px] w-full rounded object-cover   "
           />
-          <div className="absolute inset-0 h-[573px] w-[800] rounded  bg-gradient-to-t  from-black via-transparent to-transparent opacity-90" />
-
+          {/* Black Shadow */}
+          <div
+            aria-hidden="true"
+            className="  absolute  inset-0 w-full bg-gradient-to-b from-transparent to-black opacity-80 sm:w-[800] hidden sm:block"
+          />
+          {/* Title & Text */}
           <motion.div
             variants={fadeIn('up', 'tween', 1, 0.7)}
-            className="absolute inset-y-96 mx-auto w-[800px] pl-5 text-left text-white"
+            className="absolute inset-y-96 w-80 text-left text-white sm:w-[800px] sm:pl-5 sm:block hidden"
           >
             <div className="text-4xl ">{i.title}</div>
-            <div className="text-lg backdrop-blur-sm">{i.description}</div>
+            <div className="backdrop-blur-sm text-lg ">{i.description}</div>
           </motion.div>
         </motion.div>
       </SwiperSlide>
