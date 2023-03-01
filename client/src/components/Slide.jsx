@@ -37,7 +37,7 @@ const Slide = () => (
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className="relative h-[570px]"
+          className="relative h-[70vh] sm:h-[60vh] lg:h-[70vh] xl:h-[80vh] 2xl:h-[90vh] "
         >
           {/* Slide Image */}
           <Image
@@ -45,20 +45,20 @@ const Slide = () => (
             height={1600}
             width={1600}
             src={i.imgUrl}
-            className=" h-[570px] w-full rounded object-cover   "
+            className=" h-[70vh] w-full rounded object-cover sm:h-[60vh] lg:h-[70vh] xl:h-[80vh] 2xl:h-[90vh]   "
           />
           {/* Black Shadow */}
           <div
             aria-hidden="true"
-            className="  absolute  inset-0 w-full bg-gradient-to-b from-transparent to-black opacity-80 sm:w-[800] hidden sm:block"
+            className="  absolute  inset-0 hidden w-full bg-gradient-to-b from-transparent to-black opacity-80 sm:block sm:w-[800]"
           />
           {/* Title & Text */}
           <motion.div
             variants={fadeIn('up', 'tween', 1, 0.7)}
-            className="absolute inset-y-96 w-80 text-left text-white sm:w-[800px] sm:pl-5 sm:block hidden"
+            className="absolute inset-y-96 hidden w-80 text-left text-white sm:block sm:w-[800px] sm:pl-5"
           >
             <div className="text-4xl ">{i.title}</div>
-            <div className="backdrop-blur-sm text-lg ">{i.description}</div>
+            <div className="text-lg backdrop-blur-sm ">{i.description}</div>
           </motion.div>
         </motion.div>
       </SwiperSlide>
