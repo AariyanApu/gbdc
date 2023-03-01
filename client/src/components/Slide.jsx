@@ -39,6 +39,7 @@ const Slide = () => (
           viewport={{ once: false, amount: 0.25 }}
           className="relative h-[570px]"
         >
+          {/* Slide Image */}
           <Image
             alt="banner Image"
             height={1600}
