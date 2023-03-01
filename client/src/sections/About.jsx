@@ -14,7 +14,7 @@ export default function About() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="mt-8 mb-32"
+      className=" 2xl:my-32 xl:my-28 lg:my-24 md:my-20 my-16 "
     >
       <div>
         <TypingTitle title="About Us" />
