@@ -4,8 +4,8 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { groupPhoto } from '@/assets';
 import { TypingText, TypingTitle } from '@/components/CustomTexts';
-import SectionHeading from '@/components/SectionHeading';
 import { fadeIn, staggerContainer } from '@/utils/motion';
+import { SectionHeading } from '@/components';
 
 export default function About() {
   return (

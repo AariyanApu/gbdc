@@ -7,8 +7,8 @@ import banner from '@/assets/banner.jpg';
 import banner1 from '@/assets/banner1.jpg';
 import banner2 from '@/assets/banner2.jpg';
 import { TypingText, TypingTitle } from '@/components/CustomTexts';
-import SectionHeading from '@/components/SectionHeading';
 import { fadeIn, staggerContainer } from '@/utils/motion';
+import { SectionHeading } from '@/components';
 
 export default function Work() {
   return (
