@@ -5,6 +5,7 @@ import About from '@/sections/About';
 import { banglaFont } from '@/utils/fonts';
 import 'swiper/css/bundle';
 import Work from '@/sections/Work';
+import SuccessRate from '@/sections/SuccessRate';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <About />
       <Work />
+      <SuccessRate />
     </main>
   );
 }

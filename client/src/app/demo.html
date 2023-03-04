@@ -1,0 +1,80 @@
+<div
+  class="mx-auto flex min-h-screen flex-col content-center items-center justify-center bg-gray-200"
+>
+  <div class="mb-12 w-64 rounded bg-white p-4 shadow-xl hover:shadow-md">
+    <div class="flex items-center">
+      <div class="flex">
+        <span class="rounded-md bg-gray-200 p-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-briefcase text-primary"
+          >
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+        </span>
+      </div>
+      <div class="ml-4 flex-1 text-sm">
+        <p class="mb-3 font-bold">TOTAL PROJECTS</p>
+        <div class="mb-3 flex items-center justify-between">
+          <h4 class="mb-0 flex-grow text-3xl font-bold">
+            <span
+              x-data="animatedCounter(673, 200, 0)"
+              x-init="updatecounter"
+              x-text="Math.round(current)"
+            ></span>
+          </h4>
+          <span
+            class="flex rounded bg-red-100 px-3 py-0.5 pt-1 text-xs font-bold text-red-700"
+            ><i class="ri-arrow-down-s-line fs-13 me-1 align-middle"></i>5.02
+            %<span> </span
+          ></span>
+        </div>
+        <p class="text-muted text-truncate mb-0">Projects this month</p>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="w-42 mb-6 rounded-md bg-white p-12 text-center text-4xl font-bold text-black"
+    x-data="animatedCounter(300, 200)"
+    x-init="updatecounter"
+    x-text="Math.round(current)"
+  ></div>
+
+  <div
+    x-data="animatedCounter(780, 200)"
+    x-init="updatecounter"
+    x-text="Math.round(current)"
+  ></div>
+</div>
+
+<script>
+  function animatedCounter(targer, time = 200, start = 0) {
+    return {
+      current: 0,
+      target: targer,
+      time: time,
+      start: start,
+      updatecounter: function () {
+        start = this.start;
+        const increment = (this.target - start) / this.time;
+        const handle = setInterval(() => {
+          if (this.current < this.target) this.current += increment;
+          else {
+            clearInterval(handle);
+            this.current = this.target;
+          }
+        }, 1);
+      },
+    };
+  }
+</script>
