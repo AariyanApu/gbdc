@@ -8,7 +8,10 @@ make hero text larger and compact
 
 // Add animation to Section Heading
 
-add animation to hero slide
+// add animation to hero slide
+polish success rate
+proper size for mobile slide
+remove lazy loading for slide
 
 
 

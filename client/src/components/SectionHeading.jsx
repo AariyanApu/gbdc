@@ -13,7 +13,7 @@ export default function SectionHeading() {
     >
       <DashLIne />
 
-      <div className="px-2 text-xl text-red-700 ">
+      <div className="px-2 text-xl text-[#880808] ">
         <DonateBloodIcon />
       </div>
       <DashLIne />
