@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 
+import { bloodBags, camp, donator } from '@/assets';
 import { SectionHeading, SuccessRateCard } from '@/components';
 import { TypingTitle } from '@/components/CustomTexts';
 import { fadeIn, staggerContainer } from '@/utils/motion';
-import { bloodBags } from '@/assets';
 
 export default function SuccessRate() {
   return (
@@ -29,17 +29,18 @@ export default function SuccessRate() {
         />
 
         <SuccessRateCard
-          target={300}
-          time={200}
-          start={100}
-          description="blood donating camp"
+          target={200}
+          time={90}
+          start={50}
+          description="Active donators"
+          src={donator}
         />
-
         <SuccessRateCard
-          target={800}
-          time={200}
-          start={100}
-          description="Social work"
+          target={50}
+          time={50}
+          start={0}
+          src={camp}
+          description="blood donating camp"
         />
       </motion.div>
     </motion.div>

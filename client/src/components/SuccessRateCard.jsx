@@ -13,7 +13,7 @@ export default function SuccessRateCard({
   src,
 }) {
   return (
-    <div className="h-80 w-96 bg-violet-50 rounded-lg py-10">
+    <div className="h-80 w-96 bg-violet-100 rounded-lg py-10 shadow-md">
       <div className="flex flex-col items-center   justify-center ">
         <Image
           width={150}
