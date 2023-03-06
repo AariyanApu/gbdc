@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+
 import { DonateBloodIcon } from '@/utils/icons';
 import { zoomIn } from '@/utils/motion';
 import DashLIne from './DashLIne';
@@ -13,7 +14,7 @@ export default function SectionHeading() {
     >
       <DashLIne />
 
-      <div className="px-2 text-xl text-[#880808] ">
+      <div className="px-2">
         <DonateBloodIcon />
       </div>
       <DashLIne />
