@@ -51,18 +51,18 @@ export default function NavBar() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
                 <div className="flex flex-shrink-0 items-center">
                   <Image
-                    className="block h-8 w-auto lg:hidden"
+                    className=" h-6 w-auto lg:hidden"
                     src="/logo.png"
-                    alt="Logo of Aaru"
-                    width={100}
-                    height={100}
+                    alt="Logo of GBDC"
+                    width={40}
+                    height={40}
                   />
                   <Image
                     className="hidden h-8 w-auto lg:block"
                     src="/logo.png"
-                    alt="Logo of Aaru"
-                    width={100}
-                    height={100}
+                    alt="Logo of GBDC"
+                    width={80}
+                    height={80}
                   />
                   <div className="text-2xl text-gray-50">GBDC</div>
                 </div>

@@ -51,7 +51,7 @@ const Slide = () => (
           <Image
             alt="banner Image"
             height={400}
-            width={400}
+            width={300}
             src={i.imgUrl}
             className=" h-[70vh] w-full rounded object-cover sm:hidden   "
           />
