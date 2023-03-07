@@ -45,7 +45,6 @@ const Slide = () => (
             height={1600}
             width={1600}
             src={i.imgUrl}
-            loading="eager"
             className=" hidden w-full rounded object-cover sm:block sm:h-[60vh] lg:h-[80vh] xl:h-[90vh]    "
           />
           {/* Slide Image for Mobile */}
@@ -54,7 +53,6 @@ const Slide = () => (
             height={400}
             width={300}
             src={i.imgUrl}
-            loading="eager"
             className=" h-[70vh] w-full rounded object-cover sm:hidden   "
           />
           {/* Black Shadow */}
