@@ -45,7 +45,15 @@ const Slide = () => (
             height={1600}
             width={1600}
             src={i.imgUrl}
-            className=" h-[70vh] w-full rounded object-cover sm:h-[60vh] lg:h-[80vh] xl:h-[90vh]    "
+            className=" hidden w-full rounded object-cover sm:block sm:h-[60vh] lg:h-[80vh] xl:h-[90vh]    "
+          />
+          {/* Slide Image for Mobile */}
+          <Image
+            alt="banner Image"
+            height={400}
+            width={400}
+            src={i.imgUrl}
+            className=" h-[70vh] w-full rounded object-cover sm:hidden   "
           />
           {/* Black Shadow */}
           <div
@@ -55,7 +63,7 @@ const Slide = () => (
           {/* Title & Text Only Lg */}
           <motion.div
             variants={fadeIn('up', 'tween', 1, 0.7)}
-            className="absolute bottom-5 left-5 hidden text-left text-white md:block w-[800px] pl-5"
+            className="absolute bottom-5 left-5 hidden w-[800px] pl-5 text-left text-white md:block"
           >
             <div className="text-4xl ">{i.title}</div>
             <div className="text-lg backdrop-blur-sm ">{i.description}</div>

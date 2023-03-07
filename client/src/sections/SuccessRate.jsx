@@ -22,8 +22,8 @@ export default function SuccessRate() {
       >
         <SuccessRateCard
           target={600}
-          time={200}
-          start={100}
+          time={150}
+          start={300}
           description="bags blood"
           src={bloodBags}
         />
@@ -38,7 +38,7 @@ export default function SuccessRate() {
         <SuccessRateCard
           target={50}
           time={50}
-          start={0}
+          start={2}
           src={camp}
           description="blood donating camp"
         />
