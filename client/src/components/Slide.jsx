@@ -37,7 +37,7 @@ const Slide = () => (
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className="relative h-[70vh] sm:h-[60vh] lg:h-[80vh] xl:h-[90vh]  "
+          className="relative h-96 sm:h-[60vh] lg:h-[80vh] xl:h-[90vh]  "
         >
           {/* Slide Image */}
           <Image
@@ -53,7 +53,7 @@ const Slide = () => (
             height={800}
             width={600}
             src={i.imgUrl}
-            className=" h-[70vh] w-full rounded object-cover sm:hidden   "
+            className=" h-96 w-full rounded object-cover sm:hidden   "
           />
           {/* Black Shadow */}
           <div

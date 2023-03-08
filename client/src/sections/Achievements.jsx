@@ -13,7 +13,7 @@ export default function Achievements() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.35 }}
-      className="bg-violet-100 pt-20 "
+      className="bg-violet-100 pt-20 rounded "
     >
       <TypingTitle title="Achievements" />
       <SectionHeading />
