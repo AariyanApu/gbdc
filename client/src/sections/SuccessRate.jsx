@@ -18,7 +18,7 @@ export default function SuccessRate() {
       <SectionHeading />
       <motion.div
         variants={fadeIn('up', 'tween', 1, 0.7)}
-        className="mt-10 flex flex-col justify-center gap-5 sm:flex-row"
+        className="mt-10 flex flex-col justify-center items-center gap-5 sm:flex-row"
       >
         <SuccessRateCard
           target={600}

@@ -35,7 +35,7 @@ export default function NavBar() {
           >
             <div className="relative flex h-16 items-center justify-between">
               {/* Mobile menu button */}
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-50 hover:bg-violet-600 hover:text-gray-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-violet-600">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -48,7 +48,7 @@ export default function NavBar() {
 
               {/* Laptop Screen Start */}
 
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
+              <div className="flex flex-1 items-center justify-center sm:items-stretch lg:justify-between">
                 <div className="flex flex-shrink-0 items-center">
                   <Image
                     className=" h-6 w-auto lg:hidden"
@@ -71,7 +71,7 @@ export default function NavBar() {
 
                 <motion.div
                   variants={textContainer}
-                  className="hidden sm:ml-6 sm:block"
+                  className="hidden sm:ml-6 lg:block"
                 >
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
@@ -98,7 +98,7 @@ export default function NavBar() {
 
           {/* NavLink for Mobile */}
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="lg:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3">
               {navigation.map((item) => (
                 <Disclosure.Button

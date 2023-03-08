@@ -50,8 +50,8 @@ const Slide = () => (
           {/* Slide Image for Mobile */}
           <Image
             alt="banner Image"
-            height={400}
-            width={300}
+            height={800}
+            width={600}
             src={i.imgUrl}
             className=" h-[70vh] w-full rounded object-cover sm:hidden   "
           />
