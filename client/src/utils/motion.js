@@ -80,7 +80,6 @@ export const textContainer2 = {
     transition: { staggerChildren: 0.1, delayChildren: i * 0.9 },
   }),
 };
-
 export const textVariant2 = {
   hidden: {
     opacity: 0,
@@ -95,7 +94,30 @@ export const textVariant2 = {
     },
   },
 };
+export const imageContainer = {
+  hidden: {
+    opacity: 0,
+  },
+  show: (i = 1) => ({
+    opacity: 1,
+    transition: { staggerChildren: 0.3, delayChildren: i * 1 },
+  }),
+};
 
+export const imageVariant = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'tween',
+      ease: 'easeOut',
+    },
+  },
+};
 export const fadeIn = (direction, type, delay, duration) => ({
   hidden: {
     x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
