@@ -2,10 +2,11 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+
 import { groupPhoto } from '@/assets';
+import { SectionHeading } from '@/components';
 import { TypingText, TypingTitle } from '@/components/CustomTexts';
 import { fadeIn, staggerContainer } from '@/utils/motion';
-import { SectionHeading } from '@/components';
 
 export default function About() {
   return (
@@ -14,11 +15,9 @@ export default function About() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className=" 2xl:my-32 xl:my-28 lg:my-24 md:my-20 my-16 "
+      className=" my-16 md:my-20 lg:my-24 xl:my-28 2xl:my-32 "
     >
-      <div>
-        <TypingTitle title="About Us" />
-      </div>
+      <TypingTitle title="About Us" />
       <SectionHeading />
       <div className="mt-10 flex flex-col justify-evenly sm:flex-row ">
         <div className=" w-full px-5 sm:w-[500px] sm:px-0">
@@ -44,7 +43,10 @@ export default function About() {
             পাশে দাঁড়াই গরিব দুস্হ-অসহায় অতি দরিদ্র শ্রেণীর মানুষের পাশে।
           </motion.div>
         </div>
-        <motion.div variants={fadeIn('up', 'tween', 1.2, 0.7)} className="w-96 mx-auto sm:mx-0 mt-5 sm:mt-0">
+        <motion.div
+          variants={fadeIn('up', 'tween', 1.2, 0.7)}
+          className="mx-auto mt-5 w-96 sm:mx-0 sm:mt-0"
+        >
           {' '}
           <Image
             src={groupPhoto}

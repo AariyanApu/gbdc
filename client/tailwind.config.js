@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 /* eslint-disable import/no-extraneous-dependencies */
 /** @type {import('tailwindcss').Config} */
 const { fontFamily } = require('tailwindcss/defaultTheme');
@@ -11,8 +12,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/aspect-ratio'),
-
-  ],
+  plugins: [require('@tailwindcss/aspect-ratio')],
 };

@@ -6,9 +6,9 @@ import Image from 'next/image';
 import banner from '@/assets/banner.jpg';
 import banner1 from '@/assets/banner1.jpg';
 import banner2 from '@/assets/banner2.jpg';
+import { SectionHeading } from '@/components';
 import { TypingText, TypingTitle } from '@/components/CustomTexts';
 import { fadeIn, staggerContainer } from '@/utils/motion';
-import { SectionHeading } from '@/components';
 
 export default function Work() {
   return (
@@ -17,16 +17,19 @@ export default function Work() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="bg-violet-100 pt-20 rounded "
+      className="rounded bg-violet-100 pt-20 "
     >
       <TypingTitle title={['Our', ' Acti', 'vit', 'ies']} />
       <SectionHeading />
       <div className="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        {/* Activities Headline */}
         <div className="sm:flex sm:items-baseline sm:justify-between">
           <TypingText
             title={['আমাদের ', 'কার্যক্রম ', 'সমূহ']}
             textStyles="text-2xl font-bold tracking-tight"
           />
+
+          {/* All Activities for Large Screen  */}
           <motion.a
             variants={fadeIn('left', 'tween', 1.1, 0.6)}
             href="#"
@@ -86,7 +89,7 @@ export default function Work() {
             />
             <div className="flex items-end p-6 sm:absolute sm:inset-0">
               <div>
-                <h3 className="font-semibold text-2xl text-white">
+                <h3 className="text-2xl font-semibold text-white">
                   <a href="#">
                     <span className="absolute inset-0" />
                     রক্ত দান করে থাকি।
@@ -130,7 +133,7 @@ export default function Work() {
             </div>
           </motion.div>
         </div>
-
+        {/* All Activities for mobile  */}
         <div className="mt-6 sm:hidden">
           <a
             href="#"
