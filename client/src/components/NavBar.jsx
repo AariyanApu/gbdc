@@ -12,9 +12,7 @@ const navigation = [
   { name: 'ABOUT US', href: '#', current: false },
   { name: 'ACTIVITIES', href: '#', current: false },
   { name: 'ACHIEVEMENTS', href: '#', current: false },
-  { name: 'TESTIMONIAL', href: '#', current: false },
-  { name: 'FEATURE', href: '#', current: false },
-  { name: 'ADMIN PANEL', href: '#', current: false },
+  { name: 'JOIN US', href: '#', current: false },
 ];
 
 function classNames(...classes) {

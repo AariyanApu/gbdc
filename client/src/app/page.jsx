@@ -1,11 +1,7 @@
 'use client';
 
-import Hero from '@/sections/Hero';
-import About from '@/sections/About';
 import { banglaFont } from '@/utils/fonts';
-import 'swiper/css/bundle';
-import Work from '@/sections/Work';
-import SuccessRate from '@/sections/SuccessRate';
+import { About, Achievements, Hero, SuccessRate, Work } from '@/sections';
 
 export default function Home() {
   return (
@@ -16,6 +12,7 @@ export default function Home() {
       <About />
       <Work />
       <SuccessRate />
+      <Achievements />
     </main>
   );
 }
