@@ -32,6 +32,8 @@ export default function Work() {
           {/* All Activities for Large Screen  */}
           <motion.a
             variants={fadeIn('left', 'tween', 1.1, 0.6)}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             href="#"
             className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block"
           >
@@ -50,7 +52,7 @@ export default function Work() {
               height={800}
               width={800}
               alt="Two models wearing women's black cotton crewneck tee and off-white cotton crewneck tee."
-              className="object-cover object-center group-hover:transition-transform  group-hover:scale-105 group-hover:ease-in group-hover:duration-300 "
+              className="object-cover object-center group-hover:scale-105  group-hover:transition-transform group-hover:duration-300 group-hover:ease-in "
             />
             <div
               aria-hidden="true"
@@ -81,7 +83,7 @@ export default function Work() {
               height={800}
               width={800}
               alt="Wooden shelf with gray and olive drab green baseball caps, next to wooden clothes hanger with sweaters."
-              className="object-cover object-center group-hover:transition-transform  group-hover:scale-105 group-hover:ease-in group-hover:duration-300  sm:absolute sm:inset-0 sm:h-full sm:w-full"
+              className="object-cover object-center group-hover:scale-105  group-hover:transition-transform group-hover:duration-300 group-hover:ease-in  sm:absolute sm:inset-0 sm:h-full sm:w-full"
             />
             <div
               aria-hidden="true"
@@ -111,7 +113,7 @@ export default function Work() {
               height={800}
               width={800}
               alt="Walnut desk organizer set with white modular trays, next to porcelain mug on wooden desk."
-              className="object-cover object-center group-hover:transition-transform  group-hover:scale-105 group-hover:ease-in group-hover:duration-300  sm:absolute sm:inset-0 sm:h-full sm:w-full"
+              className="object-cover object-center group-hover:scale-105  group-hover:transition-transform group-hover:duration-300 group-hover:ease-in  sm:absolute sm:inset-0 sm:h-full sm:w-full"
             />
             <div
               aria-hidden="true"
@@ -135,13 +137,15 @@ export default function Work() {
         </div>
         {/* All Activities for mobile  */}
         <div className="mt-6 sm:hidden">
-          <a
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             href="#"
             className="block text-sm font-semibold text-indigo-600 hover:text-indigo-500"
           >
             সকল কার্যক্রম
             <span aria-hidden="true"> &rarr;</span>
-          </a>
+          </motion.a>
         </div>
       </div>
     </motion.div>
