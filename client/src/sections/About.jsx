@@ -50,7 +50,7 @@ export default function About() {
           {' '}
           <Image
             src={groupPhoto}
-            className=" w-96 rounded bg-contain"
+            className=" w-96 rounded object-cover object-center hover:transition-transform  hover:scale-105 hover:ease-in hover:duration-300 "
             alt="Group Photo "
             height={800}
             width={800}
