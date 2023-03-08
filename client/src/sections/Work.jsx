@@ -51,8 +51,8 @@ export default function Work() {
               src={banner}
               height={800}
               width={800}
-              alt="Two models wearing women's black cotton crewneck tee and off-white cotton crewneck tee."
-              className="object-cover object-center group-hover:scale-105  group-hover:transition-transform group-hover:duration-300 group-hover:ease-in "
+              alt="demo alt text."
+              className="h-48 object-cover object-center group-hover:scale-105  group-hover:transition-transform group-hover:duration-300 group-hover:ease-in "
             />
             <div
               aria-hidden="true"
@@ -82,8 +82,8 @@ export default function Work() {
               src={banner1}
               height={800}
               width={800}
-              alt="Wooden shelf with gray and olive drab green baseball caps, next to wooden clothes hanger with sweaters."
-              className="object-cover object-center group-hover:scale-105  group-hover:transition-transform group-hover:duration-300 group-hover:ease-in  sm:absolute sm:inset-0 sm:h-full sm:w-full"
+              alt="Demo Alt"
+              className="h-48 object-cover object-center group-hover:scale-105  group-hover:transition-transform group-hover:duration-300 group-hover:ease-in  sm:absolute sm:inset-0 sm:h-full sm:w-full"
             />
             <div
               aria-hidden="true"
@@ -112,8 +112,8 @@ export default function Work() {
               src={banner2}
               height={800}
               width={800}
-              alt="Walnut desk organizer set with white modular trays, next to porcelain mug on wooden desk."
-              className="object-cover object-center group-hover:scale-105  group-hover:transition-transform group-hover:duration-300 group-hover:ease-in  sm:absolute sm:inset-0 sm:h-full sm:w-full"
+              alt="demo alt"
+              className="h-48 object-cover object-center group-hover:scale-105  group-hover:transition-transform group-hover:duration-300 group-hover:ease-in  sm:absolute sm:inset-0 sm:h-full sm:w-full"
             />
             <div
               aria-hidden="true"
