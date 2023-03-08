@@ -25,7 +25,7 @@ export default function AchievementsCard() {
             key={product._id}
             className="group relative"
           >
-            <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+            <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:transition-transform  group-hover:scale-105 group-hover:ease-in group-hover:duration-300 lg:aspect-none lg:h-80">
               <Image
                 height={800}
                 width={800}
