@@ -16,7 +16,7 @@ export default function Work() {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: false, amount: 0.35 }}
       className="rounded bg-violet-100 pt-20 "
     >
       <TypingTitle title={['Our', ' Acti', 'vit', 'ies']} />
@@ -50,7 +50,7 @@ export default function Work() {
               height={800}
               width={800}
               alt="Two models wearing women's black cotton crewneck tee and off-white cotton crewneck tee."
-              className="object-cover object-center group-hover:opacity-75"
+              className="object-cover object-center group-hover:transition-transform  group-hover:scale-105 group-hover:ease-in group-hover:duration-300 "
             />
             <div
               aria-hidden="true"
@@ -81,7 +81,7 @@ export default function Work() {
               height={800}
               width={800}
               alt="Wooden shelf with gray and olive drab green baseball caps, next to wooden clothes hanger with sweaters."
-              className="object-cover object-center group-hover:opacity-75 sm:absolute sm:inset-0 sm:h-full sm:w-full"
+              className="object-cover object-center group-hover:transition-transform  group-hover:scale-105 group-hover:ease-in group-hover:duration-300  sm:absolute sm:inset-0 sm:h-full sm:w-full"
             />
             <div
               aria-hidden="true"
@@ -111,7 +111,7 @@ export default function Work() {
               height={800}
               width={800}
               alt="Walnut desk organizer set with white modular trays, next to porcelain mug on wooden desk."
-              className="object-cover object-center group-hover:opacity-75 sm:absolute sm:inset-0 sm:h-full sm:w-full"
+              className="object-cover object-center group-hover:transition-transform  group-hover:scale-105 group-hover:ease-in group-hover:duration-300  sm:absolute sm:inset-0 sm:h-full sm:w-full"
             />
             <div
               aria-hidden="true"
