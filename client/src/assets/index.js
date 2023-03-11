@@ -2,6 +2,7 @@ import achievements from './achievements1.jpg';
 import bloodBags from './bloodBags.png';
 import camp from './camp.png';
 import donator from './donator.png';
+import feature1 from './feature.png';
 import groupPhoto from './groupPhoto.jpg';
 import loader from './loader.gif';
 
@@ -40,4 +41,10 @@ export const products = [
     imageAlt: "Front of men's Basic Tee in black.",
     color: 'সম্প্রতি অর্জন',
   },
+];
+
+export const feature = [
+  { imageAlt: 'Bangladesh paritidin', imageSrc: feature1 },
+  { imageAlt: 'Bangladesh paritidin', imageSrc: feature1 },
+  { imageAlt: 'Bangladesh paritidin', imageSrc: feature1 },
 ];
