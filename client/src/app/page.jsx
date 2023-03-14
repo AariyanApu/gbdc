@@ -1,7 +1,7 @@
 'use client';
 
 import { banglaFont } from '@/utils/fonts';
-import { About, Achievements, Feature, Hero, SuccessRate, Work } from '@/sections';
+import { About, Achievements, Feature, Hero, SuccessRate, Testimonial, Work } from '@/sections';
 
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
       <SuccessRate />
       <Achievements />
       <Feature />
+      <Testimonial />
     </main>
   );
 }
