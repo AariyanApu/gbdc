@@ -1,3 +1,5 @@
+import { slides, staggerChild } from "@/types/motionTypes";
+
 export const navVariants = {
   hidden: {
     opacity: 0,
@@ -19,13 +21,6 @@ export const navVariants = {
   },
 };
 
-type slides = {
-  direction: "left" | "right" | "up" | "down";
-  type: "slideInLeft" | "slideInRight" | "slideInUp" | "slideInDown";
-  delay: number;
-  duration: number;
-};
-
 export const slideIn = ({ direction, type, delay, duration }: slides) => ({
   hidden: {
     x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
@@ -42,11 +37,6 @@ export const slideIn = ({ direction, type, delay, duration }: slides) => ({
     },
   },
 });
-
-type staggerChild = {
-  delayChildren: number;
-  staggerChildren: number;
-};
 
 export const staggerContainer: any = ({
   staggerChildren,
