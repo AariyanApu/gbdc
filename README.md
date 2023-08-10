@@ -1,34 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## This website is for a blood donation organization.
 
-## Getting Started
+## It is free and open-source.
 
-First, run the development server:
+It is a static website built using [Next.js](https://nextjs.org/).
+
+## Technologies used:
+
+[![My Skills](https://skillicons.dev/icons?i=nextjs,tailwind,mongodb,express,react,nodejs,js)](https://skillicons.dev)
+
+---
+
+- This is a open-source project. You can contribute to this project by forking this repository and sending a pull request.
+
+- You can also create an issue if you find any bug or want to suggest any feature.
+
+---
+
+## How to run this project locally?
+
+clone this repository
+
+```bash
+git clone https://github.com/AariyanApu/gbdc.git
+```
+
+install dependencies
+
+```bash
+npm install
+```
+
+run the project
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How to contribute?
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Fork this repository
+- Clone the forked repository
+- Create a new branch
+- Make changesS
+- Commit and push the changes
+- Create a pull request
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Todo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- ~~Add Navbar~~
+- ~~Change Navbar Color~~
+- ~~Add Animation to Navbar~~
+-
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
+[MIT](https://choosealicense.com/licenses/mit/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
