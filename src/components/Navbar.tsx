@@ -43,17 +43,17 @@ export default function NavBar() {
                 <Link href="/" className="flex flex-shrink-0 items-center">
                   <Image
                     className=" h-6 w-auto lg:hidden"
-                    src="/assets/logo.png"
+                    src="/logo.png"
                     alt="Logo of GBDC"
-                    width={40}
-                    height={40}
+                    width={100}
+                    height={100}
                   />
                   <Image
-                    className="hidden h-8 w-auto lg:block"
-                    src="/assets/logo.png"
+                    className="hidden h-16 w-auto lg:block"
+                    src="/logo.png"
                     alt="Logo of GBDC"
-                    width={80}
-                    height={80}
+                    width={200}
+                    height={200}
                   />
                   <div className="ml-1 text-4xl font-semibold">GBDC</div>
                 </Link>
