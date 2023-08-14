@@ -12,7 +12,7 @@ export default function ActivitiesCard({
 }: ActivitiesCardProps) {
   return (
     <motion.div
-      variants={variants} // need to change
+      variants={variants}
       className={` group relative  overflow-hidden rounded-lg ${customStyle}  `}
     >
       <Image
@@ -20,7 +20,7 @@ export default function ActivitiesCard({
         height={800}
         width={800}
         alt={title + " এর ছবি "}
-        className={` object-cover object-center group-hover:scale-105  group-hover:transition-transform group-hover:duration-300 group-hover:ease-in ${imgSize} sm:absolute sm:inset-0 sm:h-full sm:w-full `}
+        className={` object-cover object-center drop-shadow-sm group-hover:scale-105  group-hover:transition-transform group-hover:duration-300 group-hover:ease-in ${imgSize} sm:absolute sm:inset-0 sm:h-full sm:w-full `}
       />
       <div
         aria-hidden="true"
