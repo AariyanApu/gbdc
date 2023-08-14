@@ -123,7 +123,12 @@ export const imageVariant = {
     },
   },
 };
-export const fadeIn = ({ direction, type, delay, duration }: slides) => ({
+export const fadeIn = (
+  direction: string,
+  type: string,
+  delay: number,
+  duration: number,
+) => ({
   hidden: {
     x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
     y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
@@ -158,7 +163,7 @@ export const planetVariants = (direction: "left" | "right") => ({
   },
 });
 
-export const zoomIn = ({ delay, duration }: slides) => ({
+export const zoomIn = (delay: number, duration: number) => ({
   hidden: {
     scale: 0,
     opacity: 0,
