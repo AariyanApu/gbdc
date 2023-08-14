@@ -1,8 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
+//  spell-checker: disable
+
 "use client";
 
 import { TypingText, TypingTitle } from "@/components/CustomText";
-import TitleBottomLine from "@/components/TitleBottomLine";
 import { banglaFont } from "@/utils/fonts";
 import { fadeIn, staggerContainer } from "@/utils/motion";
 import { motion } from "framer-motion";
@@ -14,11 +15,11 @@ export default function About() {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }}
       className=" my-16 md:my-20 lg:my-20 xl:my-28 2xl:my-32 "
     >
       <TypingTitle title={["About Us"]} />
-      <TitleBottomLine />
+
       <div
         className={` ${banglaFont.className} mt-10 flex flex-col justify-evenly sm:flex-row `}
       >

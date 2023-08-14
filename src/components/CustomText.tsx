@@ -2,18 +2,23 @@ import { TypingTitleProps } from "@/types/randomTypes";
 import { titleFont } from "@/utils/fonts";
 import { textContainer, textContainer2, textVariant2 } from "@/utils/motion";
 import { motion } from "framer-motion";
+import TitleBottomLine from "./TitleBottomLine";
 
 export const TypingTitle = ({ title }: TypingTitleProps) => (
-  <motion.p
-    variants={textContainer}
-    className={`text-center text-5xl font-medium  ${titleFont.className}`}
-  >
-    {Array.from(title).map((letter, index) => (
-      <motion.span variants={textVariant2} key={index}>
-        {letter === " " ? "\u00A0" : letter}
-      </motion.span>
-    ))}
-  </motion.p>
+  <div>
+    <motion.p
+      variants={textContainer}
+      className={`text-center text-5xl font-medium  ${titleFont.className}`}
+    >
+      {Array.from(title).map((letter, index) => (
+        <motion.span variants={textVariant2} key={index}>
+          {letter === " " ? "\u00A0" : letter}
+        </motion.span>
+      ))}
+    </motion.p>
+
+    <TitleBottomLine />
+  </div>
 );
 
 interface TypingTextProps {
