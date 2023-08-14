@@ -1,3 +1,3 @@
 export interface TypingTitleProps {
-  title: string;
+  title: string[];
 }

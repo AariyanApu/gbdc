@@ -17,7 +17,7 @@ export default function About() {
       viewport={{ once: false, amount: 0.25 }}
       className=" my-16 md:my-20 lg:my-20 xl:my-28 2xl:my-32 "
     >
-      <TypingTitle title="About Us" />
+      <TypingTitle title={["About Us"]} />
       <TitleBottomLine />
       <div
         className={` ${banglaFont.className} mt-10 flex flex-col justify-evenly sm:flex-row `}
