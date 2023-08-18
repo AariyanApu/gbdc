@@ -20,13 +20,13 @@ export default function ActivitiesCard({
         height={800}
         width={800}
         alt={title + " এর ছবি "}
-        className={` object-cover object-center drop-shadow-sm group-hover:scale-105  group-hover:transition-transform group-hover:duration-300 group-hover:ease-in ${imgSize} sm:absolute sm:inset-0 sm:h-full sm:w-full `}
+        className={`  object-cover object-center drop-shadow-sm group-hover:scale-105  group-hover:transition-transform group-hover:duration-300 group-hover:ease-in ${imgSize} sm:absolute sm:inset-0 sm:h-full sm:w-full `}
       />
       <div
         aria-hidden="true"
-        className="bg-gradient-to-b from-transparent to-black opacity-80 sm:absolute sm:inset-0"
+        className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-80"
       />
-      <div className="flex items-end p-6 sm:absolute sm:inset-0 ">
+      <div className="absolute inset-0 flex items-end p-6 ">
         <div>
           <h3 className="text-2xl font-semibold text-white">
             <a href="/activities">

@@ -16,7 +16,7 @@ export default function Activities() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.35 }}
-      className="rounded overflow-x-hidden  bg-slate-100 pt-20 "
+      className="overflow-x-hidden rounded  bg-slate-100 pt-20 "
     >
       <TypingTitle title={["Our", " Acti", "vit", "ies"]} />
 
@@ -24,7 +24,7 @@ export default function Activities() {
         className={` ${banglaFont.className} w-full px-4 py-10 sm:px-6 sm:py-8 lg:px-8`}
       >
         {/* Activities Headline */}
-        <div className="sm:flex sm:items-baseline sm:justify-between">
+        <div className="flex items-center justify-center text-center sm:items-baseline sm:justify-between">
           <TypingText
             title={["আমাদের ", "কার্যক্রম ", "সমূহ"]}
             textStyles="text-2xl font-bold tracking-tight"
@@ -49,7 +49,8 @@ export default function Activities() {
               "রোগীকে রক্ত দান করে থাকি এবং অন্যকে রক্তদানে আগ্রহী করে থাকি।"
             }
             variants={fadeIn("right", "tween", 0.8, 0.7)}
-            customStyle={"h-[550px] sm:row-span-2"}
+            customStyle={"h-[400px] sm:h-[550px] sm:row-span-2"}
+            imgSize="h-[400px] sm:h-[550px]"
           />
 
           <ActivitiesCard
@@ -60,6 +61,7 @@ export default function Activities() {
             }
             variants={fadeIn("left", "tween", 1.1, 0.6)}
             customStyle="h-full"
+            imgSize="h-[300px]"
           />
 
           <ActivitiesCard
@@ -70,6 +72,7 @@ export default function Activities() {
             }
             variants={fadeIn("left", "tween", 1.5, 0.7)}
             customStyle="h-full"
+            imgSize="h-[300px]"
           />
         </div>
         <Button
@@ -77,7 +80,7 @@ export default function Activities() {
           text="সকল কার্যক্রম সমূহ "
           link="/activities"
           icon={<HiArrowTopRightOnSquare size={20} aria-hidden="true" />}
-          customStyle="flex sm:hidden w-40 mx-auto"
+          customStyle="flex sm:hidden w-40 mx-auto mt-5"
         />
       </div>
     </motion.div>
