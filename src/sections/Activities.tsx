@@ -72,7 +72,6 @@ export default function Activities() {
             customStyle="h-full"
           />
         </div>
-
         <Button
           variants={fadeIn("left", "tween", 1.1, 0.6)}
           text="সকল কার্যক্রম সমূহ "

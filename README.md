@@ -54,7 +54,9 @@ npm run dev
 - ~~Add Navbar~~
 - ~~Change Navbar Color~~
 - ~~Add Animation to Navbar~~
--
+- how to move into split windows 
+- how to open file into different windows
+- 
 
 ## License
 
