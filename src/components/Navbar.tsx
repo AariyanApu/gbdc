@@ -42,7 +42,7 @@ export default function NavBar() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch lg:justify-between">
                 <Link href="/" className="flex flex-shrink-0 items-center">
                   <Image
-                    className=" h-6 w-auto lg:hidden"
+                    className=" h-9 w-auto lg:hidden"
                     src="/logo.png"
                     alt="Logo of GBDC"
                     width={100}
