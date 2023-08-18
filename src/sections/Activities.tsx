@@ -16,7 +16,7 @@ export default function Activities() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.35 }}
-      className="overflow-x-hidden rounded  bg-slate-100 pt-20 "
+      className="overflow-x-hidden rounded  bg-slate-100 pt-0  lg:pt-20 "
     >
       <TypingTitle title={["Our", " Acti", "vit", "ies"]} />
 
