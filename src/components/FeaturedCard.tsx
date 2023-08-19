@@ -14,7 +14,7 @@ export default function FeaturedCard({ imgUrl, link }: featuredCardProps) {
           alt="GBDC Featured on Sonali Somoy"
           width={500}
           height={500}
-          className="h-[80px] w-72 rounded-xl object-fill
+          className="md h-[80px] w-72 rounded-xl object-fill
            drop-shadow  grayscale filter transition-all duration-500 ease-in-out hover:scale-105 hover:grayscale-0"
         />
       </Link>

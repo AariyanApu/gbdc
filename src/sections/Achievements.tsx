@@ -14,7 +14,7 @@ export default function Achievements() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.35 }}
-      className="overflow-x-hidden rounded  bg-slate-100 pt-0  lg:py-20 "
+      className="overflow-x-hidden rounded  bg-slate-100 py-8 lg:py-20 "
     >
       <TypingTitle title={"Our Achievements"} />
 
