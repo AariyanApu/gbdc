@@ -5,7 +5,7 @@ import Counter from "@/sections/Counter";
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-7xl ">
+    <div className="mx-auto max-w-7xl overflow-x-hidden">
       <SlideBar />
       <About />
       <Activities />

@@ -14,8 +14,8 @@ export default function Counter() {
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
     >
-      <TypingTitle title={"We Have Arranged "} />
-      <div className="flex flex-col items-center justify-evenly md:flex-row">
+      <TypingTitle title={["We ", " Have ", " A", "rr", "an", "g", "e", "d"]} />
+      <div className="flex flex-col items-center justify-evenly px-6 sm:px-0 md:flex-row">
         <CounterCard
           end={800}
           imgSrc="/assets/bloodBags.png"
