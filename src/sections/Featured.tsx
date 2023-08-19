@@ -1,10 +1,10 @@
 "use client";
 
 import { TypingTitle } from "@/components/CustomText";
+import FeaturedCard from "@/components/FeaturedCard";
+import { featuredData } from "@/utils/data";
 import { staggerContainer } from "@/utils/motion";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function Featured() {
   return (
@@ -17,18 +17,10 @@ export default function Featured() {
     >
       <TypingTitle title={" We are featured on"} />
 
-      <div className="mt-16 ">
-        <div className=" h-36 w-96 cursor-pointer overflow-hidden rounded-lg bg-slate-200 p-2 drop-shadow-lg">
-          <Link href="https://aariyanapu.com">
-            <Image
-              src={"/assets/featured/sonaliSomoy.jpg"}
-              alt="GBDC Featured on Sonali Somoy"
-              width={500}
-              height={500}
-              className="h-[128px] w-96 rounded-xl object-cover object-center grayscale  filter transition-all duration-500 ease-in-out hover:scale-105 hover:grayscale-0"
-            />
-          </Link>
-        </div>
+      <div className="mt-16 flex flex-col justify-center gap-x-4 md:flex-row ">
+        {featuredData?.map((item, index) => (
+          <FeaturedCard key={index} imgUrl={item.imgUrl} link={item.link} />
+        ))}
       </div>
     </motion.div>
   );

@@ -50,7 +50,7 @@ export const featuredData = [
     link: "https://report71.com/2021/12/24/%e0%a6%97%e0%a7%8c%e0%a6%b0%e0%a6%a8%e0%a6%a6%e0%a7%80%e0%a6%a4%e0%a7%87-%e0%a6%b8%e0%a7%8d%e0%a6%ac%e0%a7%87%e0%a6%9a%e0%a7%8d%e0%a6%9b%e0%a6%be%e0%a6%b8%e0%a7%87%e0%a6%ac%e0%a7%80%e0%a6%a6%e0%a7%87/?fbclid=IwAR3UL9WJtkwjLw_FHX1sAtnY_2-tTbbHNooe4bf-ottTlnMWF8rQP7VYijQ",
   },
   {
-    imgUrl: "/assets/featured/bangladeshSomoy.jpg",
+    imgUrl: "/assets/featured/bangladeshSomoy.png",
     link: "https://www.facebook.com/photo/?fbid=843640510171872&set=gm.1499948843818600&idorvanity=525407151272779",
   },
   {
