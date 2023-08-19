@@ -21,9 +21,9 @@ export default function Achievements() {
       <div className=" w-full px-4 sm:px-6 lg:px-8">
         <TypingText
           title={["আমাদের ", "অর্জন ", "স", "মূ", "হ"]}
-          textStyles={`text-2xl font-bold tracking-tight ${banglaFont.className}} my-8`}
+          textStyles={`text-2xl font-bold tracking-tight text-center lg:text-start ${banglaFont.className}} my-8`}
         />
-        <div className="flex flex-row flex-wrap items-center justify-start gap-4">
+        <div className="flex flex-row flex-wrap items-center justify-center gap-4 lg:justify-start">
           {achievementsData?.map((item, idx) => (
             <AchievementCard key={idx} src={item.src} />
           ))}
