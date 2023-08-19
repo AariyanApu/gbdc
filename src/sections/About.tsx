@@ -48,12 +48,12 @@ export default function About() {
         </div>
         <motion.div
           variants={fadeIn("up", "tween", 1.2, 0.7)}
-          className="mx-auto mt-5 w-96 sm:mx-0 sm:mt-16 lg:mt-0"
+          className="mx-4 mt-5 sm:mx-0 md:mt-6 lg:mt-0"
         >
           {" "}
           <Image
             src={"/assets/about.jpg"}
-            className=" mx-auto w-[340px] rounded-md object-cover object-center drop-shadow-xl filter "
+            className=" mx-auto h-[250px] w-full rounded-md object-cover object-center drop-shadow-xl filter  md:h-[300px] md:w-[350px] lg:h-[250px] lg:w-[450px] "
             alt="Group Photo "
             height={800}
             width={800}
