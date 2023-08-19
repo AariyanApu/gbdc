@@ -3,6 +3,7 @@ import About from "@/sections/About";
 import Achievements from "@/sections/Achievements";
 import Activities from "@/sections/Activities";
 import Counter from "@/sections/Counter";
+import Featured from "@/sections/Featured";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Activities />
       <Counter />
       <Achievements />
+      <Featured />
     </div>
   );
 }
