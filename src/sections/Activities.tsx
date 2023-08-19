@@ -18,7 +18,7 @@ export default function Activities() {
       viewport={{ once: true, amount: 0.35 }}
       className="overflow-x-hidden rounded  bg-slate-100 pt-0  lg:pt-20 "
     >
-      <TypingTitle title={["Our", " Acti", "vit", "ies"]} />
+      <TypingTitle title={"Our Activities"} />
 
       <div
         className={` ${banglaFont.className} w-full px-4 py-10 sm:px-6 sm:py-8 lg:px-8`}

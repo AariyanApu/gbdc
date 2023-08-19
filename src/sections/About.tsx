@@ -18,12 +18,12 @@ export default function About() {
       viewport={{ once: true, amount: 0.25 }}
       className=" my-16 md:my-20 lg:my-20 xl:my-28 2xl:my-32 "
     >
-      <TypingTitle title={["About Us"]} />
+      <TypingTitle title={"About Us"} />
 
       <div
         className={` ${banglaFont.className} mt-10 flex flex-col justify-evenly sm:flex-row `}
       >
-        <div className=" w-full px-5 sm:w-[300px] lg:w-[500px] sm:px-0">
+        <div className=" w-full px-5 sm:w-[300px] sm:px-0 lg:w-[500px]">
           <TypingText
             title={[
               "গৌরনদী",
@@ -38,7 +38,7 @@ export default function About() {
           />
           <motion.div
             variants={fadeIn("up", "tween", 1, 0.7)}
-            className=" text-justify text-lg w-full sm:w-[290px] lg:w-[450px]  "
+            className=" w-full text-justify text-lg sm:w-[290px] lg:w-[450px]  "
           >
             গৌরনদী ব্লাড ডোনার্স ক্লাব GBDC একটি অরাজনৈতিক ও অলাভজনক সেচছাসেবী
             সংগঠন। "নতুন প্রজন্মের নতুন পৃথিবী" এই স্লোগানকে আঁকড়ে ধরে এগিয়ে
@@ -53,7 +53,7 @@ export default function About() {
           {" "}
           <Image
             src={"/assets/about.jpg"}
-            className=" w-[340px] mx-auto rounded-md object-cover object-center drop-shadow-xl filter "
+            className=" mx-auto w-[340px] rounded-md object-cover object-center drop-shadow-xl filter "
             alt="Group Photo "
             height={800}
             width={800}
