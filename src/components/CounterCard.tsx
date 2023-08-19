@@ -1,19 +1,9 @@
+import { counterCardProps } from "@/types/randomTypes";
 import { titleFont } from "@/utils/fonts";
 import Image from "next/image";
 import CountUp, { useCountUp } from "react-countup";
 
-interface counterCardProps {
-  end: number;
-  imgSrc: string;
-  desc: string;
-}
-
-export default function CounterCard({
-  end,
-  imgSrc,
-
-  desc,
-}: counterCardProps) {
+export default function CounterCard({ end, imgSrc, desc }: counterCardProps) {
   useCountUp({
     ref: "counter",
     end: 1234567,

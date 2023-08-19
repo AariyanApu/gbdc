@@ -1,10 +1,12 @@
 "use client";
 
+import AchievementCard from "@/components/AchievementCard";
 import { TypingText, TypingTitle } from "@/components/CustomText";
+import { achievementsData } from "@/utils/data";
 import { banglaFont } from "@/utils/fonts";
 import { staggerContainer } from "@/utils/motion";
 import { motion } from "framer-motion";
-import Image from "next/image";
+
 export default function Achievements() {
   return (
     <motion.div
@@ -21,14 +23,10 @@ export default function Achievements() {
           title={["আমাদের ", "অর্জন ", "স", "মূ", "হ"]}
           textStyles={`text-2xl font-bold tracking-tight ${banglaFont.className}} my-8`}
         />
-        <div className="w-72 rounded-lg bg-white p-2 drop-shadow-lg">
-          <Image
-            src="/assets/achievements/2.jpg"
-            alt="Picture of the awards"
-            width={500}
-            height={500}
-            className="h-96 w-72 rounded-md object-cover object-center "
-          />
+        <div className="flex flex-row flex-wrap items-center justify-start gap-4">
+          {achievementsData?.map((item, idx) => (
+            <AchievementCard key={idx} src={item.src} />
+          ))}
         </div>
       </div>
     </motion.div>

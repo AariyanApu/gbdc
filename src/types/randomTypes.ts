@@ -19,3 +19,11 @@ export interface ButtonProps {
   icon?: any;
   customStyle?: string;
 }
+export interface counterCardProps {
+  end: number;
+  imgSrc: string;
+  desc: string;
+}
+export interface AchievementCardProps {
+  src: string;
+}

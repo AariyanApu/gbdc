@@ -11,3 +11,31 @@ export const banner = [
   { img: "/assets/banner/banner-2.jpg", alt: "GBDC accepting awards" },
   { img: "/assets/banner/banner-3.jpg", alt: "GBDC celebrating success" },
 ];
+
+export const achievementsData = [
+  {
+    src: "/assets/achievements/1.jpg",
+  },
+  {
+    src: "/assets/achievements/2.jpg",
+  },
+
+  {
+    src: "/assets/achievements/3.jpg",
+  },
+  {
+    src: "/assets/achievements/4.jpg",
+  },
+  {
+    src: "/assets/achievements/5.jpg",
+  },
+  {
+    src: "/assets/achievements/6.jpg",
+  },
+  {
+    src: "/assets/achievements/7.jpg",
+  },
+  {
+    src: "/assets/achievements/8.jpg",
+  },
+];
