@@ -31,17 +31,19 @@ export default function CounterCard({
             height={200}
             width={200}
             alt={desc}
-            className="mx-auto mb-2 w-32 drop-shadow-md md:w-24 lg:w-32 "
+            className="mx-auto mb-2 w-32 drop-shadow-md md:w-24 lg:w-32  "
           />
           <div className="mx-auto flex gap-x-1">
             <span
-              className="text-7xl text-red-700 md:text-4xl"
+              className="text-7xl text-red-700 md:text-4xl lg:text-7xl"
               ref={countUpRef}
             />
 
-            <span className="text-7xl text-red-700 md:text-4xl">+</span>
+            <span className="text-7xl text-red-700 md:text-4xl lg:text-7xl">
+              +
+            </span>
           </div>
-          <span className="text-2xl md:text-xl">{desc}</span>
+          <span className="text-2xl md:text-xl lg:text-2xl">{desc}</span>
         </div>
       )}
     </CountUp>
