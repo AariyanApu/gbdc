@@ -15,8 +15,23 @@ export default function Counter() {
       viewport={{ once: true, amount: 0.25 }}
     >
       <TypingTitle title={"We Have Arranged "} />
-
-      <CounterCard end={800} imgSrc="/assets/bloodBags.png" desc="Bags Blood" />
+      <div className="flex flex-col items-center justify-evenly md:flex-row">
+        <CounterCard
+          end={800}
+          imgSrc="/assets/bloodBags.png"
+          desc="Bags Blood"
+        />
+        <CounterCard
+          end={200}
+          imgSrc="/assets/donor.png"
+          desc="Active Blood Donors"
+        />
+        <CounterCard
+          end={50}
+          imgSrc="/assets/camp.png"
+          desc="Blood Donation Camps"
+        />
+      </div>
     </motion.div>
   );
 }
