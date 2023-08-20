@@ -10,6 +10,7 @@ export const banner = [
   { img: "/assets/banner/banner-1.jpg", alt: "GBDC giving people wheelchairs" },
   { img: "/assets/banner/banner-2.jpg", alt: "GBDC accepting awards" },
   { img: "/assets/banner/banner-3.jpg", alt: "GBDC celebrating success" },
+  { img: "/assets/banner/banner-4.jpg", alt: "GBDC celebrating success" },
 ];
 
 export const achievementsData = [
