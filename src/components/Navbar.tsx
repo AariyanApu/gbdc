@@ -1,6 +1,7 @@
 "use client";
 
 import { navigation } from "@/utils/data";
+import { titleFont } from "@/utils/fonts";
 import { staggerContainer, textContainer, textVariant2 } from "@/utils/motion";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -42,7 +43,7 @@ export default function NavBar() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch lg:justify-between">
                 <Link href="/" className="flex flex-shrink-0 items-center">
                   <Image
-                    className=" h-9 w-auto lg:hidden"
+                    className=" h-10 w-auto lg:hidden"
                     src="/logo.png"
                     alt="Logo of GBDC"
                     width={100}
@@ -55,7 +56,11 @@ export default function NavBar() {
                     width={200}
                     height={200}
                   />
-                  <div className="ml-1 text-4xl font-semibold">GBDC</div>
+                  <div
+                    className={` ml-1 mt-1 items-center text-center text-4xl font-normal ${titleFont.className}`}
+                  >
+                    GBDC
+                  </div>
                 </Link>
 
                 {/* Here Nav LINK */}
@@ -69,10 +74,6 @@ export default function NavBar() {
                       <motion.div
                         variants={textVariant2}
                         whileTap={{ scale: 0.9 }}
-                        // whileHover={{
-                        //   scale: 1.02,
-                        //   transition: { duration: 0.5, ease: "easeOut" },
-                        // }}
                         key={item.name}
                         aria-current={item.current ? "page" : undefined}
                         className="my-4 "
