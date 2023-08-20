@@ -13,15 +13,14 @@ export default function Achievements() {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.35 }}
-      className="overflow-x-hidden rounded  bg-slate-100 py-8 lg:py-20 "
+      viewport={{ once: true, amount: 0.05 }}
+      className=" rounded bg-slate-100 py-16 md:my-20 lg:my-20 xl:my-28 2xl:my-32"
     >
       <TypingTitle title={"Our Achievements"} />
-
       <div className=" w-full px-4 sm:px-6 lg:px-8">
         <TypingText
           title={["আমাদের ", "অর্জন ", "স", "মূ", "হ"]}
-          textStyles={`text-2xl font-bold tracking-tight text-center lg:text-start ${banglaFont.className}} my-8`}
+          textStyles={`text-2xl font-bold tracking-tight text-slate-900 text-center lg:text-start ${banglaFont.className}} my-8`}
         />
         <div className="flex flex-row flex-wrap items-center justify-center gap-4 lg:justify-start">
           {achievementsData?.map((item, idx) => (

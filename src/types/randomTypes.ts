@@ -1,5 +1,6 @@
 export interface TypingTitleProps {
   title: string | string[];
+  textStyles?: string;
 }
 
 // Types For Activities Section
