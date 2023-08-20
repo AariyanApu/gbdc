@@ -69,25 +69,25 @@ export default function NavBar() {
                       <motion.div
                         variants={textVariant2}
                         whileTap={{ scale: 0.9 }}
-                        whileHover={{
-                          scale: 1.02,
-                          transition: { duration: 0.5, ease: "easeOut" },
-                        }}
+                        // whileHover={{
+                        //   scale: 1.02,
+                        //   transition: { duration: 0.5, ease: "easeOut" },
+                        // }}
                         key={item.name}
                         aria-current={item.current ? "page" : undefined}
-                        className="my-4"
+                        className="my-4 "
                       >
-                        <Link
+                        <a
                           href={item.href}
                           className={classNames(
                             item.current
                               ? "bg-[#85D7FC] text-white"
-                              : "text-white  hover:bg-sky-300 hover:text-sky-950",
+                              : "text-gray-100 transition-all duration-300 ease-in hover:bg-sky-300 hover:text-white",
                             "rounded-md px-2 py-1 text-lg font-medium",
                           )}
                         >
                           {item.name}
-                        </Link>
+                        </a>
                       </motion.div>
                     ))}
                   </div>
@@ -98,7 +98,17 @@ export default function NavBar() {
 
           {/* NavLink for Mobile */}
 
-          <Disclosure.Panel className="lg:hidden">
+          <Disclosure.Panel
+            className="lg:hidden"
+            as={motion.div}
+            initial="collapsed"
+            animate={open ? "open" : "collapsed"}
+            variants={{
+              open: { height: "auto" },
+              collapsed: { height: 0 },
+            }}
+            transition={{ duration: 0.4 }}
+          >
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
                 <Disclosure.Button
