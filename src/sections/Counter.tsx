@@ -1,9 +1,9 @@
-"use client";
+'use client'
 
-import CounterCard from "@/components/CounterCard";
-import { TypingTitle } from "@/components/CustomText";
-import { staggerContainer } from "@/utils/motion";
-import { motion } from "framer-motion";
+import CounterCard from '@/components/CounterCard'
+import { TypingTitle } from '@/components/CustomText'
+import { staggerContainer } from '@/utils/motion'
+import { motion } from 'framer-motion'
 
 export default function Counter() {
   return (
@@ -14,7 +14,7 @@ export default function Counter() {
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
     >
-      <TypingTitle title={["We ", " Have ", " A", "rr", "an", "g", "e", "d"]} />
+      <TypingTitle title={'We have arranged'} />
       <div className="flex flex-col items-center justify-evenly px-6 sm:px-0 md:flex-row">
         <CounterCard
           end={800}
@@ -33,5 +33,5 @@ export default function Counter() {
         />
       </div>
     </motion.div>
-  );
+  )
 }
