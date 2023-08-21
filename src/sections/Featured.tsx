@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 export default function Featured() {
   return (
     <motion.div
-      className=" my-16 md:my-20 lg:my-20 xl:my-28 2xl:my-32 "
+      className=" my-16  xl:my-20 2xl:my-20 "
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
