@@ -24,10 +24,7 @@ export default function Footer() {
       {/* Footer credits of developer */}
       <div className="text-end text-sm tracking-wide">
         Design and Developed by{' '}
-        <a
-          href="https://aariyanapu.com"
-          className="transition-colors duration-500 ease-in-out hover:text-sky-400 "
-        >
+        <a href="https://aariyanapu.com" className="link_styles ">
           Aariyan Apu
         </a>{' '}
       </div>

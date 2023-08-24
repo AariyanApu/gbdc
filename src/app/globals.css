@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-slate-50 text-slate-950 overflow-x-hidden;
+  @apply overflow-x-hidden bg-slate-50 text-slate-950;
 }
 
 /* Color Platter */
@@ -14,3 +14,6 @@ body {
 
 */
 
+.link_styles {
+  @apply transition-colors duration-500 ease-in-out hover:text-sky-500;
+}
