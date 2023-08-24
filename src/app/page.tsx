@@ -1,10 +1,10 @@
-import SlideBar from "@/components/SlideBar";
-import About from "@/sections/About";
-import Achievements from "@/sections/Achievements";
-import Activities from "@/sections/Activities";
-import Counter from "@/sections/Counter";
-import Featured from "@/sections/Featured";
-import { Testimonial } from "@/sections/Testimonial";
+import SlideBar from '@/components/SlideBar'
+import About from '@/sections/About'
+import Achievements from '@/sections/Achievements'
+import Activities from '@/sections/Activities'
+import Counter from '@/sections/Counter'
+import Featured from '@/sections/Featured'
+import Footer from '@/sections/Footer'
 
 export default function Home() {
   return (
@@ -15,7 +15,8 @@ export default function Home() {
       <Counter />
       <Achievements />
       <Featured />
-      <Testimonial />
+      {/* <Testimonial /> */}
+      <Footer />
     </div>
-  );
+  )
 }
