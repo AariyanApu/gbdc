@@ -81,7 +81,7 @@ export default function NavBar() {
                         <a
                           href={item.href}
                           className={
-                            'animation_color rounded-md  border border-sky-300/30 px-2 py-1 text-lg font-medium text-white drop-shadow hover:bg-sky-300 hover:text-sky-600'
+                            'animation_color rounded-md  border border-sky-300/30 px-2 py-1 text-lg font-medium text-white drop-shadow hover:bg-sky-300 hover:text-sky-700/80'
                           }
                         >
                           {item.name}
