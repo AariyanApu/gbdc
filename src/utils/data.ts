@@ -1,6 +1,6 @@
-import { Review } from '@/types/randomTypes'
+import { LinkProps, Review } from '@/types/randomTypes'
 
-export const navigation = [
+export const navigation: Array<LinkProps> = [
   { name: 'About Us', href: '/about-us', current: false },
   { name: 'Activities', href: '#', current: false },
   { name: 'Achievements', href: '#', current: false },
@@ -73,4 +73,11 @@ export const reviews: Array<Review> = [
   { imgUrl: '/assets/testimonial/3.jpeg' },
   { imgUrl: '/assets/testimonial/4.jpeg' },
   { imgUrl: '/assets/testimonial/5.jpeg' },
+]
+
+export const footerLink: Array<LinkProps> = [
+  { name: 'Become a Volunteer', href: '/join-us' },
+  { name: 'Our Admin Panel', href: '/about-us' },
+  { name: 'Our All Activities', href: '/activities' },
+  { name: 'All Abou Us', href: '/about-us' },
 ]

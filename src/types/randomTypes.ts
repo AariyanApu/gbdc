@@ -31,3 +31,9 @@ export interface AchievementCardProps {
 export interface Review {
   imgUrl: string
 }
+
+export interface LinkProps {
+  name: string
+  href: string
+  current?: boolean
+}
