@@ -20,3 +20,7 @@ body {
 .flex_center {
   @apply flex items-center justify-center;
 }
+
+.animation_color {
+  @apply transition-colors duration-500 ease-in-out;
+}

@@ -28,7 +28,7 @@ export default function NavBar() {
             <div className="relative flex h-16 items-center justify-between">
               {/* Mobile menu button */}
               <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-sky-300 hover:text-sky-950 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500">
+                <Disclosure.Button className="animation_color inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-sky-300 hover:text-sky-950 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -80,12 +80,9 @@ export default function NavBar() {
                       >
                         <a
                           href={item.href}
-                          className={classNames(
-                            item.current
-                              ? 'bg-[#85D7FC] text-white'
-                              : 'text-gray-100 transition-all duration-300 ease-in hover:bg-sky-300 hover:text-white',
-                            'rounded-md px-2 py-1 text-lg font-medium',
-                          )}
+                          className={
+                            'animation_color rounded-md  border border-sky-300/30 px-2 py-1 text-lg font-medium text-white drop-shadow hover:bg-sky-300 hover:text-sky-600'
+                          }
                         >
                           {item.name}
                         </a>
@@ -119,7 +116,7 @@ export default function NavBar() {
                   className={classNames(
                     item.current
                       ? 'bg-sky-300 text-gray-50'
-                      : 'text-white hover:bg-sky-300 hover:text-sky-950',
+                      : 'animation_color text-white hover:bg-sky-300 hover:text-sky-950',
                     'block rounded-md px-3 py-2 text-base font-medium',
                   )}
                   aria-current={item.current ? 'page' : undefined}
