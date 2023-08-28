@@ -79,5 +79,11 @@ export const footerLink: Array<LinkProps> = [
   { name: 'Become a Volunteer', href: '/join-us' },
   { name: 'Our Admin Panel', href: '/about-us' },
   { name: 'Our All Activities', href: '/activities' },
-  { name: 'All Abou Us', href: '/about-us' },
+  { name: 'All About Us', href: '/about-us' },
+]
+export const secondFooterLink: Array<LinkProps> = [
+  { name: 'Feature News', href: '/join-us' },
+  { name: 'All Achievements', href: '/about-us' },
+  { name: 'Contact Us', href: '/activities' },
+  { name: 'Donate to GBDC', href: '/about-us' },
 ]

@@ -1,5 +1,6 @@
 import FooterCards from '@/components/FooterCards'
-import { footerLink } from '@/utils/data'
+import { FooterLinkCard } from '@/components/FooterLinkCard'
+import { footerLink, secondFooterLink } from '@/utils/data'
 import { banglaFont } from '@/utils/fonts'
 import Image from 'next/image'
 
@@ -22,29 +23,10 @@ export default function Footer() {
           <FooterCards />
         </div>
         {/* Footer links */}
-        <div className="mb-2 flex flex-col items-center justify-end gap-y-2">
-          {footerLink?.map((link, index) => (
-            <a
-              key={index}
-              href={link.href}
-              className="w-44 rounded-md border border-slate-200/70 px-4 py-2 text-center text-sm  transition-colors duration-500 ease-in-out hover:border-sky-500 hover:text-sky-500 hover:shadow-md"
-            >
-              {link.name}
-            </a>
-          ))}
-        </div>
-        <div className="mb-2 flex flex-col items-center justify-end gap-y-2">
-          {footerLink?.map((link, index) => (
-            <a
-              key={index}
-              href={link.href}
-              className="w-44 rounded-md border border-slate-200/70 px-4 py-2 text-center text-sm transition-colors duration-500 ease-in-out hover:border-sky-500 hover:text-sky-500 hover:shadow-md"
-            >
-              {link.name}
-            </a>
-          ))}
-        </div>
+        <FooterLinkCard footerLink={footerLink} />
+        <FooterLinkCard footerLink={secondFooterLink} />
       </div>
+
       {/* Footer credits of developer */}
       <div className="mt-6 text-end text-sm tracking-wide">
         Design and Developed by{' '}
