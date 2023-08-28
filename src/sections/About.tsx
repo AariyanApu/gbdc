@@ -53,7 +53,7 @@ export default function About() {
           {' '}
           <Image
             src={'/assets/about.jpg'}
-            className=" mx-auto h-[250px] w-full rounded-md object-cover object-center drop-shadow-xl filter  md:h-[300px] md:w-[350px] lg:h-[250px] lg:w-[450px] "
+            className=" mx-auto h-[250px] w-full rounded-md object-cover object-center drop-shadow md:h-[300px] md:w-[350px] lg:h-[250px] lg:w-[450px] "
             alt="Group Photo "
             height={800}
             width={800}
