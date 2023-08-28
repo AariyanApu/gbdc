@@ -6,7 +6,7 @@ import { PiFacebookLogo } from 'react-icons/pi'
 export default function FooterCards() {
   return (
     <>
-      <div className="link_styles flex cursor-pointer  gap-x-1">
+      <div className="link_styles  flex  cursor-pointer gap-x-1">
         <HiOutlineDevicePhoneMobile className=" h-6 w-6" />
         +880 1234 567 890
       </div>

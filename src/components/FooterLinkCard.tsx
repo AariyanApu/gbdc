@@ -2,7 +2,7 @@ import { LinkProps } from '@/types/randomTypes'
 
 export const FooterLinkCard = ({ footerLink }: { footerLink: LinkProps[] }) => {
   return (
-    <div className="mb-2 flex flex-col items-center justify-end gap-y-2">
+    <div className="mb-2 hidden flex-col items-center justify-end gap-y-2 md:flex">
       {footerLink?.map((link, index) => (
         <a
           key={index}

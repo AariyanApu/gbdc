@@ -8,13 +8,15 @@ export default function Footer() {
   return (
     <div className="mb-5 mt-10 text-slate-800">
       <div className="flex flex-row justify-around">
-        <div className={`flex w-60 flex-col gap-y-2 ${banglaFont.className}`}>
+        <div
+          className={` mx-auto flex w-60 flex-col items-center justify-center gap-y-2 text-center sm:mx-0 sm:items-start sm:justify-start sm:text-start ${banglaFont.className}`}
+        >
           <Image
             src={'/logo.png'}
             alt="Logo of GBDC"
             height={300}
             width={300}
-            className="mb-2 w-32 object-contain"
+            className=" mb-2 w-32 object-contain"
           />
           <div className="ml-1 pt-2">
             প্রধান কার্যালয়ঃ গৌরনদী ব্লাড ডোনার্স ক্লাব, গৌরনদী উপজেলা,
@@ -28,7 +30,7 @@ export default function Footer() {
       </div>
 
       {/* Footer credits of developer */}
-      <div className="mt-6 text-end text-sm tracking-wide">
+      <div className="mt-6 text-center text-sm tracking-wide md:mr-4 md:text-end">
         Design and Developed by{' '}
         <a href="https://aariyanapu.com" className="link_styles ">
           Aariyan Apu
