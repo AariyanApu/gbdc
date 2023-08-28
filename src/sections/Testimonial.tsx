@@ -1,29 +1,14 @@
 'use client'
 
 import { TypingText, TypingTitle } from '@/components/CustomText'
+import { Review } from '@/types/randomTypes'
+import { reviews } from '@/utils/data'
 import { banglaFont } from '@/utils/fonts'
 import { staggerContainer } from '@/utils/motion'
 import clsx from 'clsx'
 import { motion, useInView } from 'framer-motion'
 import Image from 'next/image'
 import { useEffect, useMemo, useRef, useState } from 'react'
-
-interface Review {
-  imgUrl: string
-}
-
-const reviews: Array<Review> = [
-  { imgUrl: '/assets/testimonial/1.jpeg' },
-  { imgUrl: '/assets/testimonial/2.jpeg' },
-  { imgUrl: '/assets/testimonial/3.jpeg' },
-  { imgUrl: '/assets/testimonial/4.jpeg' },
-  { imgUrl: '/assets/testimonial/5.jpeg' },
-  { imgUrl: '/assets/testimonial/1.jpeg' },
-  { imgUrl: '/assets/testimonial/2.jpeg' },
-  { imgUrl: '/assets/testimonial/3.jpeg' },
-  { imgUrl: '/assets/testimonial/4.jpeg' },
-  { imgUrl: '/assets/testimonial/5.jpeg' },
-]
 
 function Review({
   imgUrl,

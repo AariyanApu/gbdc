@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <div className="mb-5 mt-10">
-      <div className="flex flex-col sm:flex-row">
+    <div className="mb-5 mt-10 text-slate-800">
+      <div className="flex flex-row justify-between">
         <div className={`flex w-60 flex-col gap-y-2 ${banglaFont.className}`}>
           <Image
             src={'/logo.png'}
@@ -19,6 +19,15 @@ export default function Footer() {
             গৌরনদী,বরিশাল।
           </div>
           <FooterCards />
+        </div>
+        {/* Footer links */}
+        <div className="flex_center flex-col ">
+          <a
+            href="https://www.facebook.com/groups/525407151272779"
+            className="rounded-md border border-slate-200 px-4 py-2 text-sm transition-colors duration-500 ease-in-out hover:border-sky-500 hover:text-sky-500"
+          >
+            Become a Volunteer
+          </a>
         </div>
       </div>
       {/* Footer credits of developer */}
