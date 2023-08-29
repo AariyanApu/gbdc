@@ -13,6 +13,10 @@ export const banner = [
   { img: '/assets/banner/banner-2.jpg', alt: 'GBDC accepting awards' },
   { img: '/assets/banner/banner-3.jpg', alt: 'GBDC celebrating success' },
   { img: '/assets/banner/banner-4.jpg', alt: 'GBDC celebrating success' },
+  {
+    img: '/assets/banner/banner-5.jpg',
+    alt: 'GBDC celebrating 3 years of success',
+  },
 ]
 
 export const achievementsData = [
