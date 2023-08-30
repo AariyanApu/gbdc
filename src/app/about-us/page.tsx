@@ -1,9 +1,9 @@
-import { banglaFont } from '@/utils/fonts'
+import { banglaFont, titleFont } from '@/utils/fonts'
 import Image from 'next/image'
 
 export default function AboutUs() {
   return (
-    <div className={`${banglaFont.className} my-5 bg-white`}>
+    <div className={` my-5 bg-white`}>
       <main className="isolate">
         {/* Hero section */}
         <div className="relative isolate -z-10">
@@ -64,13 +64,17 @@ export default function AboutUs() {
             </svg>
           </div>
 
-          <div className="mx-auto max-w-7xl ">
+          <div className="mx-4 max-w-7xl sm:mx-auto ">
             <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
-              <div className="w-full sm:w-[630px] lg:shrink-0 xl:max-w-2xl">
-                <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              <div className="w-full text-center sm:w-[630px] sm:text-start lg:shrink-0 xl:max-w-2xl">
+                <h1
+                  className={` text-4xl font-medium tracking-tight text-gray-900 sm:text-6xl ${titleFont.className}`}
+                >
                   We’re changing the way of donating blood.
                 </h1>
-                <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+                <p
+                  className={`relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none ${banglaFont.className}`}
+                >
                   গৌরনদী ব্লাড ডোনার্স ক্লাব পরিবারে আপনাকে স্বাগতম। গৌরনদী
                   ব্লাড ডোনার্স ক্লাব GBDC একটি অরাজনৈতিক ও অলাভজনক সেচছাসেবী
                   সংগঠন। &quot;নতুন প্রজন্মের নতুন পৃথিবী&quot; এই স্লোগানকে
