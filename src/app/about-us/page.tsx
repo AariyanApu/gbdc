@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function AboutUs() {
   return (
-    <div className={`${banglaFont.className} bg-white`}>
+    <div className={`${banglaFont.className} my-5 bg-white`}>
       <main className="isolate">
         {/* Hero section */}
         <div className="relative isolate -z-10">
@@ -63,78 +63,77 @@ export default function AboutUs() {
               </defs>
             </svg>
           </div>
-          <div className="overflow-hidden">
-            <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
-              <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
-                <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                  <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    We’re changing the way of donating blood.
-                  </h1>
-                  <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                    গৌরনদী ব্লাড ডোনার্স ক্লাব পরিবারে আপনাকে স্বাগতম। গৌরনদী
-                    ব্লাড ডোনার্স ক্লাব GBDC একটি অরাজনৈতিক ও অলাভজনক সেচছাসেবী
-                    সংগঠন। &quot;নতুন প্রজন্মের নতুন পৃথিবী&quote; এই স্লোগানকে
-                    আঁকড়ে ধরে এগিয়ে চলা। তাই আপনিও আসুন আমাদের সাথে, আসুন
-                    মানবতার কাজে, ঐক্যবদ্ধ হয়ে পাশে দাঁড়াই গরিব দুস্হ-অসহায়
-                    অতি দরিদ্র শ্রেণীর মানুষের পাশে।
-                  </p>
+
+          <div className="mx-auto max-w-7xl ">
+            <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
+              <div className="w-full sm:w-[630px] lg:shrink-0 xl:max-w-2xl">
+                <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                  We’re changing the way of donating blood.
+                </h1>
+                <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+                  গৌরনদী ব্লাড ডোনার্স ক্লাব পরিবারে আপনাকে স্বাগতম। গৌরনদী
+                  ব্লাড ডোনার্স ক্লাব GBDC একটি অরাজনৈতিক ও অলাভজনক সেচছাসেবী
+                  সংগঠন। &quot;নতুন প্রজন্মের নতুন পৃথিবী&quot; এই স্লোগানকে
+                  আঁকড়ে ধরে এগিয়ে চলা। তাই আপনিও আসুন আমাদের সাথে, আসুন
+                  মানবতার কাজে, ঐক্যবদ্ধ হয়ে পাশে দাঁড়াই গরিব দুস্হ-অসহায় অতি
+                  দরিদ্র শ্রেণীর মানুষের পাশে।
+                </p>
+              </div>
+              <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
+                <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
+                  <div className="relative">
+                    <Image
+                      height={600}
+                      width={600}
+                      src={'/assets/aboutPhoto1.jpg'}
+                      alt="about photo 1"
+                      className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                    />
+                    <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                  </div>
                 </div>
-                <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
-                  <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
-                    <div className="relative">
-                      <Image
-                        height={600}
-                        width={600}
-                        src={'/assets/aboutPhoto1.jpg'}
-                        alt="about photo 1"
-                        className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                      />
-                      <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                    </div>
+                <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
+                  <div className="relative">
+                    <Image
+                      height={600}
+                      width={600}
+                      src={'/assets/aboutPhoto1.jpg'}
+                      alt="about photo "
+                      className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                    />
+                    <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                   </div>
-                  <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
-                    <div className="relative">
-                      <Image
-                        height={600}
-                        width={600}
-                        src={'/assets/aboutPhoto1.jpg'}
-                        alt="about photo "
-                        className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                      />
-                      <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                    </div>
-                    <div className="relative">
-                      <Image
-                        height={600}
-                        width={600}
-                        src={'/assets/aboutPhoto1.jpg'}
-                        alt="about photo 1"
-                        className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                      />
-                      <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                    </div>
+                  <div className="relative">
+                    <Image
+                      height={600}
+                      width={600}
+                      src={'/assets/aboutPhoto1.jpg'}
+                      alt="about photo 1"
+                      className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                    />
+                    <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                   </div>
-                  <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
-                    <div className="relative">
-                      <Image
-                        height={600}
-                        width={600}
-                        src={'/assets/aboutPhoto1.jpg'}
-                        alt="about photo 1"
-                        className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                      />
-                      <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                    </div>
-                    <div className="relative">
-                      <Image
-                        height={600}
-                        width={600}
-                        src={'/assets/aboutPhoto1.jpg'}
-                        alt="about photo 1"
-                        className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                      />
-                      <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                    </div>
+                </div>
+                <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
+                  <div className="relative">
+                    <Image
+                      height={600}
+                      width={600}
+                      src={'/assets/aboutPhoto1.jpg'}
+                      alt="about photo 1"
+                      className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                    />
+                    <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                  </div>
+                  <div className="relative">
+                    <Image
+                      height={600}
+                      width={600}
+                      src={'/assets/aboutPhoto1.jpg'}
+                      alt="about photo 1"
+                      className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                    />
+                    <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                   </div>
                 </div>
               </div>

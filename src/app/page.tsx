@@ -4,7 +4,6 @@ import Achievements from '@/sections/Achievements'
 import Activities from '@/sections/Activities'
 import Counter from '@/sections/Counter'
 import Featured from '@/sections/Featured'
-import Footer from '@/sections/Footer'
 import { Testimonial } from '@/sections/Testimonial'
 
 export default function Home() {
@@ -17,7 +16,6 @@ export default function Home() {
       <Achievements />
       <Featured />
       <Testimonial />
-      <Footer />
     </div>
   )
 }
