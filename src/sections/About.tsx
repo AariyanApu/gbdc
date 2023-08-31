@@ -2,7 +2,6 @@
 //  spell-checker: disable
 
 'use client'
-
 import { TypingText, TypingTitle } from '@/components/CustomText'
 import { banglaFont } from '@/utils/fonts'
 import { fadeIn, staggerContainer } from '@/utils/motion'
