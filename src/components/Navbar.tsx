@@ -73,7 +73,8 @@ export default function NavBar() {
                     {navigation.map((item) => (
                       <motion.div
                         variants={textVariant2}
-                        whileTap={{ scale: 0.9 }}
+                        whileTap={{ scale: 0.95 }}
+                        transition={{ duration: 0.3 }} // set duration to 200 milliseconds
                         key={item.name}
                         aria-current={item.current ? 'page' : undefined}
                         className="my-4 "
