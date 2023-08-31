@@ -1,3 +1,4 @@
+import AboutUsImageCard from '@/components/AboutUsImageCard'
 import { banglaFont, titleFont } from '@/utils/fonts'
 import Image from 'next/image'
 
@@ -85,6 +86,7 @@ export default function AboutUs() {
               </div>
               <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
                 <div className="ml-auto h-80  w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
+                  {/* First Image */}
                   <div className="relative hidden md:flex">
                     <Image
                       height={600}
@@ -96,50 +98,18 @@ export default function AboutUs() {
                     <div className="pointer-events-none absolute inset-0 h-60 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                   </div>
                 </div>
-                <div className="mr-auto w-40  flex-none space-y-8 sm:mr-0 sm:w-44 sm:pt-52 lg:pt-36">
-                  <div className="relative">
-                    <Image
-                      height={600}
-                      width={600}
-                      src={'/assets/about/2.jpg'}
-                      alt="about photo "
-                      className="w-full rounded-xl bg-gray-900/5 object-cover shadow-lg sm:h-60"
-                    />
-                    <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10 sm:h-60" />
-                  </div>
-                  <div className="relative">
-                    <Image
-                      height={600}
-                      width={600}
-                      src={'/assets/about/3.jpg'}
-                      alt="about photo 1"
-                      className=" w-full rounded-xl bg-gray-900/5 object-cover shadow-lg sm:h-60"
-                    />
-                    <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10 sm:h-60" />
-                  </div>
-                </div>
-                <div className="w-40 flex-none space-y-8 pt-32 sm:w-44 sm:pt-0">
-                  <div className="relative">
-                    <Image
-                      height={600}
-                      width={600}
-                      src={'/assets/about/4.jpg'}
-                      alt="about photo 1"
-                      className="w-full rounded-xl bg-gray-900/5 object-cover shadow-lg sm:h-60"
-                    />
-                    <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10 sm:h-60" />
-                  </div>
-                  <div className="relative">
-                    <Image
-                      height={600}
-                      width={600}
-                      src={'/assets/about/5.jpg'}
-                      alt="about photo 1"
-                      className=" w-full rounded-xl bg-gray-900/5 object-cover shadow-lg sm:h-60"
-                    />
-                    <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10 sm:h-60 " />
-                  </div>
-                </div>
+                {/* 2nd image */}
+                <AboutUsImageCard
+                  imgSrc="/assets/about/2.jpg"
+                  customStyle=" mr-auto  sm:mr-0 sm:pt-52 lg:pt-36"
+                  imgSrc2="/assets/about/3.jpg"
+                />
+                {/* 3rd Image */}
+                <AboutUsImageCard
+                  imgSrc="/assets/about/4.jpg"
+                  imgSrc2="/assets/about/5.jpg"
+                  customStyle="pt-32 sm:w-44 sm:pt-0"
+                />
               </div>
             </div>
           </div>
