@@ -60,5 +60,6 @@ export default function About() {
         </motion.div>
       </div>
     </motion.div>
+
   )
 }

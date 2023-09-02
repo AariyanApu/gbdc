@@ -6,7 +6,7 @@ import Image from 'next/image'
 export default function AboutUs() {
   return (
     <div className={` bg-white`}>
-      <main className="isolate">
+      <main className="isolate mx-auto max-w-7xl">
         {/* Hero section */}
         <div className="relative isolate -z-10">
           <AboutUsBgSvg />
@@ -60,9 +60,16 @@ export default function AboutUs() {
           </div>
         </div>
 
-        {/* Content section */}
+        {/* All members Picture  */}
 
-        {/* Image section */}
+        <Image
+          src={'/assets/banner/banner-3.jpg'}
+          alt="All members of GBDC"
+          height={600}
+          width={1200}
+          className=" my-20 h-[500px] w-full rounded-lg object-cover object-center shadow-md"
+        />
+        {/* All member Introduction */}
 
         {/* Values section */}
 
