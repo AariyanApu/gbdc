@@ -1,26 +1,16 @@
 'use client'
 
-import { useEffect, useId, useState } from 'react'
-import Image from 'next/image'
 import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
+import Image from 'next/image'
+import { useEffect, useId, useState } from 'react'
 
 import dianneGuilianelliImage from '@/images/avatars/dianne-guilianelli.jpg'
 import erhartCockrinImage from '@/images/avatars/erhart-cockrin.jpg'
-import giordanoSagucioImage from '@/images/avatars/giordano-sagucio.jpg'
-import gordonSandersonImage from '@/images/avatars/gordon-sanderson.jpg'
-import heatherTerryImage from '@/images/avatars/heather-terry.jpg'
-import ibrahimFraschImage from '@/images/avatars/ibrahim-frasch.jpg'
 import jaquelinIschImage from '@/images/avatars/jaquelin-isch.jpg'
-import kimberlyParsonsImage from '@/images/avatars/kimberly-parsons.jpg'
 import parkerJohnsonImage from '@/images/avatars/parker-johnson.jpg'
-import piersWilkinsImage from '@/images/avatars/piers-wilkins.jpg'
-import richardAstley from '@/images/avatars/richard-astley.jpg'
-import rinaldoBeynonImage from '@/images/avatars/rinaldo-beynon.jpg'
 import ronniCantadoreImage from '@/images/avatars/ronni-cantadore.jpg'
 import stevenMchailImage from '@/images/avatars/steven-mchail.jpg'
-import waylonHydenImage from '@/images/avatars/waylon-hyden.jpg'
-import { TypingText, TypingTitle } from './CustomText'
 
 const days = [
   {
@@ -115,19 +105,19 @@ export function Admin() {
       <div>
         <Tab.Group
           as="div"
-          className="mt-14 grid grid-cols-1 items-start gap-x-8 gap-y-8 sm:mt-16 sm:gap-y-16  lg:grid-cols-4"
+          className="mt-14  items-start gap-x-8 gap-y-8 sm:mt-16"
           vertical={tabOrientation === 'vertical'}
         >
-          <Tab.Panels className="lg:col-span-6">
+          <Tab.Panels className="">
             {days.map((day, idx) => (
               <Tab.Panel
                 key={idx}
-                className="ui-not-focus-visible:outline-none grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3"
+                className="ui-not-focus-visible:outline-none  flex flex-row flex-wrap items-center justify-center gap-x-8 gap-y-10 sm:gap-y-16 "
                 unmount={false}
               >
                 {day.speakers.map((speaker, speakerIndex) => (
                   <div key={speakerIndex}>
-                    <div className="group relative h-[17.5rem] transform overflow-hidden rounded-4xl">
+                    <div className="group relative h-[17.5rem] w-72 transform overflow-hidden rounded-4xl">
                       <div
                         className={clsx(
                           'absolute bottom-6 left-0 right-4 top-0 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
