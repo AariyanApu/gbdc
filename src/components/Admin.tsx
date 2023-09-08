@@ -100,12 +100,16 @@ export function Admin() {
   }, [])
 
   return (
-    <section id="speakers" aria-labelledby="speakers-title" className="py-12 ">
+    <section
+      id="speakers"
+      aria-labelledby="speakers-title"
+      className="pb-12 pt-8 "
+    >
       <ImageClipPaths id={id} />
       <div>
         <Tab.Group
           as="div"
-          className="mt-14  items-start gap-x-8 gap-y-8 sm:mt-16"
+          className="  items-start gap-x-8 gap-y-8 "
           vertical={tabOrientation === 'vertical'}
         >
           <Tab.Panels className="">
