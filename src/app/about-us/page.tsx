@@ -1,11 +1,22 @@
+'use client'
 import AboutUsBgSvg from '@/components/AboutUsBgSvg'
 import AboutUsImageCard from '@/components/AboutUsImageCard'
+import { TypingTitle } from '@/components/CustomText'
 import { banglaFont, titleFont } from '@/utils/fonts'
+import { staggerContainer } from '@/utils/motion'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
+import { Admin } from '@/components/Admin'
 
 export default function AboutUs() {
   return (
-    <div className={` bg-white`}>
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      className={` bg-white`}
+    >
       <main className="isolate mx-auto max-w-7xl">
         {/* Hero section */}
         <div className="relative isolate -z-10">
@@ -70,6 +81,10 @@ export default function AboutUs() {
           className=" my-20 h-[500px] w-full rounded-lg object-cover object-center shadow-md"
         />
         {/* All member Introduction */}
+        <div>
+          <TypingTitle title="The Distinguished Admin Panel" />
+          <Admin />
+        </div>
 
         {/* Values section */}
 
@@ -77,6 +92,6 @@ export default function AboutUs() {
       </main>
 
       {/* Footer */}
-    </div>
+    </motion.div>
   )
 }
