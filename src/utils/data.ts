@@ -1,4 +1,10 @@
 import { LinkProps, Review } from '@/types/randomTypes'
+import dianneGuilianelliImage from '@/images/avatars/dianne-guilianelli.jpg'
+import erhartCockrinImage from '@/images/avatars/erhart-cockrin.jpg'
+import jaquelinIschImage from '@/images/avatars/jaquelin-isch.jpg'
+import parkerJohnsonImage from '@/images/avatars/parker-johnson.jpg'
+import ronniCantadoreImage from '@/images/avatars/ronni-cantadore.jpg'
+import stevenMchailImage from '@/images/avatars/steven-mchail.jpg'
 
 export const navigation: Array<LinkProps> = [
   { name: 'About Us', href: '/about-us', current: false },
@@ -89,4 +95,50 @@ export const secondFooterLink: Array<LinkProps> = [
   { name: 'All Achievements', href: '/about-us' },
   { name: 'Feature News', href: '/join-us' },
   { name: 'Contact Us', href: '/activities' },
+]
+export const adminPanel = [
+  {
+    speakers: [
+      {
+        name: 'Steven McHail',
+        role: 'Designer at Globex Corporation',
+        image: stevenMchailImage,
+      },
+      {
+        name: 'Jaquelin Isch',
+        role: 'UX Design at InGen',
+        image: jaquelinIschImage,
+      },
+      {
+        name: 'Dianne Guilianelli',
+        role: 'General Manager at Initech',
+        image: dianneGuilianelliImage,
+      },
+      {
+        name: 'Ronni Cantadore',
+        role: 'Design Engineer at Weyland-Yutani',
+        image: ronniCantadoreImage,
+      },
+      {
+        name: 'Erhart Cockrin',
+        role: 'Product Lead at Cyberdyne Systems',
+        image: erhartCockrinImage,
+      },
+      {
+        name: 'Parker Johnson',
+        role: 'UI Designer at MomCorp',
+        image: parkerJohnsonImage,
+      },
+      {
+        name: 'Erhart Cockrin',
+        role: 'Product Lead at Cyberdyne Systems',
+        image: erhartCockrinImage,
+      },
+      {
+        name: 'Parker Johnson',
+        role: 'UI Designer at MomCorp',
+        image: parkerJohnsonImage,
+      },
+    ],
+  },
 ]

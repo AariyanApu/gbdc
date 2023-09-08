@@ -1,63 +1,7 @@
-'use client'
-
-import { Tab } from '@headlessui/react'
+import { adminPanel } from '@/utils/data'
 import clsx from 'clsx'
 import Image from 'next/image'
-import { useEffect, useId, useState } from 'react'
-
-import dianneGuilianelliImage from '@/images/avatars/dianne-guilianelli.jpg'
-import erhartCockrinImage from '@/images/avatars/erhart-cockrin.jpg'
-import jaquelinIschImage from '@/images/avatars/jaquelin-isch.jpg'
-import parkerJohnsonImage from '@/images/avatars/parker-johnson.jpg'
-import ronniCantadoreImage from '@/images/avatars/ronni-cantadore.jpg'
-import stevenMchailImage from '@/images/avatars/steven-mchail.jpg'
-
-const days = [
-  {
-    speakers: [
-      {
-        name: 'Steven McHail',
-        role: 'Designer at Globex Corporation',
-        image: stevenMchailImage,
-      },
-      {
-        name: 'Jaquelin Isch',
-        role: 'UX Design at InGen',
-        image: jaquelinIschImage,
-      },
-      {
-        name: 'Dianne Guilianelli',
-        role: 'General Manager at Initech',
-        image: dianneGuilianelliImage,
-      },
-      {
-        name: 'Ronni Cantadore',
-        role: 'Design Engineer at Weyland-Yutani',
-        image: ronniCantadoreImage,
-      },
-      {
-        name: 'Erhart Cockrin',
-        role: 'Product Lead at Cyberdyne Systems',
-        image: erhartCockrinImage,
-      },
-      {
-        name: 'Parker Johnson',
-        role: 'UI Designer at MomCorp',
-        image: parkerJohnsonImage,
-      },
-      {
-        name: 'Erhart Cockrin',
-        role: 'Product Lead at Cyberdyne Systems',
-        image: erhartCockrinImage,
-      },
-      {
-        name: 'Parker Johnson',
-        role: 'UI Designer at MomCorp',
-        image: parkerJohnsonImage,
-      },
-    ],
-  },
-]
+import { useId } from 'react'
 
 function ImageClipPaths({
   id,
@@ -82,22 +26,6 @@ function ImageClipPaths({
 
 export function Admin() {
   let id = useId()
-  let [tabOrientation, setTabOrientation] = useState('horizontal')
-
-  useEffect(() => {
-    let lgMediaQuery = window.matchMedia('(min-width: 1024px)')
-
-    function onMediaQueryChange({ matches }: { matches: boolean }) {
-      setTabOrientation(matches ? 'vertical' : 'horizontal')
-    }
-
-    onMediaQueryChange(lgMediaQuery)
-    lgMediaQuery.addEventListener('change', onMediaQueryChange)
-
-    return () => {
-      lgMediaQuery.removeEventListener('change', onMediaQueryChange)
-    }
-  }, [])
 
   return (
     <section
@@ -106,57 +34,48 @@ export function Admin() {
       className="pb-12 pt-8 "
     >
       <ImageClipPaths id={id} />
-      <div>
-        <Tab.Group
-          as="div"
-          className="  items-start gap-x-8 gap-y-8 "
-          vertical={tabOrientation === 'vertical'}
-        >
-          <Tab.Panels className="">
-            {days.map((day, idx) => (
-              <Tab.Panel
-                key={idx}
-                className="ui-not-focus-visible:outline-none  flex flex-row flex-wrap items-center justify-center gap-x-8 gap-y-10 sm:gap-y-16 "
-                unmount={false}
-              >
-                {day.speakers.map((speaker, speakerIndex) => (
-                  <div key={speakerIndex}>
-                    <div className="group relative h-[17.5rem] w-72 transform overflow-hidden rounded-4xl">
-                      <div
-                        className={clsx(
-                          'absolute bottom-6 left-0 right-4 top-0 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
-                          [
-                            'border-blue-300',
-                            'border-indigo-300',
-                            'border-sky-300',
-                          ][speakerIndex % 3],
-                        )}
-                      />
-                      <div
-                        className="absolute inset-0 bg-indigo-50"
-                        style={{ clipPath: `url(#${id}-${speakerIndex % 3})` }}
-                      >
-                        <Image
-                          className="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
-                          src={speaker.image}
-                          alt=""
-                          priority
-                          sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
-                        />
-                      </div>
-                    </div>
-                    <h3 className="font-display mt-8 text-xl font-bold tracking-tight text-slate-900">
-                      {speaker.name}
-                    </h3>
-                    <p className="mt-1 text-base tracking-tight text-slate-500">
-                      {speaker.role}
-                    </p>
+      <div className="  items-start gap-x-8 gap-y-8 ">
+        {adminPanel?.map((day, idx) => (
+          <div
+            key={idx}
+            className="ui-not-focus-visible:outline-none  flex flex-row flex-wrap items-center justify-center gap-x-8 gap-y-10 sm:gap-y-16 "
+          >
+            {day.speakers.map((speaker, speakerIndex) => (
+              <div key={speakerIndex}>
+                <div className="group relative h-[17.5rem] w-72 transform overflow-hidden rounded-4xl">
+                  <div
+                    className={clsx(
+                      'absolute bottom-6 left-0 right-4 top-0 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
+                      [
+                        'border-blue-300',
+                        'border-indigo-300',
+                        'border-sky-300',
+                      ][speakerIndex % 3],
+                    )}
+                  />
+                  <div
+                    className="absolute inset-0 bg-indigo-50"
+                    style={{ clipPath: `url(#${id}-${speakerIndex % 3})` }}
+                  >
+                    <Image
+                      className="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
+                      src={speaker.image}
+                      alt=""
+                      priority
+                      sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    />
                   </div>
-                ))}
-              </Tab.Panel>
+                </div>
+                <h3 className="font-display mt-8 text-xl font-bold tracking-tight text-slate-900">
+                  {speaker.name}
+                </h3>
+                <p className="mt-1 text-base tracking-tight text-slate-500">
+                  {speaker.role}
+                </p>
+              </div>
             ))}
-          </Tab.Panels>
-        </Tab.Group>
+          </div>
+        ))}
       </div>
     </section>
   )
