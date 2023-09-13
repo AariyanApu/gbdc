@@ -1,10 +1,4 @@
 import { LinkProps, Review } from '@/types/randomTypes'
-import dianneGuilianelliImage from '@/images/avatars/dianne-guilianelli.jpg'
-import erhartCockrinImage from '@/images/avatars/erhart-cockrin.jpg'
-import jaquelinIschImage from '@/images/avatars/jaquelin-isch.jpg'
-import parkerJohnsonImage from '@/images/avatars/parker-johnson.jpg'
-import ronniCantadoreImage from '@/images/avatars/ronni-cantadore.jpg'
-import stevenMchailImage from '@/images/avatars/steven-mchail.jpg'
 
 export const navigation: Array<LinkProps> = [
   { name: 'About Us', href: '/about-us', current: false },
@@ -100,44 +94,44 @@ export const adminPanel = [
   {
     speakers: [
       {
-        name: 'Steven McHail',
-        role: 'Designer at Globex Corporation',
-        image: stevenMchailImage,
+        name: ' ইমরান  ইবনে  আমিন ',
+        role: ' পরিচালক',
+        image: '/assets/admin/amin.jpg',
       },
       {
-        name: 'Jaquelin Isch',
-        role: 'UX Design at InGen',
-        image: jaquelinIschImage,
+        name: ' কামরুল  ইসলাম  আপন ',
+        role: ' পরিচালক ',
+        image: '/assets/admin/kamrul.jpg',
       },
       {
-        name: 'Dianne Guilianelli',
-        role: 'General Manager at Initech',
-        image: dianneGuilianelliImage,
+        name: ' কাজী  সুজন ',
+        role: ' সাধারণ সম্পাদক',
+        image: '/assets/admin/sujan.jpg',
       },
       {
-        name: 'Ronni Cantadore',
-        role: 'Design Engineer at Weyland-Yutani',
-        image: ronniCantadoreImage,
+        name: ' জহিরুল  ইসলাম ',
+        role: ' যুগ্ন সাধারণ সম্পাদক',
+        image: '/assets/admin/jahir.jpg',
       },
       {
-        name: 'Erhart Cockrin',
-        role: 'Product Lead at Cyberdyne Systems',
-        image: erhartCockrinImage,
+        name: ' তানভীর  আহমেদ ',
+        role: ' সহ  সভাপতি  ',
+        image: '/assets/admin/tanvir.jpg',
       },
       {
-        name: 'Parker Johnson',
-        role: 'UI Designer at MomCorp',
-        image: parkerJohnsonImage,
+        name: ' শ্রাবণী দাস',
+        role: ' অর্থ সম্পাদক ',
+        image: '/assets/admin/sraboni.jpg',
       },
       {
-        name: 'Erhart Cockrin',
-        role: 'Product Lead at Cyberdyne Systems',
-        image: erhartCockrinImage,
+        name: ' ইমরান হোসেন',
+        role: ' প্রচার  সম্পাদক ',
+        image: '/assets/admin/imran.jpg',
       },
       {
-        name: 'Parker Johnson',
-        role: 'UI Designer at MomCorp',
-        image: parkerJohnsonImage,
+        name: ' ইব্রাহীম  খলিলুল্লাহ ',
+        role: ' সহ  দপ্তর সম্পাদক',
+        image: '/assets/admin/ibrahim.jpg',
       },
     ],
   },

@@ -1,4 +1,5 @@
 import { adminPanel } from '@/utils/data'
+import { banglaFont } from '@/utils/fonts'
 import clsx from 'clsx'
 import Image from 'next/image'
 import { useId } from 'react'
@@ -41,7 +42,7 @@ export function Admin() {
             className="ui-not-focus-visible:outline-none  flex flex-row flex-wrap items-center justify-center gap-x-8 gap-y-10 sm:gap-y-16 "
           >
             {day.speakers.map((speaker, speakerIndex) => (
-              <div key={speakerIndex}>
+              <div key={speakerIndex} className={banglaFont.className}>
                 <div className="group relative h-[17.5rem] w-72 transform overflow-hidden rounded-4xl">
                   <div
                     className={clsx(
@@ -60,6 +61,8 @@ export function Admin() {
                     <Image
                       className="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
                       src={speaker.image}
+                      width={400}
+                      height={400}
                       alt=""
                       priority
                       sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
