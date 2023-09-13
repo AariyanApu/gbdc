@@ -1,12 +1,12 @@
 'use client'
 import AboutUsBgSvg from '@/components/AboutUsBgSvg'
 import AboutUsImageCard from '@/components/AboutUsImageCard'
+import { Admin } from '@/components/Admin'
 import { TypingTitle } from '@/components/CustomText'
 import { banglaFont, titleFont } from '@/utils/fonts'
 import { staggerContainer } from '@/utils/motion'
-import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { Admin } from '@/components/Admin'
+import Image from 'next/image'
 
 export default function AboutUs() {
   return (
@@ -78,11 +78,11 @@ export default function AboutUs() {
           alt="All members of GBDC"
           height={600}
           width={1200}
-          className=" my-20 h-[500px] w-full rounded-lg object-cover object-center shadow-md"
+          className="  my-20 w-full rounded-lg object-cover object-center px-4 shadow-md sm:h-[500px] lg:px-0"
         />
         {/* All member Introduction */}
         <div>
-          <TypingTitle title="The Distinguished Admin Panel" />
+          <TypingTitle title="The Admin Panel" />
           <Admin />
         </div>
 
