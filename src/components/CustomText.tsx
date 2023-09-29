@@ -1,3 +1,4 @@
+'use client'
 import { TypingTitleProps } from '@/types/randomTypes'
 import { titleFont } from '@/utils/fonts'
 import { textContainer, textContainer2, textVariant2 } from '@/utils/motion'

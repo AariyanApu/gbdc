@@ -1,3 +1,10 @@
+import Container from '@/components/Container'
+import { TypingTitle } from '@/components/CustomText'
+
 export default function Activities() {
-  return <div>page</div>
+  return (
+    <Container>
+      <TypingTitle title={'Our Activities'} />
+    </Container>
+  )
 }
