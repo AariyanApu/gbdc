@@ -82,6 +82,7 @@ export default function AboutUs() {
         />
         {/* All member Introduction */}
         <div>
+          {/* TODO: Add Title for Mobile  */}
           <TypingTitle title="The Admin Panel" />
           <Admin />
         </div>
