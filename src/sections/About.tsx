@@ -1,8 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 //  spell-checker: disable
 
-'use client'
+import Container from '@/components/Container'
 import { TypingText, TypingTitle } from '@/components/CustomText'
+import MotionDiv from '@/components/MotionDiv'
 import { banglaFont } from '@/utils/fonts'
 import { fadeIn, staggerContainer } from '@/utils/motion'
 import { motion } from 'framer-motion'
@@ -10,13 +11,7 @@ import Image from 'next/image'
 
 export default function About() {
   return (
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
-      className=" my-16 md:my-20 lg:my-20 xl:my-28 2xl:my-32 "
-    >
+    <Container customStyle=" my-16 md:my-20 lg:my-20 xl:my-28 2xl:my-32 ">
       <TypingTitle title={'About Us'} />
 
       <div
@@ -35,19 +30,19 @@ export default function About() {
             ]}
             textStyles="mb-3 text-[23px] sm:mt-7 text-center sm:text-left font-semibold"
           />
-          <motion.div
+          <MotionDiv
             variants={fadeIn('up', 'tween', 1, 0.7)}
-            className=" w-full text-justify text-lg sm:w-[290px] lg:w-[450px]  "
+            customStyle=" w-full text-justify text-lg sm:w-[290px] lg:w-[450px]  "
           >
             গৌরনদী ব্লাড ডোনার্স ক্লাব GBDC একটি অরাজনৈতিক ও অলাভজনক সেচছাসেবী
             সংগঠন। "নতুন প্রজন্মের নতুন পৃথিবী" এই স্লোগানকে আঁকড়ে ধরে এগিয়ে
             চলা। তাই আপনিও আসুন আমাদের সাথে, আসুন মানবতার কাজে, ঐক্যবদ্ধ হয়ে
             পাশে দাঁড়াই গরিব দুস্হ-অসহায় অতি দরিদ্র শ্রেণীর মানুষের পাশে।
-          </motion.div>
+          </MotionDiv>
         </div>
-        <motion.div
+        <MotionDiv
           variants={fadeIn('up', 'tween', 1.2, 0.7)}
-          className="mx-4 mt-5 sm:mx-0 md:mt-6 lg:mt-0"
+          customStyle="mx-4 mt-5 sm:mx-0 md:mt-6 lg:mt-0"
         >
           {' '}
           <Image
@@ -57,9 +52,8 @@ export default function About() {
             height={800}
             width={800}
           />{' '}
-        </motion.div>
+        </MotionDiv>
       </div>
-    </motion.div>
-
+    </Container>
   )
 }

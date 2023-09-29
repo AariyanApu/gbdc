@@ -3,7 +3,7 @@ import { TypingTitle } from '@/components/CustomText'
 
 export default function Activities() {
   return (
-    <Container>
+    <Container customStyle=" my-8 sm:my-16 ">
       <TypingTitle title={'Our Activities'} />
     </Container>
   )
