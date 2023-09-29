@@ -1,12 +1,12 @@
 'use client'
 
+import Container from '@/components/Container'
 import { TypingText, TypingTitle } from '@/components/CustomText'
 import { Review } from '@/types/randomTypes'
 import { reviews } from '@/utils/data'
 import { banglaFont } from '@/utils/fonts'
-import { staggerContainer } from '@/utils/motion'
 import clsx from 'clsx'
-import { motion, useInView } from 'framer-motion'
+import { useInView } from 'framer-motion'
 import Image from 'next/image'
 import { useEffect, useMemo, useRef, useState } from 'react'
 
@@ -153,13 +153,7 @@ function ReviewGrid() {
 export function Testimonial() {
   return (
     <section id="reviews" aria-labelledby="reviews-title">
-      <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.25 }}
-        className="rounded-sm bg-slate-100 px-4 py-16 md:py-20 lg:px-8"
-      >
+      <Container customStyle="rounded-sm bg-slate-100 px-4 py-16 md:py-20 lg:px-8">
         <TypingTitle
           title={[
             'What ',
@@ -180,7 +174,7 @@ export function Testimonial() {
           textStyles={`sm:text-2xl text-lg font-bold tracking-tight text-slate-900 text-center lg:text-start ${banglaFont.className}} my-8`}
         />
         <ReviewGrid />
-      </motion.div>
+      </Container>
     </section>
   )
 }
