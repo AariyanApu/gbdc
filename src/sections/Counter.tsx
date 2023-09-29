@@ -1,19 +1,10 @@
-'use client'
-
+import Container from '@/components/Container'
 import CounterCard from '@/components/CounterCard'
 import { TypingTitle } from '@/components/CustomText'
-import { staggerContainer } from '@/utils/motion'
-import { motion } from 'framer-motion'
 
 export default function Counter() {
   return (
-    <motion.div
-      className=" my-16 md:my-20 lg:my-20 xl:my-28 2xl:my-32 "
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
-    >
+    <Container customStyle=" my-16 md:my-20 lg:my-20 xl:my-28 2xl:my-32 ">
       <TypingTitle title={'We have arranged'} />
       <div className="flex flex-col items-center justify-evenly px-6 sm:px-0 md:flex-row">
         <CounterCard
@@ -32,6 +23,6 @@ export default function Counter() {
           desc="Blood Donation Camps"
         />
       </div>
-    </motion.div>
+    </Container>
   )
 }

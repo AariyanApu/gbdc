@@ -1,15 +1,16 @@
-import { counterCardProps } from "@/types/randomTypes";
-import { titleFont } from "@/utils/fonts";
-import Image from "next/image";
-import CountUp, { useCountUp } from "react-countup";
+'use client'
+import { counterCardProps } from '@/types/randomTypes'
+import { titleFont } from '@/utils/fonts'
+import Image from 'next/image'
+import CountUp, { useCountUp } from 'react-countup'
 
 export default function CounterCard({ end, imgSrc, desc }: counterCardProps) {
   useCountUp({
-    ref: "counter",
+    ref: 'counter',
     end: 1234567,
     enableScrollSpy: true,
     scrollSpyDelay: 1000,
-  });
+  })
   return (
     <CountUp enableScrollSpy start={0} end={end} delay={0} duration={2.75}>
       {({ countUpRef }) => (
@@ -37,5 +38,5 @@ export default function CounterCard({ end, imgSrc, desc }: counterCardProps) {
         </div>
       )}
     </CountUp>
-  );
+  )
 }
