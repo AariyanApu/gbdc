@@ -1,5 +1,6 @@
-import { ButtonProps } from "@/types/randomTypes";
-import { motion } from "framer-motion";
+'use client'
+import { ButtonProps } from '@/types/randomTypes'
+import { motion } from 'framer-motion'
 
 export default function Button({
   customStyle,
@@ -18,5 +19,5 @@ export default function Button({
       <p className="mt-1.5 text-center">{text}</p>
       {icon}
     </motion.a>
-  );
+  )
 }

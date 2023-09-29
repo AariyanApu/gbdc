@@ -1,22 +1,14 @@
 //  spell-checker: disable
-'use client'
-
 import ActivitiesCard from '@/components/ActivitiesCard'
 import Button from '@/components/Button'
+import Container from '@/components/Container'
 import { TypingText, TypingTitle } from '@/components/CustomText'
 import { banglaFont } from '@/utils/fonts'
-import { fadeIn, staggerContainer } from '@/utils/motion'
-import { motion } from 'framer-motion'
+import { fadeIn } from '@/utils/motion'
 import { HiArrowTopRightOnSquare } from 'react-icons/hi2'
 export default function Activities() {
   return (
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.35 }}
-      className="overflow-x-hidden rounded  bg-slate-100 pt-0  lg:pt-20 "
-    >
+    <Container customStyle="overflow-x-hidden rounded  bg-slate-100 pt-0  lg:pt-20 ">
       <TypingTitle title={'Our Activities'} />
 
       <div
@@ -82,6 +74,6 @@ export default function Activities() {
           customStyle="flex sm:hidden w-40 mx-auto mt-5"
         />
       </div>
-    </motion.div>
+    </Container>
   )
 }

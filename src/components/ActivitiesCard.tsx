@@ -1,6 +1,7 @@
-import { ActivitiesCardProps } from "@/types/randomTypes";
-import { motion } from "framer-motion";
-import Image from "next/image";
+'use client'
+import { ActivitiesCardProps } from '@/types/randomTypes'
+import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function ActivitiesCard({
   imgUrl,
@@ -19,7 +20,7 @@ export default function ActivitiesCard({
         src={imgUrl}
         height={800}
         width={800}
-        alt={title + " এর ছবি "}
+        alt={title + ' এর ছবি '}
         className={`  object-cover object-center drop-shadow-sm group-hover:scale-105  group-hover:transition-transform group-hover:duration-300 group-hover:ease-in ${imgSize} sm:absolute sm:inset-0 sm:h-full sm:w-full `}
       />
       <div
@@ -40,5 +41,5 @@ export default function ActivitiesCard({
         </div>
       </div>
     </motion.div>
-  );
+  )
 }
