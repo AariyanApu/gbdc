@@ -3,7 +3,7 @@ import { LinkProps, Review } from '@/types/randomTypes'
 export const navigation: Array<LinkProps> = [
   { name: 'About Us', href: '/about-us', current: false },
   { name: 'Activities', href: '/activities', current: false },
-  { name: 'Achievements', href: '#', current: false },
+  { name: 'Achievements', href: '/achievements', current: false },
   { name: 'Become Volunteer', href: '/join-us', current: false },
 ]
 
