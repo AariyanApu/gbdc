@@ -1,5 +1,6 @@
 import Container from '@/components/Container'
 import { TypingTitle } from '@/components/CustomText'
+import { achievementsData } from '@/utils/data'
 import Image from 'next/image'
 
 export default function Activities() {
@@ -10,13 +11,13 @@ export default function Activities() {
       <TypingTitle title={'Our Activities'} />
 
       <div className="mt-8 flex flex-row flex-wrap-reverse items-center justify-center gap-4">
-        {image?.map((item, idx) => (
+        {achievementsData?.map((item, idx) => (
           <div
             key={idx}
             className="flex w-72 flex-col items-center rounded-lg bg-slate-300 text-center "
           >
             <Image
-              src={'/assets/activities/donateBlood.jpg'}
+              src={item.src}
               alt="donate blood"
               width={500}
               height={500}

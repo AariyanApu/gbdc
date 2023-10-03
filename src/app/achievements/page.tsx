@@ -1,23 +1,22 @@
 import Container from '@/components/Container'
 import { TypingTitle } from '@/components/CustomText'
+import { achievementsData } from '@/utils/data'
 import Image from 'next/image'
 import React from 'react'
 
 export default function Achievements() {
-  const image = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-
   return (
     <Container customStyle=" my-8 sm:my-16 max-w-7xl mx-auto">
       <TypingTitle title={'Our Achievements'} />
 
       <div className="mt-8 flex flex-row flex-wrap items-center justify-center gap-4">
-        {image?.map((item, idx) => (
+        {achievementsData?.map((item, idx) => (
           <div
             key={idx}
             className="flex w-96 flex-col items-center rounded-lg bg-slate-300 text-center "
           >
             <Image
-              src={'/assets/activities/donateBlood.jpg'}
+              src={item.src}
               alt="donate blood"
               width={500}
               height={500}
