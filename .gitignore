@@ -34,3 +34,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .directory
+.env*
+.flaskenv*
+!.env.project
+!.env.vault
