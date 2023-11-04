@@ -4,7 +4,7 @@ export const navigation: Array<LinkProps> = [
   { name: 'About Us', href: '/about-us', current: false },
   { name: 'Activities', href: '/activities', current: false },
   { name: 'Achievements', href: '/achievements', current: false },
-  { name: 'Become Volunteer', href: '/join-us', current: false },
+  { name: 'Blog', href: '/blog', current: false },
 ]
 
 export const banner = [
@@ -79,16 +79,16 @@ export const reviews: Array<Review> = [
 ]
 
 export const footerLink: Array<LinkProps> = [
-  { name: 'Become a Volunteer', href: '/join-us' },
+  { name: 'Contact Us', href: '/activities' },
+  { name: 'All About Us', href: '/about-us' },
   { name: 'Our Admin Panel', href: '/about-us' },
   { name: 'Our All Activities', href: '/activities' },
-  { name: 'All About Us', href: '/about-us' },
 ]
 export const secondFooterLink: Array<LinkProps> = [
+  { name: 'Become a Volunteer', href: '/join-us' },
   { name: 'Donate to GBDC', href: '/about-us' },
-  { name: 'All Achievements', href: '/about-us' },
+  { name: 'Latest Blog Post', href: '/about-us' },
   { name: 'Feature News', href: '/join-us' },
-  { name: 'Contact Us', href: '/activities' },
 ]
 export const adminPanel = [
   {

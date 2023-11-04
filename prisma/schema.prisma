@@ -11,6 +11,7 @@ datasource db {
 model Post {
   id     String @id @default(auto()) @map("_id") @db.ObjectId
   title  String
+  body   String
   imgUrl String
   userId String @db.ObjectId
   user   User   @relation(fields: [userId], references: [id])
@@ -26,4 +27,10 @@ model Activity {
   id    String @id @default(auto()) @map("_id") @db.ObjectId
   title String
   imgUrl String
+}
+
+model Achievement {
+ id    String @id @default(auto()) @map("_id") @db.ObjectId
+ title String
+ imgUrl String 
 }

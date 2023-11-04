@@ -26,7 +26,10 @@ export default function Footer() {
         </div>
         {/* Footer links */}
         <FooterLinkCard footerLink={footerLink} />
-        <FooterLinkCard footerLink={secondFooterLink} />
+        <FooterLinkCard
+          footerLink={secondFooterLink}
+          customStyles="first:border-sky-400  first:text-sky-400"
+        />
       </div>
 
       {/* Footer credits of developer */}

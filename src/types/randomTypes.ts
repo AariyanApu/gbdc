@@ -35,6 +35,7 @@ export interface Review {
 export interface LinkProps {
   name: string
   href: string
+  customStyles?: string
   current?: boolean
 }
 export interface activitiesData {
