@@ -21,3 +21,9 @@ model User {
   email String
   posts Post[]
 }
+
+model Activity {
+  id    String @id @default(auto()) @map("_id") @db.ObjectId
+  title String
+  imgUrl String
+}

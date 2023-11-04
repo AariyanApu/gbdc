@@ -1,23 +1,26 @@
 import Container from '@/components/Container'
 import { TypingTitle } from '@/components/CustomText'
-import { achievementsData } from '@/utils/data'
+import { activitiesData } from '@/types/randomTypes'
+import { getDataWithoutStore } from '@/utils/getData'
 import Image from 'next/image'
 
-export default function Activities() {
-  const image = [1, 2, 3, 4, 5, 6, 7, 8]
+export default async function Activities() {
+  const activitiesData: activitiesData[] = await getDataWithoutStore(
+    'activities',
+  )
 
   return (
     <Container customStyle=" my-8 sm:my-16 max-w-7xl mx-auto">
       <TypingTitle title={'Our Activities'} />
 
       <div className="mt-8 flex flex-row flex-wrap-reverse items-center justify-center gap-4">
-        {achievementsData?.map((item, idx) => (
+        {activitiesData?.map((item) => (
           <div
-            key={idx}
+            key={item.id}
             className="flex w-72 flex-col items-center rounded-lg bg-slate-300 text-center "
           >
             <Image
-              src={item.src}
+              src={item.imgUrl}
               alt="donate blood"
               width={500}
               height={500}

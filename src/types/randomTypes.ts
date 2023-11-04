@@ -37,3 +37,8 @@ export interface LinkProps {
   href: string
   current?: boolean
 }
+export interface activitiesData {
+  id: number
+  title: string
+  imgUrl: string
+}
