@@ -1,13 +1,11 @@
 import Container from '@/components/Container'
 import { TypingTitle } from '@/components/CustomText'
 import { activitiesData } from '@/types/randomTypes'
-import { getDataWithoutStore } from '@/utils/getData'
+import { getDataNoStore } from '@/utils/getData'
 import Image from 'next/image'
 
 export default async function Activities() {
-  const activitiesData: activitiesData[] = await getDataWithoutStore(
-    'activities',
-  )
+  const activitiesData: activitiesData[] = await getDataNoStore('activities')
 
   return (
     <Container customStyle=" my-8 sm:my-16 max-w-7xl mx-auto">
@@ -26,7 +24,7 @@ export default async function Activities() {
               height={500}
               className="h-96 w-72 rounded-tl-lg rounded-tr-lg object-cover object-center"
             />
-            <div className="py-4">We donate Blood regularly</div>
+            <div className="py-4">{item.title}</div>
           </div>
         ))}
       </div>
