@@ -2,7 +2,6 @@ import Container from '@/components/Container'
 import { TypingTitle } from '@/components/CustomText'
 import { activitiesData } from '@/types/randomTypes'
 import { getDataNoStore } from '@/utils/getData'
-// import { achievementsData } from '@/utils/data'
 import Image from 'next/image'
 
 export default async function Achievements() {
