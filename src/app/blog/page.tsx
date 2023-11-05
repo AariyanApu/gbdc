@@ -1,3 +1,3 @@
-export const Blog = () => {
-  return <div>Blog Page</div>
+export default function Blog() {
+  return <div>page</div>
 }
