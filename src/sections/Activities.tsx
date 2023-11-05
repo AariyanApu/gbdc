@@ -8,11 +8,11 @@ import { fadeIn } from '@/utils/motion'
 import { HiArrowTopRightOnSquare } from 'react-icons/hi2'
 export default function Activities() {
   return (
-    <Container customStyle="overflow-x-hidden rounded  bg-slate-100 pt-0  lg:pt-20 ">
+    <Container customStyle="overflow-x-hidden rounded  bg-slate-100 pt-8  lg:pt-20 ">
       <TypingTitle title={'Our Activities'} />
 
       <div
-        className={` ${banglaFont.className} w-full px-4 py-10 sm:px-6 sm:py-8 lg:px-8`}
+        className={` ${banglaFont.className} w-full px-4 py-4 sm:px-6 sm:py-8 lg:px-8`}
       >
         {/* Activities Headline */}
         <div className="flex items-center justify-center text-center sm:items-baseline sm:justify-between">
