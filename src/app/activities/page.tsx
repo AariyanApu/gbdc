@@ -5,14 +5,14 @@ import { getDataNoStore } from '@/utils/getData'
 import Image from 'next/image'
 
 export default async function Activities() {
-  // const activitiesData: activitiesData[] = await getDataNoStore('activities')
+  const activitiesData: activitiesData[] = await getDataNoStore('activities')
 
   return (
     <Container customStyle=" my-8 sm:my-16 max-w-7xl mx-auto">
       <TypingTitle title={'Our Activities'} />
 
       <div className="mt-8 flex flex-row flex-wrap-reverse items-center justify-center gap-4">
-        {/* {activitiesData?.map((item) => (
+        {activitiesData?.map((item) => (
           <div
             key={item.id}
             className="flex w-72 flex-col items-center rounded-lg bg-slate-300 text-center "
@@ -26,7 +26,7 @@ export default async function Activities() {
             />
             <div className="py-4">{item.title}</div>
           </div>
-        ))} */}
+        ))}
       </div>
     </Container>
   )
