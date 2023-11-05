@@ -6,7 +6,13 @@ export const navigation: Array<LinkProps> = [
   { name: 'Achievements', href: '/achievements', current: false },
   { name: 'Blog', href: '/blog', current: false },
 ]
-
+export const navigationForMobile: Array<LinkProps> = [
+  { name: 'Home', href: '', current: false },
+  { name: 'About Us', href: '/about-us', current: false },
+  { name: 'Activities', href: '/activities', current: false },
+  { name: 'Achievements', href: '/achievements', current: false },
+  { name: 'Blog', href: '/blog', current: false },
+]
 export const banner = [
   { img: '/assets/banner/banner.jpg', alt: 'All members of GBDC' },
   { img: '/assets/banner/banner-1.jpg', alt: 'GBDC giving people wheelchairs' },
@@ -85,7 +91,7 @@ export const footerLink: Array<LinkProps> = [
   { name: 'Our All Activities', href: '/activities' },
 ]
 export const secondFooterLink: Array<LinkProps> = [
-  { name: 'Become a Volunteer', href: '/join-us' },
+  { name: 'Volunteer to GBDC', href: '/join-us' },
   { name: 'Donate to GBDC', href: '/about-us' },
   { name: 'Latest Blog Post', href: '/about-us' },
   { name: 'Feature News', href: '/join-us' },

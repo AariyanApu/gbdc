@@ -7,28 +7,28 @@ import Image from 'next/image'
 export default function Footer() {
   return (
     <div className="mb-5 mt-10 text-slate-800">
-      <div className="flex flex-row justify-around">
+      <div className="ml-4 flex flex-row justify-between sm:justify-around">
         <div
-          className={` mx-auto flex w-60 flex-col items-center justify-center gap-y-2 text-center sm:mx-0 sm:items-start sm:justify-start sm:text-start ${banglaFont.className}`}
+          className={` flex flex-col items-start  justify-start gap-y-2 text-start sm:w-60 sm:text-start ${banglaFont.className}`}
         >
           <Image
             src={'/logo.png'}
             alt="Logo of GBDC"
             height={300}
             width={300}
-            className=" mb-2 w-32 object-contain"
+            className=" mb-2 w-32 object-cover"
           />
-          <div className="ml-1 pt-2">
+          <div className="w-48 pt-2 sm:w-full">
             প্রধান কার্যালয়ঃ গৌরনদী ব্লাড ডোনার্স ক্লাব, গৌরনদী উপজেলা,
             গৌরনদী,বরিশাল।
           </div>
           <FooterCards />
         </div>
         {/* Footer links */}
-        <FooterLinkCard footerLink={footerLink} />
+        {/* <FooterLinkCard footerLink={footerLink} /> */}
         <FooterLinkCard
           footerLink={secondFooterLink}
-          customStyles="first:border-sky-400  first:text-sky-400"
+          customStyles="first:border-sky-400  first:text-sky-400 first:font-semibold"
         />
       </div>
 

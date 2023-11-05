@@ -1,6 +1,6 @@
 'use client'
 
-import { navigation } from '@/utils/data'
+import { navigation, navigationForMobile } from '@/utils/data'
 import { titleFont } from '@/utils/fonts'
 import { staggerContainer, textContainer, textVariant2 } from '@/utils/motion'
 import { Disclosure } from '@headlessui/react'
@@ -109,7 +109,7 @@ export default function NavBar() {
             transition={{ duration: 0.4 }}
           >
             <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map((item) => (
+              {navigationForMobile.map((item) => (
                 <Disclosure.Button
                   key={item.name}
                   as="a"

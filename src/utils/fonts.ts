@@ -1,18 +1,18 @@
-import { Nunito } from "next/font/google";
-import localFont from "next/font/local";
+import { Nunito, Quicksand } from 'next/font/google'
+import localFont from 'next/font/local'
 
 // export const titleFont = localFont({ src: "./balivia.ttf" });
 export const titleFont = localFont({
-  src: "./Revans-Medium.ttf",
-});
+  src: './Revans-Medium.ttf',
+})
 
 export const banglaFont = localFont({
-  src: "./BalooDa2-Regular.ttf",
-  variable: "--font-bangla",
-});
+  src: './BalooDa2-Regular.ttf',
+  variable: '--font-bangla',
+})
 // Remove if no longer needed
 
-export const regularFont = Nunito({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
+export const regularFont = Quicksand({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
