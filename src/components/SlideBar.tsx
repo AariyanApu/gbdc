@@ -44,7 +44,7 @@ export default function SlideBar() {
             alt={item.alt}
             width={1300}
             height={600}
-            className="h-[310px] w-full rounded-lg object-cover object-center"
+            className="h-[310px] w-full rounded-lg object-cover object-center sm:h-[520px]"
           />
         </SwiperSlide>
       ))}
