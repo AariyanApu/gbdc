@@ -25,7 +25,7 @@ export default function Footer() {
           <FooterCards />
         </div>
         {/* Footer links */}
-        {/* <FooterLinkCard footerLink={footerLink} /> */}
+        <FooterLinkCard footerLink={footerLink} hiddenItem="hidden sm:flex" />
         <FooterLinkCard
           footerLink={secondFooterLink}
           customStyles="first:border-sky-400  first:text-sky-400 first:font-semibold"
