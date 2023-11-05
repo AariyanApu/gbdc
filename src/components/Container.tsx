@@ -14,7 +14,7 @@ export default function Container({
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.15 }}
       className={customStyle}
     >
       {children}
