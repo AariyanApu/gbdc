@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import {
   A11y,
@@ -6,17 +6,17 @@ import {
   EffectFade,
   Navigation,
   Pagination,
-} from "swiper/modules";
+} from 'swiper/modules'
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Import Swiper styles from package
-import { banner } from "@/utils/data";
-import Image from "next/image";
-import "swiper/css";
-import "swiper/css/effect-fade";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import { banner } from '@/utils/data'
+import Image from 'next/image'
+import 'swiper/css'
+import 'swiper/css/effect-fade'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 export default function SlideBar() {
   return (
@@ -44,10 +44,10 @@ export default function SlideBar() {
             alt={item.alt}
             width={1300}
             height={600}
-            className="h-[520px] w-full rounded-lg object-cover object-center"
+            className="h-[310px] w-full rounded-lg object-cover object-center"
           />
         </SwiperSlide>
       ))}
     </Swiper>
-  );
+  )
 }
