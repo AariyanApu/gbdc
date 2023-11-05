@@ -47,7 +47,7 @@ export default function AboutUs() {
                     <Image
                       height={600}
                       width={600}
-                      src={'/assets/about/1.jpg'}
+                      src={'/assets/about/1.webp'}
                       alt="about photo 1"
                       className=" h-60 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
@@ -56,14 +56,14 @@ export default function AboutUs() {
                 </div>
                 {/* 2nd image */}
                 <AboutUsImageCard
-                  imgSrc="/assets/about/2.jpg"
+                  imgSrc="/assets/about/2.webp"
                   customStyle=" mr-auto  sm:mr-0 sm:pt-52 lg:pt-36"
-                  imgSrc2="/assets/about/3.jpg"
+                  imgSrc2="/assets/about/3.webp"
                 />
                 {/* 3rd Image */}
                 <AboutUsImageCard
-                  imgSrc="/assets/about/4.jpg"
-                  imgSrc2="/assets/about/5.jpg"
+                  imgSrc="/assets/about/4.webp"
+                  imgSrc2="/assets/about/5.webp"
                   customStyle="pt-32 sm:w-44 sm:pt-0"
                 />
               </div>
@@ -74,7 +74,7 @@ export default function AboutUs() {
         {/* All members Picture  */}
 
         <Image
-          src={'/assets/banner/banner-3.jpg'}
+          src={'/assets/banner/banner-3.webp'}
           alt="All members of GBDC"
           height={600}
           width={1200}

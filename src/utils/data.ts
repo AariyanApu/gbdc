@@ -14,42 +14,45 @@ export const navigationForMobile: Array<LinkProps> = [
   { name: 'Blog', href: '/blog', current: false },
 ]
 export const banner = [
-  { img: '/assets/banner/banner.jpg', alt: 'All members of GBDC' },
-  { img: '/assets/banner/banner-1.jpg', alt: 'GBDC giving people wheelchairs' },
-  { img: '/assets/banner/banner-2.jpg', alt: 'GBDC accepting awards' },
-  { img: '/assets/banner/banner-3.jpg', alt: 'GBDC celebrating success' },
-  { img: '/assets/banner/banner-4.jpg', alt: 'GBDC celebrating success' },
+  { img: '/assets/banner/banner.webp', alt: 'All members of GBDC' },
   {
-    img: '/assets/banner/banner-5.jpg',
+    img: '/assets/banner/banner-1.webp',
+    alt: 'GBDC giving people wheelchairs',
+  },
+  { img: '/assets/banner/banner-2.webp', alt: 'GBDC accepting awards' },
+  { img: '/assets/banner/banner-3.webp', alt: 'GBDC celebrating success' },
+  { img: '/assets/banner/banner-4.webp', alt: 'GBDC celebrating success' },
+  {
+    img: '/assets/banner/banner-5.webp',
     alt: 'GBDC celebrating 3 years of success',
   },
 ]
 
 export const achievementsData = [
   {
-    src: '/assets/achievements/1.jpg',
+    src: '/assets/achievements/1.webp',
   },
   {
-    src: '/assets/achievements/2.jpg',
+    src: '/assets/achievements/2.webp',
   },
 
   {
-    src: '/assets/achievements/3.jpg',
+    src: '/assets/achievements/3.webp',
   },
   {
-    src: '/assets/achievements/4.jpg',
+    src: '/assets/achievements/4.webp',
   },
   {
-    src: '/assets/achievements/5.jpg',
+    src: '/assets/achievements/5.webp',
   },
   {
-    src: '/assets/achievements/6.jpg',
+    src: '/assets/achievements/6.webp',
   },
   {
-    src: '/assets/achievements/7.jpg',
+    src: '/assets/achievements/7.webp',
   },
   {
-    src: '/assets/achievements/8.jpg',
+    src: '/assets/achievements/8.webp',
   },
 ]
 
