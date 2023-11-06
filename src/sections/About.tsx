@@ -13,30 +13,34 @@ export default function About() {
     <Container customStyle=" my-16 md:my-20 lg:my-20 xl:my-28 2xl:my-32 ">
       <TypingTitle title={'About Us'} />
 
-      <div
-        className={` ${banglaFont.className} mt-10 flex flex-col justify-evenly sm:flex-row `}
-      >
+      <div className={'  mt-10 flex flex-col justify-evenly sm:flex-row '}>
         <div className=" w-full px-5 sm:w-[300px] sm:px-0 lg:w-[500px]">
           <TypingText
             title={[
-              'গৌরনদী',
-              ' ব্লাড ',
-              ' ডোনার্স',
-              ' ক্লাব',
-              ' পরিবারে',
-              ' আপনাকে',
-              ' স্বাগতম।',
+              'GBDC',
+              ' family',
+              ' extends',
+              ' a',
+              ' warm',
+              ' welcome',
+              ' t',
+              'o',
+              ' y',
+              'o',
+              'u',
             ]}
-            textStyles="mb-3 text-[23px] sm:mt-7 text-center sm:text-left font-semibold"
+            textStyles="mb-3 text-[22px] sm:mt-7 text-center sm:text-left font-semibold"
           />
           <MotionDiv
             variants={fadeIn('up', 'tween', 1, 0.7)}
-            customStyle=" w-full text-justify text-lg sm:w-[290px] lg:w-[450px]  "
+            customStyle=" w-full text-justify text-lg tracking-normal sm:w-[290px] lg:w-[480px]  "
           >
-            গৌরনদী ব্লাড ডোনার্স ক্লাব GBDC একটি অরাজনৈতিক ও অলাভজনক সেচছাসেবী
-            সংগঠন। "নতুন প্রজন্মের নতুন পৃথিবী" এই স্লোগানকে আঁকড়ে ধরে এগিয়ে
-            চলা। তাই আপনিও আসুন আমাদের সাথে, আসুন মানবতার কাজে, ঐক্যবদ্ধ হয়ে
-            পাশে দাঁড়াই গরিব দুস্হ-অসহায় অতি দরিদ্র শ্রেণীর মানুষের পাশে।
+            The Gournadi Blood Donors Club (GBDC) is a non-political and
+            non-profit service organization. Embracing the slogan "A new world
+            for a new generation," it forges ahead with determination. So, come
+            join us, engage in humanitarian work, stand alongside and support
+            the impoverished, disadvantaged, and extremely underprivileged
+            members of society.
           </MotionDiv>
         </div>
         <MotionDiv
