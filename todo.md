@@ -1,0 +1,2 @@
+- Add favicon properly
+  -clean navar

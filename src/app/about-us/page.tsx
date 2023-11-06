@@ -2,6 +2,7 @@
 import AboutUsBgSvg from '@/components/AboutUsBgSvg'
 import AboutUsImageCard from '@/components/AboutUsImageCard'
 import { Admin } from '@/components/Admin'
+import Container from '@/components/Container'
 import { TypingTitle } from '@/components/CustomText'
 import { banglaFont, titleFont } from '@/utils/fonts'
 import { staggerContainer } from '@/utils/motion'
@@ -10,13 +11,7 @@ import Image from 'next/image'
 
 export default function AboutUs() {
   return (
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
-      className={` bg-white`}
-    >
+    <Container customStyle="bg-white">
       <main className="isolate mx-auto max-w-7xl">
         {/* Hero section */}
         <div className="relative isolate -z-10">
@@ -93,6 +88,6 @@ export default function AboutUs() {
       </main>
 
       {/* Footer */}
-    </motion.div>
+    </Container>
   )
 }
