@@ -170,8 +170,25 @@ export function Testimonial() {
           ]}
         />
         <TypingText
-          title={'এমন ভাবে হাজারো মানুষের সেবা করতে পেরে আমরা ধন্য।'}
-          textStyles={`sm:text-2xl text-lg font-bold tracking-tight text-slate-900 text-center lg:text-start ${banglaFont.className}} my-8`}
+          title={[
+            'We',
+            ' are',
+            ' grateful',
+            ' to',
+            ' be',
+            ' able',
+            ' to',
+            ' serve',
+            ' thousands',
+            ' of',
+            ' people',
+            ' in',
+            ' this',
+            ' way.',
+          ]}
+          textStyles={
+            'sm:text-2xl text-lg font-bold tracking-tight text-slate-900 text-center lg:text-start  my-8'
+          }
         />
         <ReviewGrid />
       </Container>
