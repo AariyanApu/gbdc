@@ -20,12 +20,12 @@ export default function ActivitiesCard({
         src={imgUrl}
         height={800}
         width={800}
-        alt={title + ' এর ছবি '}
+        alt={title}
         className={`  object-cover object-center drop-shadow-sm group-hover:scale-105  group-hover:transition-transform group-hover:duration-300 group-hover:ease-in ${imgSize} sm:absolute sm:inset-0 sm:h-full sm:w-full `}
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-80"
+        className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-90"
       />
       <div className="absolute inset-0 flex items-end p-6 ">
         <div>
@@ -35,7 +35,7 @@ export default function ActivitiesCard({
               {title}
             </a>
           </h3>
-          <p aria-hidden="true" className="mt-1 text-sm text-white">
+          <p aria-hidden="true" className="mt-1 text-base text-white">
             {description}
           </p>
         </div>

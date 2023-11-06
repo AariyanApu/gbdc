@@ -17,7 +17,7 @@ export default function Activities() {
         {/* Activities Headline */}
         <div className="flex items-center justify-center text-center sm:items-baseline sm:justify-between">
           <TypingText
-            title={['আমাদের ', 'কার্যক্রম ', 'সমূহ']}
+            title={['What', ' We', ' Do', ' For', ' Humanity']}
             textStyles="text-2xl font-bold tracking-tight"
           />
 
@@ -25,7 +25,7 @@ export default function Activities() {
 
           <Button
             variants={fadeIn('left', 'tween', 1.1, 0.6)}
-            text="সকল কার্যক্রম সমূহ "
+            text="Our All Activities "
             link="/activities"
             icon={<HiArrowTopRightOnSquare size={20} aria-hidden="true" />}
             customStyle="hidden sm:flex"
@@ -35,9 +35,9 @@ export default function Activities() {
         <div className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">
           <ActivitiesCard
             imgUrl={'/assets/activities/donateBlood.jpg'}
-            title={'স্বেছায় রক্ত দান'}
+            title={'Voluntary Blood Donation'}
             description={
-              'রোগীকে রক্ত দান করে থাকি এবং অন্যকে রক্তদানে আগ্রহী করে থাকি।'
+              'We engage in voluntary blood donation and encourage others to donate blood.'
             }
             variants={fadeIn('right', 'tween', 0.8, 0.7)}
             customStyle={'h-[400px] sm:h-[550px] sm:row-span-2'}
@@ -46,9 +46,9 @@ export default function Activities() {
 
           <ActivitiesCard
             imgUrl={'/assets/activities/bloodGroup.jpg'}
-            title={'বিনামূল্যে রক্তের গ্রুপ নির্ণয়'}
+            title={'Free Blood Group Determination'}
             description={
-              'আমরা বিভিন্ন সময়ে, বিভিন্ন স্থানে ক্যাম্পেইং করে বিনামূল্যে রক্তের গ্রুপ নির্ণয় করে থাকি।'
+              'We conduct free blood group determination camps at various and locations.'
             }
             variants={fadeIn('left', 'tween', 1.1, 0.6)}
             customStyle="h-full"
@@ -57,9 +57,9 @@ export default function Activities() {
 
           <ActivitiesCard
             imgUrl={'/assets/activities/wheelChair.jpg'}
-            title={'হুইলচেয়ার এবং শীতবস্ত্র বিতান'}
+            title={'Distribution of Wheelchairs and Warm Clothing'}
             description={
-              'গরিব অসহায় মানুষকে হুইলচেয়ার এবং শীতবস্ত্র বিতান করে থাকি।'
+              'We provide wheelchairs and distribute warm clothing to the needy individuals.'
             }
             variants={fadeIn('left', 'tween', 1.5, 0.7)}
             customStyle="h-full"
@@ -68,7 +68,7 @@ export default function Activities() {
         </div>
         <Button
           variants={fadeIn('left', 'tween', 1.1, 0.6)}
-          text="সকল কার্যক্রম সমূহ "
+          text="Our All Activities "
           link="/activities"
           icon={<HiArrowTopRightOnSquare size={20} aria-hidden="true" />}
           customStyle="flex sm:hidden w-40 mx-auto mt-5"
