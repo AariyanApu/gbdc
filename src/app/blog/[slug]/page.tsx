@@ -1,18 +1,18 @@
 import Image from 'next/image'
 
-export default function page() {
+export default function SingleBlog() {
   return (
-    <div className="mx-auto my-4 max-w-5xl">
+    <div className="mx-auto my-4 max-w-5xl px-4 lg:px-0">
       <Image
         src="/assets/about.webp"
         alt=""
         width={800}
         height={800}
-        className=" w-[700px] rounded object-cover object-center lg:h-96"
+        className=" w-full rounded object-cover object-center lg:h-96 lg:w-[700px]"
       />
       <div className="flex flex-col gap-y-4">
         <p className="mt-8">11/11/2023</p>
-        <h1 className="text-3xl">
+        <h1 className="text-2xl sm:text-3xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ipsum!
         </h1>
         <p>

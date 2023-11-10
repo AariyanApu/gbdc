@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function BlogPostCard() {
   return (
     <Link
-      href={'/'}
+      href={'/blog/slug'}
       className="mx-4 flex flex-col justify-around rounded-md bg-slate-200/70 transition-colors duration-300 ease-in-out hover:bg-slate-200 sm:flex-row xl:mx-0"
     >
       <Image
