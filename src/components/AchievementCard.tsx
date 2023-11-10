@@ -1,5 +1,5 @@
-import { AchievementCardProps } from "@/types/randomTypes";
-import Image from "next/image";
+import { AchievementCardProps } from '@/types/randomTypes'
+import Image from 'next/image'
 
 export default function AchievementCard({ src }: AchievementCardProps) {
   return (
@@ -10,9 +10,9 @@ export default function AchievementCard({ src }: AchievementCardProps) {
           alt="GBDC accepting award"
           width={500}
           height={500}
-          className="absolute inset-0 h-96 w-[270px] rounded-xl object-cover object-center opacity-70   transition-all duration-500  ease-in-out hover:scale-105 hover:opacity-100"
+          className="absolute inset-0 h-96 w-[270px] rounded-xl object-cover object-center transition-all   duration-500 ease-in-out  hover:scale-105 hover:opacity-100 lg:opacity-70"
         />
       </div>
     </div>
-  );
+  )
 }
