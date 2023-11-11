@@ -1,4 +1,3 @@
-// 'use client'
 import CloudImage from '@/components/CloudImage'
 import Container from '@/components/Container'
 import { TypingTitle } from '@/components/CustomText'
@@ -16,7 +15,7 @@ export default async function Achievements() {
         {Array.isArray(data) &&
           data?.map((item: any) => (
             <div
-              key={item._id}
+              key={item.id}
               className="flex w-96 flex-col items-center rounded-lg bg-slate-300 px-4 text-center lg:px-0 "
             >
               <CloudImage
