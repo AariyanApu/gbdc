@@ -13,7 +13,7 @@ export default async function Achievements() {
 
       <div className="mt-8 flex flex-row flex-wrap items-center justify-center gap-4">
         {Array.isArray(data) &&
-          data?.map((item: any) => (
+          data?.map((item: activitiesData) => (
             <div
               key={item.id}
               className="flex w-96 flex-col items-center rounded-lg bg-slate-300 px-4 text-center lg:px-0 "
