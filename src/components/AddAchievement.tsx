@@ -34,7 +34,7 @@ export default function AddAchievement() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="mx-auto flex w-96 flex-col items-center justify-center gap-4 rounded-md border border-sky-400 p-4"
+      className=" flex w-96 flex-col items-center justify-center gap-4 rounded-md border border-sky-400 p-4"
     >
       <h1 className="text-3xl ">Add Achivments</h1>
       <textarea
