@@ -1,3 +1,4 @@
+'use client'
 import AddAchievement from '@/components/AddAchievement'
 import AddActivity from '@/components/AddActivity'
 import AddSingleBlog from '@/components/AddSingleBlog'
