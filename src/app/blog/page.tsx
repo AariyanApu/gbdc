@@ -10,7 +10,7 @@ interface activitiesData {
   desc: string
 }
 export default async function Blog() {
-  const data: activitiesData[] = await getDataNoStoreLocal('posts')
+  const data: activitiesData[] = await getDataNoStore('posts')
 
   return (
     <div className="mx-auto my-6 flex max-w-5xl flex-col gap-y-8 sm:gap-y-4">
