@@ -1,6 +1,12 @@
+import { getDataNoStore, getDataNoStoreLocal } from '@/utils/getData'
 import Image from 'next/image'
 
-export default function SingleBlog() {
+export default function SingleBlog({ params }: any) {
+  const slug = params?.slug
+
+  // const data = getDataNoStoreLocal(`posts/${slug}`)
+
+  // console.log(data)
   return (
     <div className="mx-auto my-4 max-w-5xl px-4 lg:px-0">
       <Image

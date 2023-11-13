@@ -12,6 +12,7 @@ const ReactQuill = dynamic(() => import('react-quill'), { ssr: false })
 interface imgUrl {
   imgUrl: string
 }
+
 export default function AddBlog() {
   const [title, setTitle] = useState('')
   const [imgUrl, setImgUrl] = useState('')
@@ -27,12 +28,20 @@ export default function AddBlog() {
         title,
         imgUrl,
         desc,
+        slug: slugify(title),
       }),
     })
     setTitle('')
     setImgUrl('')
     router.push('/blog')
   }
+  const slugify = (str: string) =>
+    str
+      .toLowerCase()
+      .trim()
+      .replace(/[^\w\s-]/g, '')
+      .replace(/[\s_-]+/g, '-')
+      .replace(/^-+|-+$/g, '')
 
   const handleUpload = (result: any) => {
     setImgUrl(result.info.public_id)

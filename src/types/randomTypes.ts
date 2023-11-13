@@ -50,4 +50,5 @@ export interface activitiesData {
   imgUrl: string
   desc: string
   createdAt: string
+  slug: string
 }

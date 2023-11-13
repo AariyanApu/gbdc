@@ -14,7 +14,7 @@ export default async function Blog() {
         data?.map((item: activitiesData) => (
           <Link
             key={item.id}
-            href={'/blog/slug'}
+            href={`/blog/${item.slug}`}
             className="mx-4 flex flex-col justify-around rounded-md bg-slate-200/70 transition-colors duration-300 ease-in-out hover:bg-slate-200 sm:flex-row xl:mx-0"
           >
             <CloudImage
