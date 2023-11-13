@@ -1,16 +1,20 @@
 'use client'
+
 import { CldUploadButton } from 'next-cloudinary'
 import { useRouter } from 'next/navigation'
 import { ChangeEvent, useState } from 'react'
-import ReactQuill from 'react-quill'
+
 import 'react-quill/dist/quill.bubble.css'
+import dynamic from 'next/dynamic'
+
+const ReactQuill = dynamic(() => import('react-quill'), { ssr: false })
 
 interface imgUrl {
   imgUrl: string
 }
-export default function AddSingleBlog() {
+export default function AddBlog() {
   const [title, setTitle] = useState('')
-  const [imgUrl, setImgUrl] = useState<imgUrl>({ imgUrl: '' })
+  const [imgUrl, setImgUrl] = useState('')
   const [desc, setDesc] = useState('')
 
   const router = useRouter()
@@ -26,14 +30,13 @@ export default function AddSingleBlog() {
       }),
     })
     setTitle('')
-    setImgUrl({ imgUrl: '' })
+    setImgUrl('')
     router.push('/blog')
   }
 
   const handleUpload = (result: any) => {
     setImgUrl(result.info.public_id)
   }
-
   return (
     <form
       onSubmit={handleSubmit}
