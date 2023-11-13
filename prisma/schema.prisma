@@ -11,7 +11,7 @@ datasource db {
 model Post {
   id     String @id @default(auto()) @map("_id") @db.ObjectId
   title  String
-  slug     String    @unique
+  slug   String    @unique
   desc   String?
   imgUrl String
   createdAt DateTime? @default(now())

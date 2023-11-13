@@ -1,10 +1,10 @@
 import CloudImage from '@/components/CloudImage'
 import { activitiesData } from '@/types/randomTypes'
-import { getDataNoStore } from '@/utils/getData'
+import { getDataNoStore, getDataNoStoreLocal } from '@/utils/getData'
 import Link from 'next/link'
 
 export default async function Blog() {
-  const data: activitiesData[] = await getDataNoStore('posts')
+  const data: activitiesData[] = await getDataNoStoreLocal('posts')
 
   return (
     <div className="mx-auto my-6 flex max-w-5xl flex-col gap-y-8 sm:gap-y-4">

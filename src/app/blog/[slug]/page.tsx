@@ -1,43 +1,43 @@
+import CloudImage from '@/components/CloudImage'
 import { getDataNoStore, getDataNoStoreLocal } from '@/utils/getData'
 import Image from 'next/image'
 
-export default function SingleBlog({ params }: any) {
-  const slug = params?.slug
+export default async function SingleBlog({ params }: any) {
+  // const { slug } = params
 
-  // const data = getDataNoStoreLocal(`posts/${slug}`)
+  // const getData = async () => {
+  //   const res = await fetch(`http://localhost:3000/api/posts/${slug}`, {
+  //     cache: 'no-store',
+  //   })
+  //   if (!res.ok) {
+  //     throw new Error('Failed to fetch data')
+  //   }
+  //   return res.json()
+  // }
 
-  // console.log(data)
+  // const data = await getData()
+
   return (
-    <div className="mx-auto my-4 max-w-5xl px-4 lg:px-0">
-      <Image
-        src="/assets/about.webp"
-        alt=""
-        width={800}
-        height={800}
-        className=" w-full rounded object-cover object-center lg:h-96 lg:w-[700px]"
-      />
-      <div className="flex flex-col gap-y-4">
-        <p className="mt-8">11/11/2023</p>
-        <h1 className="text-2xl sm:text-3xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ipsum!
-        </h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
-          quos! Temporibus molestiae a expedita veritatis veniam magni itaque
-          ipsa repudiandae. Illum aliquam nobis ad ut.
-          <br />
-          quae debitis incidunt sunt reiciendis voluptatum odit modi possimus
-          corporis tempore non eius harum! Quaerat hic labore blanditiis ipsum
-          minima, officiis animi, obcaecati eaque eos earum unde ea repellat
-          distinctio dolorem ab excepturi sapiente eum nisi quasi quos iusto
-          inventore ut quam rem. Reprehenderit.
-          <br />
-          nisi quisquam. Exercitationem consectetur dolorum natus minima vel?
-          Consequatur, explicabo! Quia ex voluptatem, repellat necessitatibus
-          sequi molestiae voluptates impedit dicta dolores, dolor excepturi?
-          Consectetur quaerat vitae placeat quos, odit omnis voluptas!
-        </p>
-      </div>
-    </div>
+    // <div className="mx-auto my-4 max-w-5xl px-4 lg:px-0">
+    //   <CloudImage
+    //     src={data.imgUrl}
+    //     alt={data.title}
+    //     height={800}
+    //     width={800}
+    //     customStyles="w-full rounded object-cover object-center lg:h-96 lg:w-[700px]"
+    //   />
+
+    //   <div className="flex flex-col gap-y-4">
+    //     <p className="mt-8">{data.createdAt.substring(0, 10)}</p>
+    //     <h1 className="text-2xl sm:text-3xl">{data.title} </h1>
+    //     <div
+    //       className="md:text-sm lg:text-base"
+    //       dangerouslySetInnerHTML={{
+    //         __html: data.desc,
+    //       }}
+    //     />
+    //   </div>
+    // </div>
+    <div>hi</div>
   )
 }

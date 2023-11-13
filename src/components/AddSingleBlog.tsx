@@ -3,7 +3,6 @@
 import { CldUploadButton } from 'next-cloudinary'
 import { useRouter } from 'next/navigation'
 import { ChangeEvent, useState } from 'react'
-
 import 'react-quill/dist/quill.bubble.css'
 import dynamic from 'next/dynamic'
 
@@ -18,6 +17,13 @@ export default function AddBlog() {
   const [imgUrl, setImgUrl] = useState('')
   const [desc, setDesc] = useState('')
 
+  const slugify = (str: string) =>
+    str
+      .toLowerCase()
+      .trim()
+      .replace(/[^\w\s-]/g, '')
+      .replace(/[\s_-]+/g, '-')
+      .replace(/^-+|-+$/g, '')
   const router = useRouter()
   const handleSubmit = async (e: ChangeEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -26,22 +32,15 @@ export default function AddBlog() {
       method: 'POST',
       body: JSON.stringify({
         title,
+        slug: slugify(title),
         imgUrl,
         desc,
-        slug: slugify(title),
       }),
     })
     setTitle('')
     setImgUrl('')
     router.push('/blog')
   }
-  const slugify = (str: string) =>
-    str
-      .toLowerCase()
-      .trim()
-      .replace(/[^\w\s-]/g, '')
-      .replace(/[\s_-]+/g, '-')
-      .replace(/^-+|-+$/g, '')
 
   const handleUpload = (result: any) => {
     setImgUrl(result.info.public_id)
