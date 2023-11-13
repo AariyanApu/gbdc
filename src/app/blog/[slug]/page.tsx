@@ -1,4 +1,5 @@
 import CloudImage from '@/components/CloudImage'
+import { banglaFont } from '@/utils/fonts'
 import { getDataNoStore, getDataNoStoreLocal } from '@/utils/getData'
 import Image from 'next/image'
 
@@ -18,7 +19,9 @@ export default async function SingleBlog({ params }: any) {
   const data = await getData()
 
   return (
-    <div className="mx-auto my-4 max-w-5xl px-4 lg:px-0">
+    <div
+      className={`mx-auto my-4 max-w-5xl px-4 lg:px-0 ${banglaFont.className}`}
+    >
       <CloudImage
         src={data.imgUrl}
         alt={data.title}
