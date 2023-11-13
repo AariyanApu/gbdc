@@ -10,7 +10,7 @@ interface imgUrl {
 
 export default function AddActivity() {
   const [title, setTitle] = useState('')
-  const [imgUrl, setImgUrl] = useState<imgUrl>({ imgUrl: '' })
+  const [imgUrl, setImgUrl] = useState(' ')
 
   const router = useRouter()
   const handleSubmit = async (e: ChangeEvent<HTMLFormElement>) => {
@@ -24,7 +24,7 @@ export default function AddActivity() {
       }),
     })
     setTitle('')
-    setImgUrl({ imgUrl: '' })
+    setImgUrl('')
     router.push('/activities')
   }
 

@@ -1,15 +1,15 @@
 'use client'
 
-import { ChangeEvent, useState } from 'react'
-import { CldImage, CldUploadButton } from 'next-cloudinary'
+import { CldUploadButton } from 'next-cloudinary'
 import { useRouter } from 'next/navigation'
+import { ChangeEvent, useState } from 'react'
 
 interface imgUrl {
   imgUrl: string
 }
 export default function AddAchievement() {
   const [title, setTitle] = useState('')
-  const [imgUrl, setImgUrl] = useState<imgUrl>({ imgUrl: '' })
+  const [imgUrl, setImgUrl] = useState(' ')
 
   const router = useRouter()
   const handleSubmit = async (e: ChangeEvent<HTMLFormElement>) => {
@@ -23,7 +23,7 @@ export default function AddAchievement() {
       }),
     })
     setTitle('')
-    setImgUrl({ imgUrl: '' })
+    setImgUrl('')
     router.push('/achievements')
   }
 
