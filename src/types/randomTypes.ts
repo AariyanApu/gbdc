@@ -43,3 +43,11 @@ export interface activitiesData {
   title: string
   imgUrl: string
 }
+
+export interface activitiesData {
+  id: number
+  title: string
+  imgUrl: string
+  desc: string
+  createdAt: string
+}

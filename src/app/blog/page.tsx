@@ -1,15 +1,8 @@
-import BlogPostCard from '@/components/BlogPostCard'
 import CloudImage from '@/components/CloudImage'
-import { getDataNoStore, getDataNoStoreLocal } from '@/utils/getData'
+import { activitiesData } from '@/types/randomTypes'
+import { getDataNoStore } from '@/utils/getData'
 import Link from 'next/link'
 
-interface activitiesData {
-  id: number
-  title: string
-  imgUrl: string
-  desc: string
-  createdAt: string
-}
 export default async function Blog() {
   const data: activitiesData[] = await getDataNoStore('posts')
 
@@ -30,9 +23,8 @@ export default async function Blog() {
               height={500}
               width={500}
               customStyles="h-72 w-[450px] rounded-t-md object-cover opacity-95 transition-opacity duration-300 ease-in-out hover:opacity-100 sm:rounded-s-md sm:rounded-tr-none md:h-80"
-              // className="h-72 w-[450px] rounded-t-md object-cover opacity-95 transition-opacity duration-300 ease-in-out hover:opacity-100 sm:rounded-s-md sm:rounded-tr-none md:h-80"
             />
-            <div className=" flex flex-col gap-y-2 pb-1 pl-1 sm:pl-8">
+            <div className=" mt-8 flex flex-col gap-y-2 pb-1 pl-1 sm:pl-8">
               <p className="mt-4 text-sm">{item.createdAt.substring(0, 10)}</p>
               <h1 className="text-3xl font-semibold md:text-2xl">
                 {item.title}
