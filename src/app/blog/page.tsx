@@ -1,15 +1,16 @@
 import CloudImage from '@/components/CloudImage'
 import { activitiesData } from '@/types/randomTypes'
-import { getDataNoStore, getDataNoStoreLocal } from '@/utils/getData'
+import { getDataNoStore } from '@/utils/getData'
 import Link from 'next/link'
 
 export default async function Blog() {
-  // const data: activitiesData[] = await getDataNoStoreLocal('posts')
+  const data: activitiesData[] = await getDataNoStore('posts')
 
   return (
     <div className="mx-auto my-6 flex max-w-5xl flex-col gap-y-8 sm:gap-y-4">
       {/* Blog Post Card */}
-      {/* {Array.isArray(data) &&
+
+      {Array.isArray(data) &&
         data?.map((item: activitiesData) => (
           <Link
             key={item.id}
@@ -36,8 +37,7 @@ export default async function Blog() {
               />
             </div>
           </Link>
-        ))} */}
-      to be added
+        ))}
     </div>
   )
 }
