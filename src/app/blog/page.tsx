@@ -8,6 +8,7 @@ interface activitiesData {
   title: string
   imgUrl: string
   desc: string
+  createdAt: string
 }
 export default async function Blog() {
   const data: activitiesData[] = await getDataNoStore('posts')
@@ -32,11 +33,10 @@ export default async function Blog() {
               // className="h-72 w-[450px] rounded-t-md object-cover opacity-95 transition-opacity duration-300 ease-in-out hover:opacity-100 sm:rounded-s-md sm:rounded-tr-none md:h-80"
             />
             <div className=" flex flex-col gap-y-2 pb-1 pl-1 sm:pl-8">
-              <p className="mt-4 text-sm">11/11/2023</p>
+              <p className="mt-4 text-sm">{item.createdAt.substring(0, 10)}</p>
               <h1 className="text-3xl font-semibold md:text-2xl">
                 {item.title}
               </h1>
-
               <div
                 className="md:text-sm lg:text-base"
                 dangerouslySetInnerHTML={{
