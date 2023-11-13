@@ -23,6 +23,9 @@ export default async function Achievements() {
                 height={800}
                 src={item.imgUrl}
                 alt={item.title}
+                customStyles={
+                  'mt-4  h-96 w-96 rounded-tl-lg rounded-tr-lg object-cover object-center shadow-md sm:mt-2 sm:h-[390px] sm:w-[370px] '
+                }
               />
 
               <div className=" py-6  text-base font-medium tracking-tight text-slate-900">

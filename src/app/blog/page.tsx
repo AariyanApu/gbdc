@@ -28,6 +28,7 @@ export default async function Blog() {
               alt={item.title}
               height={500}
               width={500}
+              customStyles="h-72 w-[450px] rounded-t-md object-cover opacity-95 transition-opacity duration-300 ease-in-out hover:opacity-100 sm:rounded-s-md sm:rounded-tr-none md:h-80"
               // className="h-72 w-[450px] rounded-t-md object-cover opacity-95 transition-opacity duration-300 ease-in-out hover:opacity-100 sm:rounded-s-md sm:rounded-tr-none md:h-80"
             />
             <div className=" flex flex-col gap-y-2 pb-1 pl-1 sm:pl-8">
@@ -35,7 +36,13 @@ export default async function Blog() {
               <h1 className="text-3xl font-semibold md:text-2xl">
                 {item.title}
               </h1>
-              <p className=" md:text-sm lg:text-base">{item.desc}</p>
+
+              <div
+                className="md:text-sm lg:text-base"
+                dangerouslySetInnerHTML={{
+                  __html: item.desc.substring(0, 200),
+                }}
+              />
             </div>
           </Link>
         ))}

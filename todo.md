@@ -1,2 +1,4 @@
 - Add favicon properly
   -clean navar
+  -Add latest post in home page
+- Add Emergency notic section
