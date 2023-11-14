@@ -14,10 +14,10 @@ export default function Dasboard() {
         onClick={() => setDeleteButton((prevValue) => !prevValue)}
         className="ml-auto w-36 rounded-md border border-sky-400 px-4 py-2 font-semibold text-sky-400 hover:text-sky-500 hover:shadow-md"
       >
-        {!deleteButton ? 'Add Post' : 'Delete Post'}
+        {deleteButton ? 'Add Post' : 'Delete Post'}
       </button>
-      {deleteButton ? <AddSingleBlog /> : <DeletePost />}
-      {deleteButton && (
+      {!deleteButton ? <AddSingleBlog /> : <DeletePost />}
+      {!deleteButton && (
         <div className="flex flex-row items-center justify-center gap-x-6">
           <AddAchievement />
           <AddActivity />
