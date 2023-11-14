@@ -12,8 +12,9 @@ model Post {
   id     String @id @default(auto()) @map("_id") @db.ObjectId
   title  String
   slug   String    @unique
-  desc   String?
+  desc   String
   imgUrl String
+  views Int @default(0)
   createdAt DateTime? @default(now())
 
   

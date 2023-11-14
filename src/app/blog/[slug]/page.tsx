@@ -1,22 +1,11 @@
 import CloudImage from '@/components/CloudImage'
 import { banglaFont } from '@/utils/fonts'
-import { getDataNoStore, getDataNoStoreLocal } from '@/utils/getData'
+import { getData, getDataNoStore, getDataNoStoreLocal } from '@/utils/getData'
 import Image from 'next/image'
 
 export default async function SingleBlog({ params }: any) {
   const { slug } = params
-
-  const getData = async () => {
-    const res = await fetch(`https://gbdc.vercel.app/api/posts/${slug}`, {
-      cache: 'no-store',
-    })
-    if (!res.ok) {
-      throw new Error('Failed to fetch data')
-    }
-    return res.json()
-  }
-
-  const data = await getData()
+  const data = await getDataNoStore(`posts/${slug}`)
 
   return (
     <div

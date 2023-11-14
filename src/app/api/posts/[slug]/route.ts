@@ -1,6 +1,12 @@
 import prisma from '@/utils/connect'
 import { NextResponse } from 'next/server'
 
+interface ExtendedPostUpdateInput {
+  views: {
+    increment: number
+  }
+}
+
 // Fetch single post
 export const GET = async (
   req: Request,
@@ -8,8 +14,22 @@ export const GET = async (
 ) => {
   const { slug } = params
   try {
-    const post = await prisma.post.findUnique({
+    // const post = await prisma.post.update({
+    //   where: { slug },
+
+    // data: {
+    //   views: {
+    //     increment: 1,
+    //   },
+    // },
+    // })
+    const post = await prisma.post.update({
       where: { slug },
+      data: {
+        views: {
+          increment: 1,
+        },
+      } as ExtendedPostUpdateInput,
     })
 
     return new NextResponse(JSON.stringify(post))
