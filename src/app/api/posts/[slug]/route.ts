@@ -14,15 +14,6 @@ export const GET = async (
 ) => {
   const { slug } = params
   try {
-    // const post = await prisma.post.update({
-    //   where: { slug },
-
-    // data: {
-    //   views: {
-    //     increment: 1,
-    //   },
-    // },
-    // })
     const post = await prisma.post.update({
       where: { slug },
       data: {
@@ -32,6 +23,7 @@ export const GET = async (
       } as ExtendedPostUpdateInput,
     })
 
+    console.log('post', post)
     return new NextResponse(JSON.stringify(post))
   } catch (error) {
     return new NextResponse('Database Error', { status: 500 })
