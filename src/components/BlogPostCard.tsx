@@ -15,7 +15,7 @@ export default function BlogPostCard({ item }: { item: activitiesData }) {
         alt={item.title}
         height={500}
         width={500}
-        customStyles="h-72 w-[450px] rounded-t-md object-cover opacity-95 transition-opacity duration-300 ease-in-out hover:opacity-100 sm:rounded-s-md sm:rounded-tr-none md:h-80"
+        customStyles="h-72 w-[550px] rounded-t-md object-cover opacity-95 transition-opacity duration-300 ease-in-out hover:opacity-100 sm:rounded-s-md sm:rounded-tr-none md:h-80"
       />
       <div className=" mt-8 flex flex-col gap-y-2 pb-1 pl-1 sm:pl-8">
         <p className="mt-4 text-sm">{item.createdAt.substring(0, 10)}</p>
