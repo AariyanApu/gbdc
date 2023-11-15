@@ -1,31 +1,31 @@
+import { activitiesData } from '@/types/randomTypes'
 import Image from 'next/image'
 import Link from 'next/link'
+import CloudImage from './CloudImage'
 
-export default function BlogPostCard() {
+export default function BlogPostCard({ item }: { item: activitiesData }) {
   return (
     <Link
-      href={'/blog/slug'}
+      key={item.id}
+      href={`/blog/${item.slug}`}
       className="mx-4 flex flex-col justify-around rounded-md bg-slate-200/70 transition-colors duration-300 ease-in-out hover:bg-slate-200 sm:flex-row xl:mx-0"
     >
-      <Image
-        src={'/assets/about.webp'}
-        alt=""
+      <CloudImage
+        src={item.imgUrl}
+        alt={item.title}
         height={500}
         width={500}
-        className="h-72 w-[450px] rounded-t-md object-cover opacity-95 transition-opacity duration-300 ease-in-out hover:opacity-100 sm:rounded-s-md sm:rounded-tr-none md:h-80"
+        customStyles="h-72 w-[450px] rounded-t-md object-cover opacity-95 transition-opacity duration-300 ease-in-out hover:opacity-100 sm:rounded-s-md sm:rounded-tr-none md:h-80"
       />
-      <div className=" flex flex-col gap-y-2 pb-1 pl-1 sm:pl-8">
-        <p className="mt-4 text-sm">11/11/2023</p>
-        <h1 className="text-3xl font-semibold md:text-2xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
-          deserunt!
-        </h1>
-        <p className=" md:text-sm lg:text-base">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-          asperiores, nam esse quo dolor illum voluptatum possimus quas
-          inventore veniam, ipsa eveniet voluptatem! Excepturi dicta itaque
-          similique assumenda, corrupti obcaecati?
-        </p>
+      <div className=" mt-8 flex flex-col gap-y-2 pb-1 pl-1 sm:pl-8">
+        <p className="mt-4 text-sm">{item.createdAt.substring(0, 10)}</p>
+        <h1 className="text-3xl font-semibold md:text-2xl">{item.title}</h1>
+        <div
+          className="md:text-sm lg:text-base"
+          dangerouslySetInnerHTML={{
+            __html: item.desc.substring(0, 200),
+          }}
+        />
       </div>
     </Link>
   )
