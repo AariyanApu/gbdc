@@ -51,4 +51,5 @@ export interface activitiesData {
   desc: string
   createdAt: string
   slug: string
+  views: number
 }

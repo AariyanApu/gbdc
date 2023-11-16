@@ -13,9 +13,11 @@ export default async function Blog() {
       {/* Blog Post Card */}
 
       {Array.isArray(data) &&
-        data?.map((item: activitiesData) => (
-          <BlogPostCard item={item} key={item.id} />
-        ))}
+        data
+          ?.reverse()
+          .map((item: activitiesData) => (
+            <BlogPostCard item={item} key={item.id} />
+          ))}
     </div>
   )
 }
