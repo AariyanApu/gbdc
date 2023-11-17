@@ -4,6 +4,7 @@ import { Nunito } from 'next/font/google'
 import './globals.css'
 import Footer from '@/sections/Footer'
 import { regularFont } from '@/utils/fonts'
+import AuthProvider from '@/utils/AuthProvider'
 // const nunito = Nunito({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -20,9 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={regularFont.className}>
-        <NavBar />
-        {children}
-        <Footer />
+        <AuthProvider>
+          <NavBar />
+          {children}
+          <Footer />
+        </AuthProvider>
       </body>
     </html>
   )

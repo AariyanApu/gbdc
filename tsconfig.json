@@ -28,7 +28,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/CloudImage.jsx"
+    "src/components/CloudImage.tsx"
   ],
   "exclude": ["node_modules"]
 }
