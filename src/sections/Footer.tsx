@@ -1,7 +1,6 @@
 import FooterCards from '@/components/FooterCards'
 import { FooterLinkCard } from '@/components/FooterLinkCard'
 import { footerLink, secondFooterLink } from '@/utils/data'
-import { banglaFont } from '@/utils/fonts'
 import Image from 'next/image'
 
 export default function Footer() {
