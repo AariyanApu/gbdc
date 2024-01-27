@@ -6,7 +6,7 @@ It is a static website built using [Next.js](https://nextjs.org/).
 
 ## Technologies used:
 
-[![My Skills](https://skillicons.dev/icons?i=nextjs,tailwind,mongodb,express,react,nodejs,js)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=nextjs,tailwind,mongodb,prisma,react,nodejs,ts,)](https://skillicons.dev)
 
 ---
 
@@ -48,17 +48,6 @@ npm run dev
 - Create a pull request
 
 ---
-
-## Todo
-
-- ~~Add Navbar~~
-- ~~Change Navbar Color~~
-- ~~Add Animation to Navbar~~
-- ~~Add counterUp~~
-- ~~Slice the counterUp~~
-- Make CounterUp Responsive
-- Make about picture responsive
-- Add animation to navbar
 
 ## License
 
