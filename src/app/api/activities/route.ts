@@ -6,7 +6,9 @@ export const GET = async () => {
     const activities = await prisma.activity.findMany()
     return new NextResponse(JSON.stringify(activities), { status: 200 })
   } catch (error) {
-    return new NextResponse('Database Error', { status: 500 })
+    return new NextResponse('Database Error Cant find soultions', {
+      status: 500,
+    })
   }
 }
 export const POST = async (req: Request) => {

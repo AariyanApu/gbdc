@@ -6,14 +6,28 @@ import { getDataNoStore } from '@/utils/getData'
 
 export default async function Activities() {
   const data: activitiesData[] = await getDataNoStore('activities')
+  interface Prompt {
+    title: string
+  }
+
+  const filterPrompts = (
+    searchtext: string,
+    data: Prompt[] | undefined,
+  ): Prompt[] | undefined => {
+    const regex = new RegExp(searchtext, 'i') // 'i' flag for case-insensitive search
+    return data?.filter((item) => regex.test(item.title))
+  }
+
+  const filterData = filterPrompts('free', data)
+  console.log(filterData)
 
   return (
     <Container customStyle=" my-8 sm:my-16 max-w-7xl mx-auto">
       <TypingTitle title={'Our Activities'} />
 
       <div className="mt-8 flex flex-row flex-wrap items-center justify-center gap-4">
-        {Array.isArray(data) &&
-          data?.map((item: any) => (
+        {Array.isArray(filterData) &&
+          filterData?.map((item: any) => (
             <div
               key={item.id}
               className="flex w-96 flex-col items-center rounded-lg bg-slate-300 px-4 text-center lg:px-0 "

@@ -9,8 +9,6 @@ import { useSession, signIn, signOut } from 'next-auth/react'
 
 export default function Dasboard() {
   const { data: session }: any = useSession()
-
-  console.log(session?.user?.email)
   const [deleteButton, setDeleteButton] = useState(false)
   return (
     <div className="mx-auto flex max-w-5xl items-center justify-center">
