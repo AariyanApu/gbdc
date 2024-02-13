@@ -35,7 +35,7 @@ model another {
  title String
  imgUrl String 
 }
-model ActivityBanner {
+model Activitybanner {
   id    String @id @default(auto()) @map("_id") @db.ObjectId
   title String
   imgUrl String
