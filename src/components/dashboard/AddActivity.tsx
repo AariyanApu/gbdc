@@ -40,7 +40,7 @@ export default function AddActivity() {
       <h1 className="text-3xl ">Add Activity</h1>
       <textarea
         placeholder="Enter Image Title...."
-        className="mt-4 py-2 text-black"
+        className="mt-4 rounded-md bg-gray-200 px-4 py-2 text-black"
         onChange={(e) => setTitle(e.target.value)}
       />
 
