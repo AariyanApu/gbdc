@@ -1,8 +1,8 @@
 'use client'
 
-import AddAchievement from '@/components/AddAchievement'
-import AddActivity from '@/components/AddActivity'
-import AddSingleBlog from '@/components/AddSingleBlog'
+import AddAchievement from '@/components/dashboard/AddAchievement'
+import AddActivity from '@/components/dashboard/AddActivity'
+import AddSingleBlog from '@/components/dashboard/AddSingleBlog'
 import DeletePost from '@/components/DeletePost'
 import { useState } from 'react'
 import { useSession, signIn, signOut } from 'next-auth/react'
