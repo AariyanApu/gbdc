@@ -3,7 +3,6 @@
 import AddAchievement from '@/components/dashboard/AddAchievement'
 import AddActivity from '@/components/dashboard/AddActivity'
 import AddSingleBlog from '@/components/dashboard/AddSingleBlog'
-import AddActivityBanner from '@/components/dashboard/AddActivityBanner'
 import DeletePost from '@/components/DeletePost'
 import { useState } from 'react'
 import { useSession, signIn, signOut } from 'next-auth/react'
@@ -25,7 +24,6 @@ export default function Dasboard() {
           {!deleteButton && (
             <div className="flex flex-row flex-wrap items-center justify-center gap-6">
               <AddActivity />
-              <AddActivityBanner />
               <AddAchievement />
             </div>
           )}
