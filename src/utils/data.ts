@@ -14,7 +14,6 @@ export const navigationForMobile: Array<LinkProps> = [
   { name: 'Blog', href: '/blog', current: false },
 ]
 export const banner = [
-  { img: '/assets/banner/banner.webp', alt: 'All members of GBDC' },
   {
     img: '/assets/banner/banner-1.webp',
     alt: 'GBDC giving people wheelchairs',
@@ -26,6 +25,15 @@ export const banner = [
     img: '/assets/banner/banner-5.webp',
     alt: 'GBDC celebrating 3 years of success',
   },
+  {
+    img: '/assets/banner/banner-7.webp',
+    alt: 'GBDC celebrating 3 years of success',
+  },
+  {
+    img: '/assets/banner/banner-8.webp',
+    alt: 'GBDC celebrating 3 years of success',
+  },
+  { img: '/assets/banner/banner.webp', alt: 'All members of GBDC' },
 ]
 
 export const achievementsData = [
