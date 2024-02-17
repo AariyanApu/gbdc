@@ -1,4 +1,4 @@
 - Add favicon properly
-  -clean navar
-  -Add latest post in home page
-- Add Emergency notic section
+- Add Emergency notice section
+- Add Navigation to Activity
+- Add Navigation to Achievement
