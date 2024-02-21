@@ -154,21 +154,7 @@ export function Testimonial() {
   return (
     <section id="reviews" aria-labelledby="reviews-title">
       <Container customStyle="rounded-sm bg-slate-100 px-4 py-16 md:py-20 lg:px-8">
-        <TypingTitle
-          title={[
-            'What ',
-            ' ',
-            'P',
-            'e',
-            'o',
-            'p',
-            'le ',
-            ' ',
-            ' Are',
-            ' ',
-            ' Saying',
-          ]}
-        />
+        <TypingTitle title={'Voices of Appreciation'} />
         <TypingText
           title={[
             'We',

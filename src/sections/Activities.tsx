@@ -9,7 +9,7 @@ import { HiArrowTopRightOnSquare } from 'react-icons/hi2'
 export default function Activities() {
   return (
     <Container customStyle="overflow-x-hidden rounded  bg-slate-100 pt-8  lg:pt-20 ">
-      <TypingTitle title={'Our Activities'} />
+      <TypingTitle title={'Life-Sustaining Projects'} />
 
       <div className={'  w-full px-4 py-4 sm:px-6 sm:py-8 lg:px-8'}>
         {/* Activities Headline */}

@@ -11,7 +11,7 @@ export default async function BlogSection() {
 
   return (
     <Container>
-      <TypingTitle title={'Our Recent Blog'} />
+      <TypingTitle title={'Latest Stories'} />
       <div className="mb-5 mt-10">
         {Array.isArray(latestItem) &&
           latestItem?.map((item: activitiesData) => (

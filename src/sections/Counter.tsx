@@ -5,7 +5,7 @@ import { TypingTitle } from '@/components/CustomText'
 export default function Counter() {
   return (
     <Container customStyle=" my-16 md:my-20 lg:my-20 xl:my-28 2xl:my-32 ">
-      <TypingTitle title={'We have arranged'} />
+      <TypingTitle title={'Our Organized Efforts'} />
       <div className="flex flex-col items-center justify-evenly px-6 sm:px-0 md:flex-row">
         <CounterCard
           end={800}

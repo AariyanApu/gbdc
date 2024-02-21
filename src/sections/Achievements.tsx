@@ -6,7 +6,7 @@ import { achievementsData } from '@/utils/data'
 export default function Achievements() {
   return (
     <Container customStyle=" rounded bg-slate-100 py-16 md:my-20 lg:my-20 xl:my-28 2xl:my-32">
-      <TypingTitle title={'Our Achievements'} />
+      <TypingTitle title={'Notable Achievements'} />
       <div className=" w-full px-4 sm:px-6 lg:px-8">
         <TypingText
           title={['What', ' We', ' Got', ' For', ' Our', ' Performance']}

@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+
 //  spell-checker: disable
 
 import Container from '@/components/Container'
@@ -11,7 +12,7 @@ import Image from 'next/image'
 export default function About() {
   return (
     <Container customStyle=" my-16 md:my-20 lg:my-20 xl:my-28 2xl:my-32 ">
-      <TypingTitle title={'About Us'} />
+      <TypingTitle title={'Our Lifesaving Mission'} />
 
       <div className={'  mt-10 flex flex-col justify-evenly sm:flex-row '}>
         <div className=" w-full px-5 sm:w-[300px] sm:px-0 lg:w-[500px]">
