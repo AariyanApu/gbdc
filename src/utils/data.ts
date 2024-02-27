@@ -99,13 +99,13 @@ export const footerLink: Array<LinkProps> = [
   { name: 'Contact Us', href: '/about-us' },
   { name: 'All About Us', href: '/about-us' },
   { name: 'Our Admin Panel', href: '/about-us' },
-  { name: 'Our All Activities', href: '/activities' },
+  // { name: 'Our All Activities', href: '/activities' },
 ]
 export const secondFooterLink: Array<LinkProps> = [
   { name: 'Volunteer to GBDC', href: '/' },
   { name: 'Donate to GBDC', href: '/about-us' },
   { name: 'Latest Blog Post', href: '/blog' },
-  { name: 'Feature News', href: '/blog' },
+  // { name: 'Feature News', href: '/blog' },
 ]
 export const adminPanel = [
   {
