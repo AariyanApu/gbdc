@@ -8,7 +8,7 @@ export default function FooterCards() {
     <>
       <div className="link_styles    cursor-pointer ">
         {/* <HiOutlineDevicePhoneMobile className=" h-6 w-6" /> */}
-        +880 1234 567 890
+        +8801918184091
       </div>
       <div className="link_styles cursor-pointer ">
         {/* <IoMailOutline className=" h-6 w-6" /> */}

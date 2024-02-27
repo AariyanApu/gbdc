@@ -2,3 +2,6 @@
 - Add Emergency notice section
 - Add Navigation to Activity
 - Add Navigation to Achievement
+- Add Contact Page
+- Add Donate To GBDC Page
+- Add Add New Volunteer
