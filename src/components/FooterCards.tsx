@@ -12,7 +12,7 @@ export default function FooterCards() {
       </div>
       <div className="link_styles cursor-pointer ">
         {/* <IoMailOutline className=" h-6 w-6" /> */}
-        mail@gbdc.com
+        gbdc2018@gmail.com
       </div>
       <div className="link_styles  cursor-pointer ">
         {/* <PiFacebookLogo className=" h-6 w-6" /> */}
