@@ -102,7 +102,10 @@ export const footerLink: Array<LinkProps> = [
   // { name: 'Our All Activities', href: '/activities' },
 ]
 export const secondFooterLink: Array<LinkProps> = [
-  { name: 'Volunteer to GBDC', href: '/' },
+  {
+    name: 'Volunteer to GBDC',
+    href: 'https://docs.google.com/forms/d/e/1FAIpQLSdKqIpsTlYF7F5liN8-ftSN2VnSGDL-vPx18dmbWslMUhk3cg/viewform?usp=pp_url',
+  },
   { name: 'Donate to GBDC', href: '/about-us' },
   { name: 'Terms & Condition', href: '/blog' },
   // { name: 'Feature News', href: '/blog' },
