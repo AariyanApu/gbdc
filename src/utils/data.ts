@@ -104,7 +104,7 @@ export const footerLink: Array<LinkProps> = [
 export const secondFooterLink: Array<LinkProps> = [
   { name: 'Volunteer to GBDC', href: '/' },
   { name: 'Donate to GBDC', href: '/about-us' },
-  { name: 'Latest Blog Post', href: '/blog' },
+  { name: 'Terms & Condition', href: '/blog' },
   // { name: 'Feature News', href: '/blog' },
 ]
 export const adminPanel = [
