@@ -10,7 +10,7 @@ export default function Terms() {
         {/* Title */}
         <TypingTitle title={['গ', 'ঠ', 'ন', 'ত', 'ন্ত্র']} />
         {/* bullted Text */}
-        <div className="mx-auto max-w-4xl space-y-2 text-lg">
+        <div className="w-full space-y-2 px-4 text-lg sm:mx-auto sm:max-w-4xl sm:px-6 lg:px-0">
           <p className=" mt-6 text-2xl">অনুচ্ছেদ ১ : </p>
           <p className="pl-5">
             সংগঠনের নামঃ গৌরনদী ব্লাড ডোনার্স ক্লাব (জি.বি.ডি.সি)
@@ -34,6 +34,26 @@ export default function Terms() {
             <ul className="list-inside list-decimal space-y-2 pl-5">
               {termsData?.map((item, idx) => <li key={idx}>{item.text}</li>)}
             </ul>
+          </div>
+          <div>
+            <p className="mb-2 mt-6 text-2xl">অনুচ্ছেদ ৪ : তহবিলের উৎস/আয়: </p>
+            <p className="pl-5">
+              1. এই সংগঠন এর সদস্যদের যে কোন দান, অনুদান ও উপহার এনে তহবিল
+              সংযোজন করা হবে।{' '}
+            </p>
+            <p className="pl-5">
+              2. যে কোন দেশী-বিদেশি সংস্থা, এনজিও, প্রাইভেট ও পাবলিক সংগঠন, যে
+              কোন কোম্পানি, ফার্মা, সরকারি দান, অনুদান, নগদ অর্থ কিংবা সম্পদে এই
+              সংগঠনের তহবিলে সাদরে গৃহীত হবে।
+            </p>
+          </div>
+          <div>
+            <p className="mb-2 mt-6 text-2xl">অনুচ্ছেদ ৫ : সম্পত্তি আহরন: </p>
+            <p className="pl-5">
+              এই সংগঠন বাংলাদেশের যে কোন স্থাবর অস্থাবর সম্পত্তি ধারন-অধিগ্রহন,
+              ক্রয়, ভাড়ায় ক্রয় দেয়া ব্যবহার উপযোগী করা উন্নয়ন কর। বিক্রয়
+              বা অন্য যে কোন আইনানুগভাবে সম্পত্তি ও স্বত্ব ত্যাগের ব্যবস্থা করা।{' '}
+            </p>
           </div>
         </div>
       </div>
