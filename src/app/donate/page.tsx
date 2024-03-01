@@ -5,9 +5,9 @@ import Image from 'next/image'
 export default function Donate() {
   return (
     <Container>
-      <div className="mx-auto max-w-7xl py-5">
+      <div className="mx-auto my-12 max-w-7xl">
         <TypingTitle title={"Support GBDC's Mission!"} />
-        <div className="mt-10 flex flex-row items-start justify-around text-gray-900">
+        <div className="mt-12 flex flex-row items-start justify-around text-gray-900">
           <div>
             <p className="w-full text-justify text-xl lg:w-[500px]">
               Your generosity fuels our work at GBDC. With your support, we can
