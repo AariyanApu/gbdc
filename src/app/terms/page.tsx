@@ -1,12 +1,14 @@
 import Container from '@/components/Container'
-import { TypingTitle } from '@/components/CustomText'
-import { termsData } from '@/utils/data'
+import { TypingText, TypingTitle } from '@/components/CustomText'
+import { conditionData, membershipCancel, termsData } from '@/utils/data'
 import { banglaFont } from '@/utils/fonts'
 
 export default function Terms() {
   return (
     <Container>
-      <div className={`isolate mx-auto max-w-7xl ${banglaFont.className} py-5`}>
+      <div
+        className={`isolate mx-auto max-w-6xl ${banglaFont.className} my-2 rounded-3xl bg-white py-6 shadow-xl`}
+      >
         {/* Title */}
         <TypingTitle title={['গ', 'ঠ', 'ন', 'ত', 'ন্ত্র']} />
         {/* bullted Text */}
@@ -54,6 +56,24 @@ export default function Terms() {
               ক্রয়, ভাড়ায় ক্রয় দেয়া ব্যবহার উপযোগী করা উন্নয়ন কর। বিক্রয়
               বা অন্য যে কোন আইনানুগভাবে সম্পত্তি ও স্বত্ব ত্যাগের ব্যবস্থা করা।{' '}
             </p>
+          </div>
+          <div>
+            <p className="mb-2 mt-6 text-2xl underline">
+              ভলান্টিয়ারদের জন্য অবশ্যই পালনীয় আইন:
+            </p>
+            <ol className="list-inside list-decimal space-y-2 pl-5">
+              {conditionData?.map((item, idx) => (
+                <li key={idx}>{item.text}</li>
+              ))}
+            </ol>
+          </div>
+          <div>
+            <p className="mb-2 mt-6 text-2xl underline">সদস্য পদ বাতিল: </p>
+            <ol className="list-inside list-decimal space-y-2 pl-5">
+              {membershipCancel?.map((item, idx) => (
+                <li key={idx}>{item.text}</li>
+              ))}
+            </ol>
           </div>
         </div>
       </div>
