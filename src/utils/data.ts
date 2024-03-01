@@ -107,7 +107,7 @@ export const secondFooterLink: Array<LinkProps> = [
     href: 'https://docs.google.com/forms/d/e/1FAIpQLSdKqIpsTlYF7F5liN8-ftSN2VnSGDL-vPx18dmbWslMUhk3cg/viewform?usp=pp_url',
   },
   { name: 'Donate to GBDC', href: '/about-us' },
-  { name: 'Terms & Condition', href: '/blog' },
+  { name: 'Terms & Condition', href: '/terms' },
   // { name: 'Feature News', href: '/blog' },
 ]
 export const adminPanel = [
