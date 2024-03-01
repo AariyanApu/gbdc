@@ -8,6 +8,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
+import { RiMenu3Line } from 'react-icons/ri'
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
@@ -33,7 +34,8 @@ export default function NavBar() {
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                    <RiMenu3Line className="block h-6 w-6" aria-hidden="true" />
+                    // <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>
