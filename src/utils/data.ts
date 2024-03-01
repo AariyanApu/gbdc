@@ -96,7 +96,7 @@ export const reviews: Array<Review> = [
 ]
 
 export const footerLink: Array<LinkProps> = [
-  { name: 'Contact Us', href: '/about-us' },
+  { name: 'Contact Us', href: '/contact' },
   { name: 'All About Us', href: '/about-us' },
   { name: 'Our Admin Panel', href: '/about-us' },
   // { name: 'Our All Activities', href: '/activities' },

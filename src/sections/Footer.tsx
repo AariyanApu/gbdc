@@ -26,10 +26,21 @@ export default function Footer() {
         </div>
         {/* Footer links */}
         <FooterLinkCard footerLink={footerLink} hiddenItem="hidden sm:flex" />
-        <FooterLinkCard
-          footerLink={secondFooterLink}
-          customStyles="first:border-sky-400  first:text-sky-400 first:font-semibold"
-        />
+        <div className=" mr-2 flex flex-col items-center justify-end gap-y-2 sm:mr-0">
+          <FooterLinkCard
+            footerLink={secondFooterLink}
+            customStyles="first:border-sky-400  first:text-sky-400 first:font-semibold"
+          />
+          {/* Footer for Only Mobile */}
+          <a
+            href={'/contact'}
+            className={
+              ' w-[150px]  rounded-md border border-slate-300/80 px-2 py-1.5 text-center text-sm transition-colors duration-500 ease-in-out  hover:border-sky-500 hover:text-sky-500 hover:shadow-md  sm:hidden sm:w-44 sm:px-4 sm:py-2'
+            }
+          >
+            Contact Us
+          </a>
+        </div>
       </div>
 
       {/* Footer credits of developer */}

@@ -11,7 +11,7 @@ export const FooterLinkCard = ({
 }) => {
   return (
     <div
-      className={`${hiddenItem} mb-2 mr-2 flex flex-col items-center justify-end gap-y-2 sm:mr-0`}
+      className={`${hiddenItem}  flex flex-col items-center justify-end gap-y-2 sm:mr-0`}
     >
       {footerLink?.map((link, index) => (
         <a
