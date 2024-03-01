@@ -5,15 +5,17 @@ import Image from 'next/image'
 export default function Donate() {
   return (
     <Container>
-      <div className="mx-auto my-12 max-w-7xl">
-        <TypingTitle title={"Support GBDC's Mission!"} />
-        <div className="mt-12 flex flex-row items-start justify-around text-gray-900">
+      <div className="mx-auto my-12 max-w-7xl px-4 sm:px-6 lg:px-8">
+        <TypingTitle title={"Support GBDC's Mission"} />
+        <div className="mt-12 flex flex-col items-start justify-around gap-y-6 text-gray-900 sm:gap-y-0 lg:flex-row">
           <div>
-            <p className="w-full text-justify text-xl lg:w-[500px]">
+            <p className="w-full px-1  text-xl lg:w-[500px]">
               Your generosity fuels our work at GBDC. With your support, we can
               continue empowering communities and changing lives.
             </p>
-            <p className=" mt-5 text-xl ">You can Donate Money to GBDC By :</p>
+            <p className=" mt-5 pl-1 text-xl ">
+              You can Donate Money to GBDC By :
+            </p>
 
             <div className="relative mt-2 overflow-x-auto">
               <table className="w-full text-left text-base  rtl:text-right lg:w-80 ">
@@ -40,7 +42,7 @@ export default function Donate() {
               </table>
             </div>
           </div>
-          <div className="  flex w-96 flex-col items-center justify-center  text-center">
+          <div className=" flex w-full flex-col items-center justify-center text-center  lg:w-96">
             <p className=" text-2xl font-bold ">
               Scan the QR Code to Donate Money through Bkash:
             </p>
