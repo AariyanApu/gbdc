@@ -1,4 +1,4 @@
-import { Inter } from 'next/font/google'
+import { Quicksand } from 'next/font/google'
 import localFont from 'next/font/local'
 
 // export const titleFont = localFont({ src: "./balivia.ttf" });
@@ -12,7 +12,7 @@ export const banglaFont = localFont({
 })
 // Remove if no longer needed
 
-export const regularFont = Inter({
+export const regularFont = Quicksand({
   subsets: ['latin'],
   variable: '--font-inter',
 })

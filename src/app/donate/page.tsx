@@ -1,10 +1,59 @@
 import Container from '@/components/Container'
+import { TypingTitle } from '@/components/CustomText'
+import Image from 'next/image'
 
 export default function Donate() {
   return (
     <Container>
-      <div className="mx-auto max-w-7xl ">
-        <h1>Donate</h1>
+      <div className="mx-auto max-w-7xl py-5">
+        <TypingTitle title={"Support GBDC's Mission!"} />
+        <div className="mt-10 flex flex-row items-start justify-around text-gray-900">
+          <div>
+            <p className="w-full text-justify text-xl lg:w-[500px]">
+              Your generosity fuels our work at GBDC. With your support, we can
+              continue empowering communities and changing lives.
+            </p>
+            <p className=" mt-5 text-xl ">You can Donate Money to GBDC By :</p>
+
+            <div className="relative mt-2 overflow-x-auto">
+              <table className="w-full text-left text-base  rtl:text-right lg:w-80 ">
+                <tbody>
+                  <tr className="border-b bg-white">
+                    <th scope="row" className="table_header">
+                      Bkash
+                    </th>
+                    <td className="px-6 py-4">+8801234567890</td>
+                  </tr>
+                  <tr className="border-b bg-white ">
+                    <th scope="row" className="table_header">
+                      Nagad
+                    </th>
+                    <td className="px-6 py-4">+8801234567890</td>
+                  </tr>
+                  <tr className="bg-white ">
+                    <th scope="row" className="table_header ">
+                      Rocket
+                    </th>
+                    <td className="px-6 py-4">+8801234567890</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div className="  flex w-96 flex-col items-center justify-center  text-center">
+            <p className=" text-2xl font-bold ">
+              Scan the QR Code to Donate Money through Bkash:
+            </p>
+
+            <Image
+              src={'/assets/bkash.webp'}
+              width={300}
+              height={300}
+              alt={'bkash'}
+              className=" h-64 w-64"
+            />
+          </div>
+        </div>
       </div>
     </Container>
   )
