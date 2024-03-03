@@ -7,13 +7,13 @@ import { MdPerson } from 'react-icons/md'
 
 export default function ContactCard({ item }: { item: emergencyContactProps }) {
   return (
-    <div className=" w-full rounded-lg bg-white pb-4 shadow-lg sm:px-2 lg:w-72">
+    <div className=" w-full rounded-lg bg-white pb-4 shadow-lg sm:p-2 lg:w-72">
       <Image
         src={item.imgUrl}
         alt={item.name}
         height={300}
         width={300}
-        className="w-full rounded object-cover object-center"
+        className="w-full rounded-xl object-cover object-center"
       />
       <div className=" mt-4 flex  w-full flex-col gap-y-2 px-4 text-start text-lg sm:px-0">
         <p className=" flex  flex-row gap-x-2 text-2xl ">
