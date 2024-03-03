@@ -25,10 +25,7 @@ export default function BlogPostCard({ item }: { item: activitiesData }) {
             __html: item.desc.substring(0, 200),
           }}
         />
-        <Link
-          href={`/blog/${item.slug}`}
-          className="link_styles mt-2 flex flex-row gap-x-2 text-sm"
-        >
+        <Link href={`/blog/${item.slug}`} className="link_styles mt-2 text-sm">
           Read More
         </Link>
       </div>
