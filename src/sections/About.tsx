@@ -34,7 +34,7 @@ export default function About() {
           />
           <MotionDiv
             variants={fadeIn('up', 'tween', 1, 0.7)}
-            customStyle=" w-full text-start text-lg sm:tracking-normal sm:text-justify sm:w-[290px] lg:w-[480px]  "
+            customStyle=" w-full text-center text-lg sm:tracking-normal sm:text-justify sm:w-[290px] lg:w-[480px]  "
           >
             The Gournadi Blood Donors Club (GBDC) is a non-political and
             non-profit service organization. Embracing the slogan "A new world
