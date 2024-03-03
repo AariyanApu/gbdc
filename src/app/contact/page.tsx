@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { MdPerson } from 'react-icons/md'
 import { BiSolidPhoneCall } from 'react-icons/bi'
 import { IoIosMailUnread } from 'react-icons/io'
+import ContactCard from '@/components/ContactCard'
 
 export default function Contact() {
   return (
@@ -12,7 +13,7 @@ export default function Contact() {
       <TypingTitle title={'Contact Us'} />
       {/* Contact Info */}
       <div className=" my-8 flex flex-col justify-around gap-y-5 sm:flex-row sm:gap-y-0">
-        <div className="flex w-full flex-col gap-2 sm:w-60 lg:mt-8 lg:text-lg">
+        <div className="flex w-full flex-col gap-2 text-lg sm:mt-8 sm:w-60">
           <p className="">
             Head Office: Gournadi Blood Donor Club, Gournadi Bus Stand,
             Gournadi, Barisal.
@@ -33,37 +34,10 @@ export default function Contact() {
       {/* Emergency Contact */}
       <div className="pt-8">
         <TypingTitle title={'Emergency Contact'} />
-        <div className=" mt-8">
-          <div className=" w-full  rounded-lg bg-white pb-4 shadow-lg ">
-            <Image
-              src={'/assets/emergency/sujan.jpg'}
-              alt="Sujan"
-              height={300}
-              width={300}
-              className="w-full rounded object-cover object-center"
-            />
-            <div className=" mx-auto  mt-4 flex w-52 flex-col gap-y-2 text-start text-lg">
-              <p className=" flex  flex-row gap-x-2 text-2xl ">
-                {' '}
-                <MdPerson className=" text-3xl" />
-                Kazi Sujan
-              </p>
-              <Link
-                href={{ pathname: 'tel:+8801918184091' }}
-                className="link_styles flex flex-row gap-x-2 "
-              >
-                <BiSolidPhoneCall className="text-2xl" />
-                +8801918184091
-              </Link>
-              <Link
-                href={{ pathname: 'mailto:gbdc2018@gmail' }}
-                className="link_styles flex flex-row gap-x-2 "
-              >
-                <IoIosMailUnread className="mt-0.5 text-2xl" />
-                gbdc2018@gmail
-              </Link>
-            </div>
-          </div>
+        <div className=" mt-12 flex flex-col items-center justify-center gap-y-8 sm:flex-row lg:justify-around">
+          <ContactCard />
+          <ContactCard />
+          <ContactCard />
         </div>
       </div>
     </div>
