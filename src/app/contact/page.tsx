@@ -1,5 +1,10 @@
 import { TypingTitle } from '@/components/CustomText'
 import FooterCards from '@/components/FooterCards'
+import Image from 'next/image'
+import Link from 'next/link'
+import { MdPerson } from 'react-icons/md'
+import { BiSolidPhoneCall } from 'react-icons/bi'
+import { IoIosMailUnread } from 'react-icons/io'
 
 export default function Contact() {
   return (
@@ -21,12 +26,46 @@ export default function Contact() {
             width="400"
             height="300"
             loading="lazy"
-            className="w-full  px-2 "
+            className="w-full"
           ></iframe>
         </div>
       </div>
       {/* Emergency Contact */}
-      <div className=""></div>
+      <div className="pt-8">
+        <TypingTitle title={'Emergency Contact'} />
+        <div className=" mt-8">
+          <div className=" w-full  rounded-lg bg-white pb-4 shadow-lg ">
+            <Image
+              src={'/assets/emergency/sujan.jpg'}
+              alt="Sujan"
+              height={300}
+              width={300}
+              className="w-full rounded object-cover object-center"
+            />
+            <div className=" mx-auto  mt-4 flex w-52 flex-col gap-y-2 text-start text-lg">
+              <p className=" flex  flex-row gap-x-2 text-2xl ">
+                {' '}
+                <MdPerson className=" text-3xl" />
+                Kazi Sujan
+              </p>
+              <Link
+                href={{ pathname: 'tel:+8801918184091' }}
+                className="link_styles flex flex-row gap-x-2 "
+              >
+                <BiSolidPhoneCall className="text-2xl" />
+                +8801918184091
+              </Link>
+              <Link
+                href={{ pathname: 'mailto:gbdc2018@gmail' }}
+                className="link_styles flex flex-row gap-x-2 "
+              >
+                <IoIosMailUnread className="mt-0.5 text-2xl" />
+                gbdc2018@gmail
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
