@@ -5,7 +5,6 @@
 import Container from '@/components/Container'
 import { TypingText, TypingTitle } from '@/components/CustomText'
 import MotionDiv from '@/components/MotionDiv'
-import { banglaFont } from '@/utils/fonts'
 import { fadeIn } from '@/utils/motion'
 import Image from 'next/image'
 
