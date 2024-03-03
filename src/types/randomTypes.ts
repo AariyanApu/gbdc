@@ -53,3 +53,10 @@ export interface activitiesData {
   slug: string
   views: number
 }
+
+export interface emergencyContactProps {
+  name: string
+  phone: string
+  email: string
+  imgUrl: string
+}

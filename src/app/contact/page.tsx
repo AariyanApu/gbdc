@@ -1,11 +1,7 @@
+import ContactCard from '@/components/ContactCard'
 import { TypingTitle } from '@/components/CustomText'
 import FooterCards from '@/components/FooterCards'
-import Image from 'next/image'
-import Link from 'next/link'
-import { MdPerson } from 'react-icons/md'
-import { BiSolidPhoneCall } from 'react-icons/bi'
-import { IoIosMailUnread } from 'react-icons/io'
-import ContactCard from '@/components/ContactCard'
+import { emergencyContactData } from '@/utils/data'
 
 export default function Contact() {
   return (
@@ -35,9 +31,9 @@ export default function Contact() {
       <div className="pt-8">
         <TypingTitle title={'Emergency Contact'} />
         <div className=" mt-12 flex flex-col items-center justify-center gap-y-8 sm:flex-row lg:justify-around">
-          <ContactCard />
-          <ContactCard />
-          <ContactCard />
+          {emergencyContactData?.map((item, idx: number) => (
+            <ContactCard key={idx} item={item} />
+          ))}
         </div>
       </div>
     </div>

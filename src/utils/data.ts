@@ -313,3 +313,24 @@ export const membershipCancel: Array<termsProps> = [
     text: 'কার্যনির্বাহী পরিষদের প্রধান হবেন সভাপতি। সকল ক্ষেত্রেই কার্যনির্বাহী পরিষদের পরিষদের সংখ্যা গরিষ্ঠ সিদ্ধান্তই চূড়ান্ত । ',
   },
 ]
+
+export const emergencyContactData = [
+  {
+    name: 'Kazi sujan',
+    phone: '+8801918184091',
+    email: 'gbdc2018@gmail',
+    imgUrl: '/assets/emergency/sujan.jpg',
+  },
+  {
+    name: 'Imran ibn Amin',
+    phone: '+8801918184091',
+    email: 'gbdc2018@gmail',
+    imgUrl: '/assets/emergency/amin.jpg',
+  },
+  {
+    name: 'Tanveer Ahammed',
+    phone: '+8801918184091',
+    email: 'gbdc2018@gmail',
+    imgUrl: '/assets/emergency/tanvir.jpg',
+  },
+]
