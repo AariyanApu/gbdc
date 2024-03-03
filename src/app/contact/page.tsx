@@ -6,7 +6,7 @@ export default function Contact() {
     <div className="mx-auto my-12 max-w-7xl px-4 sm:px-6 lg:px-8">
       <TypingTitle title={'Contact Us'} />
       {/* Contact Info */}
-      <div className=" my-5 flex flex-col justify-around sm:flex-row">
+      <div className=" my-8 flex flex-col justify-around gap-y-5 sm:flex-row sm:gap-y-0">
         <div className="flex w-full flex-col gap-2 sm:w-60 lg:mt-8 lg:text-lg">
           <p className="">
             Head Office: Gournadi Blood Donor Club, Gournadi Bus Stand,
@@ -21,10 +21,12 @@ export default function Contact() {
             width="400"
             height="300"
             loading="lazy"
-            className=""
+            className="w-full  px-2 "
           ></iframe>
         </div>
       </div>
+      {/* Emergency Contact */}
+      <div className=""></div>
     </div>
   )
 }
