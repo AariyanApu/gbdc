@@ -18,7 +18,6 @@ const PaginationControls: FC<PaginationControlsProps> = ({
   const page = searchParams.get('page') ?? '1'
   const per_page = searchParams.get('per_page') ?? '6'
 
-  console.log(pathname)
   return (
     <div className="mt-8 flex items-center justify-center gap-x-2 ">
       <button
