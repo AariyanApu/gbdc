@@ -1,6 +1,7 @@
 import CloudImage from '@/components/CloudImage'
 import Container from '@/components/Container'
 import { TypingTitle } from '@/components/CustomText'
+import PaginationControls from '@/components/PaginationControls'
 import { activitiesData } from '@/types/randomTypes'
 import { getDataNoStore } from '@/utils/getData'
 
@@ -12,7 +13,7 @@ export default async function Activities({
   const data: activitiesData[] = await getDataNoStore('activities')
 
   const page = searchParams['page'] ?? '1'
-  const per_page = searchParams['per_page'] ?? '3'
+  const per_page = searchParams['per_page'] ?? '6'
 
   const start = (Number(page) - 1) * Number(per_page)
   const end = start + Number(per_page)
@@ -45,6 +46,10 @@ export default async function Activities({
             </div>
           ))}
       </div>
+      <PaginationControls
+        hasNextPage={end < data.length}
+        hasPrevPage={start > 0}
+      />
     </Container>
   )
 }
