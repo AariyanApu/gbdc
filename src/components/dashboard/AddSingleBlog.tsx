@@ -6,7 +6,7 @@ import { ChangeEvent, useState } from 'react'
 import 'react-quill/dist/quill.bubble.css'
 import dynamic from 'next/dynamic'
 
-const ReactQuill = dynamic(() => import('react-quill'), { ssr: false })
+const ReactQuill: any = dynamic(() => import('react-quill'), { ssr: false })
 
 interface imgUrl {
   imgUrl: string
