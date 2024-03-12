@@ -4,22 +4,19 @@ import { TypingTitle } from '@/components/CustomText'
 import { activitiesData } from '@/types/randomTypes'
 import { getDataNoStore } from '@/utils/getData'
 
-export default async function Activities() {
+export default async function Activities({
+  searchParams,
+}: {
+  searchParams: { [key: string]: string | string[] | undefined }
+}) {
   const data: activitiesData[] = await getDataNoStore('activities')
-  interface Prompt {
-    title: string
-  }
 
-  // const filterPrompts = (
-  //   searchtext: string,
-  //   data: Prompt[] | undefined,
-  // ): Prompt[] | undefined => {
-  //   const regex = new RegExp(searchtext, 'i') // 'i' flag for case-insensitive search
-  //   return data?.filter((item) => regex.test(item.title))
-  // }
+  const page = searchParams['page'] ?? '1'
+  const per_page = searchParams['per_page'] ?? '3'
 
-  // const filterData = filterPrompts('free', data)
-  // console.log(filterData)
+  const start = (Number(page) - 1) * Number(per_page)
+  const end = start + Number(per_page)
+  const filterData = data?.slice(start, end)
 
   return (
     <Container customStyle=" my-8 sm:my-16 max-w-7xl mx-auto">
@@ -27,7 +24,7 @@ export default async function Activities() {
 
       <div className="mt-8 flex flex-row flex-wrap items-center justify-center gap-4">
         {Array.isArray(data) &&
-          data?.map((item: any) => (
+          filterData?.map((item: any) => (
             <div
               key={item.id}
               className="flex w-96 flex-col items-center rounded-lg bg-slate-300 px-4 text-center lg:px-0 "
