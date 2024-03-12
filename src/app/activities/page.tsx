@@ -46,10 +46,10 @@ export default async function Activities({
             </div>
           ))}
       </div>
-      <PaginationControls
+      {/* <PaginationControls
         hasNextPage={end < data.length}
         hasPrevPage={start > 0}
-      />
+      /> */}
     </Container>
   )
 }
