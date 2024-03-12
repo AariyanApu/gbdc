@@ -1,6 +1,6 @@
 'use client'
 
-import { useRouter, useSearchParams } from 'next/navigation'
+import { useRouter, useSearchParams, usePathname } from 'next/navigation'
 import { FC } from 'react'
 
 interface PaginationControlsProps {
@@ -12,10 +12,13 @@ const PaginationControls: FC<PaginationControlsProps> = ({
   hasPrevPage,
 }) => {
   const router = useRouter()
+  const pathname = usePathname()
+
   const searchParams = useSearchParams()
   const page = searchParams.get('page') ?? '1'
   const per_page = searchParams.get('per_page') ?? '6'
 
+  console.log(pathname)
   return (
     <div className="mt-8 flex items-center justify-center gap-x-2 ">
       <button
@@ -23,7 +26,7 @@ const PaginationControls: FC<PaginationControlsProps> = ({
         disabled={!hasPrevPage}
         onClick={() => {
           router.push(
-            `/activities?page=${Number(page) - 1}&per_page=${per_page}`,
+            `${pathname}?page=${Number(page) - 1}&per_page=${per_page}`,
           )
         }}
       >
@@ -39,7 +42,7 @@ const PaginationControls: FC<PaginationControlsProps> = ({
         disabled={!hasNextPage}
         onClick={() => {
           router.push(
-            `/activities?page=${Number(page) + 1}&per_page=${per_page}`,
+            `${pathname}?page=${Number(page) + 1}&per_page=${per_page}`,
           )
         }}
       >
