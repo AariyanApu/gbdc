@@ -49,6 +49,7 @@ export default async function Activities({
       <PaginationControls
         hasNextPage={end < data.length}
         hasPrevPage={start > 0}
+        totalPosts={data.length}
       />
     </Container>
   )
