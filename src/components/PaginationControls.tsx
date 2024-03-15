@@ -31,11 +31,11 @@ const PaginationControls: FC<PaginationControlsProps> = ({
           )
         }}
       >
-        prev page
+        Prev Page
       </button>
 
-      <div className="">
-        {page}/{Math.ceil(10 / Number(per_page))}
+      <div className="rounded-lg px-4 py-1.5 text-center ring ring-sky-400">
+        {page}
       </div>
 
       <button
@@ -48,7 +48,7 @@ const PaginationControls: FC<PaginationControlsProps> = ({
           )
         }}
       >
-        next page
+        Next Page
       </button>
     </div>
   )
