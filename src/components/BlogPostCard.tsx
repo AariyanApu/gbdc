@@ -4,9 +4,9 @@ import CloudImage from './CloudImage'
 
 export default function BlogPostCard({ item }: { item: activitiesData }) {
   return (
-    <Link
+    <div
       key={item.id}
-      href={`/blog/${item.slug}`}
+      // href={`/blog/${item.slug}`}
       className="mx-4 flex flex-col justify-around rounded-md bg-slate-200/70 transition-colors duration-300 ease-in-out hover:bg-slate-200 sm:flex-row xl:mx-0"
     >
       <CloudImage
@@ -29,6 +29,6 @@ export default function BlogPostCard({ item }: { item: activitiesData }) {
           Read More
         </Link>
       </div>
-    </Link>
+    </div>
   )
 }
