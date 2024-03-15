@@ -3,6 +3,7 @@
 import cn from '@/libs/cn'
 import { useRouter, useSearchParams, usePathname } from 'next/navigation'
 import { FC } from 'react'
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa6'
 
 interface PaginationControlsProps {
   hasNextPage: boolean
@@ -22,33 +23,37 @@ const PaginationControls: FC<PaginationControlsProps> = ({
   return (
     <div className="mt-8 flex items-center justify-center gap-x-2 ">
       <button
-        className={cn('rounded-lg bg-sky-400 px-4 py-2 text-white', {
-          hidden: !hasPrevPage,
+        className={cn('rounded-lg bg-sky-400 p-3 text-white', {
+          'bg-slate-200': !hasPrevPage,
+          'text-slate-400': !hasPrevPage,
         })}
         onClick={() => {
           router.push(
             `${pathname}?page=${Number(page) - 1}&per_page=${per_page}`,
           )
         }}
+        disabled={!hasPrevPage}
       >
-        Prev Page
+        <FaArrowLeft className="text-lg" />
       </button>
 
-      <div className="rounded-lg px-4 py-1.5 text-center ring ring-sky-400">
+      <div className="rounded-lg px-4 py-1.5 text-center text-sky-400 ring ring-sky-400">
         {page}
       </div>
 
       <button
-        className={cn('rounded-lg bg-sky-400 px-4 py-2 text-white', {
-          hidden: !hasNextPage,
+        className={cn('rounded-lg bg-sky-400 p-3 text-white', {
+          'bg-slate-200': !hasNextPage,
+          'text-slate-400': !hasNextPage,
         })}
         onClick={() => {
           router.push(
             `${pathname}?page=${Number(page) + 1}&per_page=${per_page}`,
           )
         }}
+        disabled={!hasNextPage}
       >
-        Next Page
+        <FaArrowRight className="" />
       </button>
     </div>
   )
