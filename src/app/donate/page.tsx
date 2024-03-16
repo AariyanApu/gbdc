@@ -9,7 +9,7 @@ export default function Donate() {
         <TypingTitle title={"Support GBDC's Mission"} />
         <div className="mt-12 flex flex-col items-start justify-around gap-y-6 text-gray-900 sm:gap-y-0 lg:flex-row">
           <div>
-            <p className="w-full px-1  text-xl lg:w-[500px]">
+            <p className="w-full px-1  text-justify text-xl  lg:w-[500px] lg:file:text-left">
               Your generosity fuels our work at GBDC. With your support, we can
               continue empowering communities and changing lives.
             </p>
