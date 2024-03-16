@@ -97,9 +97,8 @@ export const reviews: Array<Review> = [
 
 export const footerLink: Array<LinkProps> = [
   { name: 'Contact Us', href: '/contact' },
+  { name: 'Notice Board', href: '/notice' },
   { name: 'All About Us', href: '/about-us' },
-  { name: 'Our Admin Panel', href: '/about-us' },
-  // { name: 'Our All Activities', href: '/activities' },
 ]
 export const secondFooterLink: Array<LinkProps> = [
   {
@@ -108,7 +107,6 @@ export const secondFooterLink: Array<LinkProps> = [
   },
   { name: 'Donate to GBDC', href: '/donate' },
   { name: 'Terms & Condition', href: '/terms' },
-  // { name: 'Feature News', href: '/blog' },
 ]
 export const adminPanel = [
   {

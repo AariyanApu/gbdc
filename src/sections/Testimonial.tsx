@@ -152,7 +152,11 @@ function ReviewGrid() {
 
 export function Testimonial() {
   return (
-    <section id="reviews" aria-labelledby="reviews-title">
+    <section
+      id="reviews"
+      aria-labelledby="reviews-title"
+      className="bg-cover bg-scroll  "
+    >
       <Container customStyle="rounded-sm bg-slate-100 px-4 py-16 md:py-20 lg:px-8">
         <TypingTitle title={'Voices of Appreciation'} />
         <TypingText

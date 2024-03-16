@@ -12,7 +12,7 @@ export default function FooterCards() {
         href={{ pathname: 'mailto:gbdc2018@gmail' }}
         className="link_styles cursor-pointer"
       >
-        gbdc2018@gmail.com
+        Gbdc2018@gmail.com
       </Link>
       <Link
         className="link_styles"
