@@ -1,11 +1,23 @@
 import CloudImage from '@/components/CloudImage'
 import Container from '@/components/Container'
 import { TypingTitle } from '@/components/CustomText'
+import PaginationControls from '@/components/PaginationControls'
 import { activitiesData } from '@/types/randomTypes'
 import { getDataNoStore } from '@/utils/getData'
 
-export default async function Achievements() {
+export default async function Achievements({
+  searchParams,
+}: {
+  searchParams: { [key: string]: string | string[] | undefined }
+}) {
   const data: activitiesData[] = await getDataNoStore('achievements')
+
+  const page = searchParams['page'] ?? '1'
+  const per_page = searchParams['per_page'] ?? '6'
+
+  const start = (Number(page) - 1) * Number(per_page)
+  const end = start + Number(per_page)
+  const filterData = data?.slice(start, end)
 
   return (
     <Container customStyle=" my-8 sm:my-16 max-w-7xl mx-auto">
@@ -13,7 +25,7 @@ export default async function Achievements() {
 
       <div className="mt-8 flex flex-row flex-wrap items-center justify-center gap-4">
         {Array.isArray(data) &&
-          data?.map((item: activitiesData) => (
+          filterData?.map((item: activitiesData) => (
             <div
               key={item.id}
               className="flex w-96 flex-col items-center rounded-lg bg-slate-300 px-4 text-center lg:px-0 "
@@ -34,6 +46,11 @@ export default async function Achievements() {
             </div>
           ))}
       </div>
+      <PaginationControls
+        hasNextPage={end < data?.length}
+        hasPrevPage={start > 0}
+        totalPosts={data?.length}
+      />
     </Container>
   )
 }
