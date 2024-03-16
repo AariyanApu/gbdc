@@ -1,14 +1,12 @@
 import NavBar from '@/components/Navbar'
 import type { Metadata } from 'next'
-import { Nunito } from 'next/font/google'
 import './globals.css'
 import Footer from '@/sections/Footer'
 import { regularFont } from '@/utils/fonts'
 import AuthProvider from '@/utils/AuthProvider'
-// const nunito = Nunito({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'GBDC - Give Blood, Save Lives',
+  title: 'GBDC - Save Lives',
   description:
     "GBDC is a dynamic web app revolutionizing blood donation, instantly linking heroes who give with lives that need saving. Seamlessly connecting donors and recipients, it's a beacon of hope in emergencies.",
 }
