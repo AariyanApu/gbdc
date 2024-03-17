@@ -1,17 +1,10 @@
 import Container from '@/components/Container'
 import { TypingTitle } from '@/components/CustomText'
+import { noticeProps } from '@/types/randomTypes'
 import { banglaFont } from '@/utils/fonts'
 import { getDataNoStoreLocal } from '@/utils/getData'
 import Link from 'next/link'
 
-interface noticeProps {
-  id: string
-  title: string
-  slug: string
-  desc: string
-  views: number
-  createdAt: string
-}
 export default async function Notice() {
   const data: noticeProps[] = await getDataNoStoreLocal('notice')
   return (

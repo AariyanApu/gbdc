@@ -60,3 +60,11 @@ export interface emergencyContactProps {
   email: string
   imgUrl: string
 }
+export interface noticeProps {
+  id: string
+  title: string
+  slug: string
+  desc: string
+  views: number
+  createdAt: string
+}
