@@ -1,7 +1,6 @@
 import CloudImage from '@/components/CloudImage'
 import { banglaFont } from '@/utils/fonts'
-import { getData, getDataNoStore, getDataNoStoreLocal } from '@/utils/getData'
-import Image from 'next/image'
+import { getDataNoStore } from '@/utils/getData'
 
 export default async function SingleBlog({ params }: any) {
   const { slug } = params
