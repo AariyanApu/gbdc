@@ -1,3 +1,38 @@
-export default function Notice() {
-  return <div>This Section will be updated</div>
+import Container from '@/components/Container'
+import { TypingTitle } from '@/components/CustomText'
+import { banglaFont } from '@/utils/fonts'
+import { getDataNoStoreLocal } from '@/utils/getData'
+import Link from 'next/link'
+
+interface noticeProps {
+  id: string
+  title: string
+  slug: string
+  desc: string
+  views: number
+  createdAt: string
+}
+export default async function Notice() {
+  const data: noticeProps[] = await getDataNoStoreLocal('notice')
+  return (
+    <Container
+      customStyle={`mx-auto my-6 flex max-w-4xl flex-col gap-y-8 sm:gap-y-4 ${banglaFont.className}`}
+    >
+      <TypingTitle title={'Notice Board'} />
+      <div className="">
+        {Array.isArray(data) &&
+          data?.map((item: noticeProps) => (
+            <div
+              key={item.id}
+              className="my-4 flex flex-row rounded-lg bg-white p-4 shadow-lg "
+            >
+              {item.title.substring(0, 100)}...
+              <Link href={`/notice/${item.slug}`}>
+                <p className="link_styles">Read More</p>
+              </Link>
+            </div>
+          ))}
+      </div>
+    </Container>
+  )
 }
