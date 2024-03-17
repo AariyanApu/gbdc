@@ -13,29 +13,29 @@ export const GET = async (req: Request) => {
 }
 
 // Create New post
-// export const POST = async (req: Request) => {
-//   // const session = await getAuthSession();
+export const POST = async (req: Request) => {
+  // const session = await getAuthSession();
 
-//   // if (!session) {
-//   //   return new NextResponse(
-//   //     JSON.stringify({ message: 'Not Authenticated!' }, { status: 401 })
-//   //   );
-//   // }
+  // if (!session) {
+  //   return new NextResponse(
+  //     JSON.stringify({ message: 'Not Authenticated!' }, { status: 401 })
+  //   );
+  // }
 
-//   try {
-//     const body = await req.json()
-//     const posts = await prisma.post.create({
-//       data: body,
-//     })
+  try {
+    const body = await req.json()
+    const posts = await prisma.notice.create({
+      data: body,
+    })
 
-//     return new NextResponse(JSON.stringify(posts))
-//     // return new NextResponse(JSON.stringify({ status: 200 }), { status: 200 });
-//   } catch (err) {
-//     console.log(err)
-//     return new NextResponse(
-//       JSON.stringify({
-//         message: 'Something went wrong with fucking database!',
-//       }),
-//     )
-//   }
-// }
+    return new NextResponse(JSON.stringify(posts))
+    // return new NextResponse(JSON.stringify({ status: 200 }), { status: 200 });
+  } catch (err) {
+    console.log(err)
+    return new NextResponse(
+      JSON.stringify({
+        message: 'Something went wrong with fucking database!',
+      }),
+    )
+  }
+}

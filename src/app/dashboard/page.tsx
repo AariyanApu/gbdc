@@ -6,6 +6,7 @@ import AddSingleBlog from '@/components/dashboard/AddSingleBlog'
 import DeletePost from '@/components/DeletePost'
 import { useState } from 'react'
 import { useSession, signIn, signOut } from 'next-auth/react'
+import AddNotice from '@/components/dashboard/AddNotice'
 
 export default function Dasboard() {
   const { data: session }: any = useSession()
@@ -20,7 +21,14 @@ export default function Dasboard() {
           >
             {deleteButton ? 'Add Post' : 'Delete Post'}
           </button>
-          {!deleteButton ? <AddSingleBlog /> : <DeletePost />}
+          {!deleteButton ? (
+            <div>
+              <AddSingleBlog />
+              <AddNotice />
+            </div>
+          ) : (
+            <DeletePost />
+          )}
           {!deleteButton && (
             <div className="flex flex-row flex-wrap items-center justify-center gap-6">
               <AddActivity />

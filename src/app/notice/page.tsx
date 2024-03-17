@@ -14,7 +14,7 @@ export default async function Notice() {
       <TypingTitle title={'Notice Board'} />
       <div className="">
         {Array.isArray(data) &&
-          data?.map((item: noticeProps) => (
+          data?.reverse().map((item: noticeProps) => (
             <div
               key={item.id}
               className="my-4 flex flex-row rounded-lg bg-white p-4 shadow-lg "

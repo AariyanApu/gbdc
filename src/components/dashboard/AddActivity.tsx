@@ -11,7 +11,6 @@ interface imgUrl {
 export default function AddActivity() {
   const [title, setTitle] = useState('')
   const [imgUrl, setImgUrl] = useState(' ')
-  const [tag, setTag] = useState('')
 
   const router = useRouter()
   const handleSubmit = async (e: ChangeEvent<HTMLFormElement>) => {
@@ -22,7 +21,6 @@ export default function AddActivity() {
       body: JSON.stringify({
         title,
         imgUrl,
-        tag,
       }),
     })
     setTitle('')
@@ -39,17 +37,11 @@ export default function AddActivity() {
       onSubmit={handleSubmit}
       className=" flex w-96 flex-col items-center justify-center gap-4 rounded-md border border-sky-400 p-4"
     >
-      <h1 className="text-3xl ">Add Single Activity Image</h1>
+      <h1 className="text-3xl ">Add Activity </h1>
       <textarea
         placeholder="Enter Image Title...."
         className="mt-4 rounded-md bg-gray-200 px-4 py-2 text-black"
         onChange={(e) => setTitle(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="Enter Tag"
-        onChange={(e) => setTag(e.target.value)}
-        className="rounded-md bg-gray-200 px-4 py-2 text-black"
       />
 
       <CldUploadButton

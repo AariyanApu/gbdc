@@ -27,7 +27,6 @@ model Activity {
   id    String @id @default(auto()) @map("_id") @db.ObjectId
   title String
   imgUrl String
-  tag  String
 }
 
 model another {
