@@ -35,3 +35,11 @@ model another {
  title String
  imgUrl String 
 }
+model Notice {
+  id     String @id @default(auto()) @map("_id") @db.ObjectId
+  title  String
+  slug   String    @unique
+  desc   String
+  views Int @default(0)
+  createdAt DateTime? @default(now())
+}
