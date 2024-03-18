@@ -11,6 +11,7 @@ export const navigationForMobile: Array<LinkProps> = [
   { name: 'About Us', href: '/about-us', current: false },
   { name: 'Activities', href: '/activities', current: false },
   { name: 'Achievements', href: '/achievements', current: false },
+  { name: 'Notice Board', href: '/notice', current: false },
   { name: 'Blog', href: '/blog', current: false },
 ]
 export const banner = [
