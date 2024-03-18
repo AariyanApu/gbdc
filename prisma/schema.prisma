@@ -29,7 +29,7 @@ model Activity {
   imgUrl String
 }
 
-model another {
+model Achievement {
  id    String @id @default(auto()) @map("_id") @db.ObjectId
  title String
  imgUrl String 

@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server'
 
 export const GET = async () => {
   try {
-    const anothers = await prisma.another.findMany()
+    const anothers = await prisma.achievement.findMany()
     return new NextResponse(JSON.stringify(anothers), { status: 200 })
   } catch (error) {
     return new NextResponse('Database Error', { status: 500 })
@@ -21,7 +21,7 @@ export const POST = async (req: Request) => {
 
   try {
     const body = await req.json()
-    const another = await prisma.another.create({
+    const another = await prisma.achievement.create({
       data: body,
     })
 
