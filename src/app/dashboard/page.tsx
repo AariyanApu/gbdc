@@ -13,7 +13,7 @@ export default function Dasboard() {
   const [deleteButton, setDeleteButton] = useState(false)
   return (
     <div className="mx-auto flex max-w-5xl items-center justify-center">
-      {session?.user?.email === 'aariyanapu1@gmail.com' ? (
+      {session?.user?.isAdmin === true ? (
         <div className="mx-auto mt-4 flex max-w-5xl flex-col gap-y-4">
           <button
             onClick={() => setDeleteButton((prevValue) => !prevValue)}
