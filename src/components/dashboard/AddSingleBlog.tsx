@@ -53,7 +53,7 @@ export default function AddBlog() {
       <h1 className="text-3xl ">Add Blog</h1>
 
       <CldUploadButton
-        uploadPreset="gbdc_blogs"
+        uploadPreset="izet8iap"
         className=" rounded-md  bg-sky-600 px-4 py-2"
         onUpload={handleUpload}
       />

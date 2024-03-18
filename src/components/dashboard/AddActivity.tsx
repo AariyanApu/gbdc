@@ -45,7 +45,7 @@ export default function AddActivity() {
       />
 
       <CldUploadButton
-        uploadPreset="gbdc_activities"
+        uploadPreset="izet8iap"
         className=" rounded-md  bg-sky-600 px-4 py-2"
         onUpload={handleUpload}
       />
