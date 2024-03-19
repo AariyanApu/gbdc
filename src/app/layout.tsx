@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: 'GBDC - Save Lives',
   description:
     "GBDC is a dynamic web app revolutionizing blood donation, instantly linking heroes who give with lives that need saving. Seamlessly connecting donors and recipients, it's a beacon of hope in emergencies.",
+  manifest: '/manifest.json',
+  viewport:
+    'minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover',
 }
 
 export default function RootLayout({
