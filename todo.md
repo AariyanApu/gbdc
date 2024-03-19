@@ -13,5 +13,5 @@
   <!-- - Reorganize Database with user and isAdmin -->
   <!-- - Redesign Dashboard -->
 - make responsive notice
-- fix font of single notice
+<!-- - fix font of single notice -->
 - fix font of all notice
