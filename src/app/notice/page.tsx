@@ -17,9 +17,14 @@ export default async function Notice() {
           data?.reverse().map((item: noticeProps) => (
             <div
               key={item.id}
-              className="my-4 flex flex-row rounded-lg bg-white p-4 shadow-lg "
+              className="my-4 flex flex-row  rounded-lg bg-white p-4 shadow-lg "
             >
-              {item.title.substring(0, 100)} ...
+              <p className="flex lg:hidden">
+                {item.title.substring(0, 35)} ...
+              </p>
+              <p className="hidden lg:flex">
+                {item.title.substring(0, 100)} ...
+              </p>{' '}
               <Link href={`/notice/${item.slug}`}>
                 <p className="link_styles"> Read More</p>
               </Link>
