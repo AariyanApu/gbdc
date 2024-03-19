@@ -16,14 +16,8 @@ export default function AddBlog() {
   const [title, setTitle] = useState('')
   const [imgUrl, setImgUrl] = useState('')
   const [desc, setDesc] = useState('')
+  const [slug, setSlug] = useState('')
 
-  const slugify = (str: string) =>
-    str
-      .toLowerCase()
-      .trim()
-      .replace(/[^\w\s-]/g, '')
-      .replace(/[\s_-]+/g, '-')
-      .replace(/^-+|-+$/g, '')
   const router = useRouter()
   const handleSubmit = async (e: ChangeEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -32,7 +26,7 @@ export default function AddBlog() {
       method: 'POST',
       body: JSON.stringify({
         title,
-        slug: slugify(title),
+        slug,
         imgUrl,
         desc,
       }),
@@ -63,6 +57,14 @@ export default function AddBlog() {
         onChange={(e) => setTitle(e.target.value)}
         type="text"
       />
+
+      <input
+        placeholder="Enter Slug"
+        className="mt-4 w-full rounded-md border border-sky-400 px-4 py-2 text-black"
+        onChange={(e) => setSlug(e.target.value)}
+        type="text"
+      />
+
       <ReactQuill
         className="w-full rounded-md border border-sky-400 px-4 py-2"
         theme="bubble"
