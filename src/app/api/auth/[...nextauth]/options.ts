@@ -1,6 +1,6 @@
 import prisma from '@/utils/connect'
 import { PrismaAdapter } from '@auth/prisma-adapter'
-import type { AuthOptions, User } from 'next-auth'
+import { getServerSession, type AuthOptions, type User } from 'next-auth'
 import GoogleProvider from 'next-auth/providers/google'
 import type { Adapter } from 'next-auth/adapters'
 
@@ -48,4 +48,10 @@ export const authOptions: AuthOptions = {
       return session
     },
   },
+}
+
+// This will be use for API or SSR
+
+export const getAuthSession = async () => {
+  return await getServerSession(authOptions)
 }
