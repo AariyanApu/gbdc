@@ -67,7 +67,7 @@ export default function AboutUs() {
         {/* All members Picture  */}
 
         <Image
-          src={'/assets/banner/banner.webp'}
+          src={'/assets/about-us.webp'}
           alt="All members of GBDC"
           height={600}
           width={1200}

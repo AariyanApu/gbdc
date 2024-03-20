@@ -1,7 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-
 //  spell-checker: disable
-
 import Container from '@/components/Container'
 import { TypingText, TypingTitle } from '@/components/CustomText'
 import MotionDiv from '@/components/MotionDiv'
