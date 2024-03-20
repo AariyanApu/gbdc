@@ -34,7 +34,7 @@ export default function Achievements() {
           text="View More"
           link="/achievements"
           icon={<HiArrowTopRightOnSquare size={20} aria-hidden="true" />}
-          customStyle="flex sm:hidden w-[130px] mx-auto mt-5"
+          customStyle="flex sm:hidden w-[133px] mx-auto mt-5"
         />
       </div>
     </Container>
