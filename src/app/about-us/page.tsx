@@ -5,8 +5,6 @@ import { Admin } from '@/components/Admin'
 import Container from '@/components/Container'
 import { TypingTitle } from '@/components/CustomText'
 import { banglaFont, titleFont } from '@/utils/fonts'
-import { staggerContainer } from '@/utils/motion'
-import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 export default function AboutUs() {
@@ -69,7 +67,7 @@ export default function AboutUs() {
         {/* All members Picture  */}
 
         <Image
-          src={'/assets/banner/banner-3.webp'}
+          src={'/assets/banner/banner.webp'}
           alt="All members of GBDC"
           height={600}
           width={1200}
