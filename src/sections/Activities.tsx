@@ -10,7 +10,7 @@ export default function Activities() {
     <Container customStyle="overflow-x-hidden rounded  bg-slate-100 pt-8  lg:pt-20 ">
       <TypingTitle title={'Life-Sustaining Projects'} />
 
-      <div className={'  w-full px-4 py-4 sm:px-6 sm:py-8 lg:px-8'}>
+      <div className={'  w-full px-4 py-8 sm:px-6 lg:px-8'}>
         {/* Activities Headline */}
         <div className="flex items-center justify-center text-center sm:items-baseline sm:justify-between">
           <TypingText

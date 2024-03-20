@@ -13,7 +13,9 @@ export default function About() {
     <Container customStyle=" my-16 md:my-20 lg:my-20 xl:my-28 2xl:my-32 ">
       <TypingTitle title={'Our Lifesaving Mission'} />
 
-      <div className={'  mt-10 flex flex-col justify-evenly sm:flex-row '}>
+      <div
+        className={'mt-6 flex flex-col justify-evenly sm:mt-10 sm:flex-row '}
+      >
         <div className=" w-full px-5 sm:w-[300px] sm:px-0 lg:w-[500px]">
           <TypingText
             title={[
