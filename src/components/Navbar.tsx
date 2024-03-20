@@ -16,7 +16,10 @@ function classNames(...classes: string[]) {
 
 export default function NavBar() {
   return (
-    <Disclosure as="nav" className="bg-sky-400  text-white shadow-md">
+    <Disclosure
+      as="nav"
+      className=" mx-auto mt-2 max-w-7xl rounded-lg border-y-4 border-sky-400 px-2 shadow-lg"
+    >
       {({ open }) => (
         <>
           <motion.nav
@@ -59,7 +62,7 @@ export default function NavBar() {
                     height={200}
                   />
                   <div
-                    className={` ml-1 mt-1 items-center text-center text-4xl font-normal ${titleFont.className}`}
+                    className={` ml-1 mt-1 items-center text-center text-4xl font-normal text-sky-400 ${titleFont.className}`}
                   >
                     GBDC
                   </div>
@@ -84,7 +87,7 @@ export default function NavBar() {
                         <a
                           href={item.href}
                           className={
-                            'animation_color rounded-md  border border-sky-300/30 px-2 py-1 text-lg font-medium text-white/90 hover:border-white hover:bg-sky-500/40 hover:text-white '
+                            'animation_color rounded-md  border border-sky-400 px-2 py-1 text-lg font-medium text-sky-400 hover:border-white hover:bg-sky-400 hover:text-white '
                           }
                         >
                           {item.name}
