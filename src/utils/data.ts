@@ -324,3 +324,12 @@ export const emergencyContactData = [
     imgUrl: '/assets/emergency/tanvir.jpg',
   },
 ]
+
+export const donorData = [
+  { imgUrl: '/assets/about/1.webp' },
+  { imgUrl: '/assets/about/2.webp' },
+  { imgUrl: '/assets/about/3.webp' },
+  { imgUrl: '/assets/about/4.webp' },
+  { imgUrl: '/assets/about/5.webp' },
+  { imgUrl: '/assets/about/6.webp' },
+]

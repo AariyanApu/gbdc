@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function AchievementCard({ src }: AchievementCardProps) {
   return (
-    <div className="w-72 rounded-lg bg-white p-2 drop-shadow-lg">
+    <div className="w-72 rounded-lg bg-white p-2 shadow-md">
       <div className="relative h-96 w-[270px] cursor-pointer overflow-hidden rounded-xl bg-black">
         <Image
           src={src}
