@@ -1,11 +1,9 @@
 import CloudImage from '@/components/CloudImage'
 import Container from '@/components/Container'
 import { TypingTitle } from '@/components/CustomText'
-import MotionDiv from '@/components/MotionDiv'
 import PaginationControls from '@/components/PaginationControls'
 import { activitiesData } from '@/types/randomTypes'
 import { getDataNoStoreLocal } from '@/utils/getData'
-import { fadeIn } from '@/utils/motion'
 
 export default async function AllDonors({
   searchParams,
