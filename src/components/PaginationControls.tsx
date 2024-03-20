@@ -9,18 +9,20 @@ interface PaginationControlsProps {
   hasNextPage: boolean
   hasPrevPage: boolean
   totalPosts: number
+  perPage: any
 }
 const PaginationControls: FC<PaginationControlsProps> = ({
   hasNextPage,
   hasPrevPage,
   totalPosts,
+  perPage,
 }) => {
   const router = useRouter()
   const pathname = usePathname()
 
   const searchParams = useSearchParams()
   const page = searchParams.get('page') ?? '1'
-  const per_page: any = searchParams.get('per_page') ?? '6'
+  const per_page: any = searchParams.get('per_page') ?? perPage
   let allPages = []
   for (let i = 1; i <= Math.ceil(totalPosts / per_page); i++) {
     allPages.push(i)

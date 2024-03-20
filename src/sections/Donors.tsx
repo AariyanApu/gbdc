@@ -26,7 +26,7 @@ export default function Donors() {
         <Button
           variants={fadeIn('left', 'tween', 1.1, 0.6)}
           text="Our All Donors "
-          link="/achievements"
+          link="/donors"
           icon={<HiArrowTopRightOnSquare size={20} aria-hidden="true" />}
           customStyle="hidden sm:flex"
         />
@@ -39,7 +39,7 @@ export default function Donors() {
       <Button
         variants={fadeIn('left', 'tween', 1.1, 0.6)}
         text="View More"
-        link="/achievements"
+        link="/donors"
         icon={<HiArrowTopRightOnSquare size={20} aria-hidden="true" />}
         customStyle="flex sm:hidden w-[133px] mx-auto mt-5"
       />

@@ -39,6 +39,10 @@ model Notice {
   createdAt DateTime? @default(now())
 }
 
+model Donor{
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  imgUrl String
+}
 
 
 model Account {

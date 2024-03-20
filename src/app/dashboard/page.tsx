@@ -7,6 +7,7 @@ import DeletePost from '@/components/DeletePost'
 import { useState } from 'react'
 import { useSession, signIn, signOut } from 'next-auth/react'
 import AddNotice from '@/components/dashboard/AddNotice'
+import AddDonor from '@/components/dashboard/AddDonor'
 
 export default function Dasboard() {
   const { data: session }: any = useSession()
@@ -33,6 +34,7 @@ export default function Dasboard() {
             <div className="flex flex-row flex-wrap items-center justify-center gap-6">
               <AddActivity />
               <AddAchievement />
+              <AddDonor />
             </div>
           )}
         </div>

@@ -50,6 +50,7 @@ export default async function Activities({
         hasNextPage={end < data.length}
         hasPrevPage={start > 0}
         totalPosts={data.length}
+        perPage={per_page}
       />
     </Container>
   )
