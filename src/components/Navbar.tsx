@@ -4,7 +4,7 @@ import { navigation, navigationForMobile } from '@/utils/data'
 import { titleFont } from '@/utils/fonts'
 import { staggerContainer, textContainer, textVariant2 } from '@/utils/motion'
 import { Disclosure } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { XMarkIcon } from '@heroicons/react/24/outline'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -38,7 +38,6 @@ export default function NavBar() {
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
                     <RiMenu3Line className="block h-6 w-6" aria-hidden="true" />
-                    // <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>
@@ -119,9 +118,7 @@ export default function NavBar() {
                   key={item.name}
                   as="a"
                   href={item.href}
-                  className={
-                    'animation_color block rounded-md  border-b border-sky-400 px-3 py-2  text-3xl font-bold uppercase text-sky-400 '
-                  }
+                  className="animation_color block rounded-md  border-b border-sky-400 px-3 py-2  text-3xl font-bold uppercase text-sky-400 "
                 >
                   {item.name}
                 </Disclosure.Button>

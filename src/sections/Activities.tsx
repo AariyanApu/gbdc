@@ -31,7 +31,7 @@ export default function Activities() {
 
         <div className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">
           <ActivitiesCard
-            imgUrl={'/assets/activities/donateBlood.jpg'}
+            imgUrl={'/assets/activities/donateBlood.webp'}
             title={'Voluntary Blood Donation'}
             description={
               'We engage in voluntary blood donation to help patients and encourage others to donate blood.'
@@ -42,7 +42,7 @@ export default function Activities() {
           />
 
           <ActivitiesCard
-            imgUrl={'/assets/activities/bloodGroup.jpg'}
+            imgUrl={'/assets/activities/bloodGroup.webp'}
             title={'Free Blood Group Determination'}
             description={
               'We conduct free blood group determination camps at various times and locations.'
@@ -53,7 +53,7 @@ export default function Activities() {
           />
 
           <ActivitiesCard
-            imgUrl={'/assets/activities/wheelChair.jpg'}
+            imgUrl={'/assets/activities/wheelChair.webp'}
             title={'Distribution of Wheelchairs and Clothing'}
             description={
               'We provide wheelchairs and distribute warm clothing to the impoverished and needy individuals.'
