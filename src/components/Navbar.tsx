@@ -32,7 +32,7 @@ export default function NavBar() {
             <div className="relative flex h-16 items-center justify-between">
               {/* Mobile menu button */}
               <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
-                <Disclosure.Button className="animation_color inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-sky-300 hover:text-sky-950 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500">
+                <Disclosure.Button className="animation_color inline-flex items-center justify-center rounded-md p-2 text-sky-400   focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -103,7 +103,7 @@ export default function NavBar() {
           {/* NavLink for Mobile */}
 
           <Disclosure.Panel
-            className="lg:hidden"
+            className=" lg:hidden"
             as={motion.div}
             initial="collapsed"
             animate={open ? 'open' : 'collapsed'}
@@ -111,21 +111,17 @@ export default function NavBar() {
               open: { height: 'auto' },
               collapsed: { height: 0 },
             }}
-            transition={{ duration: 0.4 }}
+            transition={{ duration: 0.9 }}
           >
-            <div className="space-y-1 px-2 pb-3 pt-2">
+            <div className="-mt-24 flex h-screen flex-col items-center justify-center space-y-4  px-2 pb-3 text-center">
               {navigationForMobile.map((item) => (
                 <Disclosure.Button
                   key={item.name}
                   as="a"
                   href={item.href}
-                  className={classNames(
-                    item.current
-                      ? 'bg-sky-300 text-gray-50'
-                      : 'animation_color text-white hover:bg-sky-300 hover:text-sky-950',
-                    'block rounded-md px-3 py-2 text-base font-medium',
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
+                  className={
+                    'animation_color block rounded-md  border-b border-sky-400 px-3 py-2  text-3xl font-bold uppercase text-sky-400 '
+                  }
                 >
                   {item.name}
                 </Disclosure.Button>

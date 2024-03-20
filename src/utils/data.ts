@@ -16,25 +16,16 @@ export const navigationForMobile: Array<LinkProps> = [
 ]
 export const banner = [
   {
+    img: '/assets/banner/banner.webp',
+    alt: 'GBDC celebrating 3 years of success',
+  },
+  {
     img: '/assets/banner/banner-1.webp',
     alt: 'GBDC giving people wheelchairs',
   },
-  { img: '/assets/banner/banner-2.webp', alt: 'GBDC accepting awards' },
-  { img: '/assets/banner/banner-3.webp', alt: 'GBDC celebrating success' },
-  { img: '/assets/banner/banner-4.webp', alt: 'GBDC celebrating success' },
-  {
-    img: '/assets/banner/banner-5.webp',
-    alt: 'GBDC celebrating 3 years of success',
-  },
-  {
-    img: '/assets/banner/banner-7.webp',
-    alt: 'GBDC celebrating 3 years of success',
-  },
-  {
-    img: '/assets/banner/banner-8.webp',
-    alt: 'GBDC celebrating 3 years of success',
-  },
-  { img: '/assets/banner/banner.webp', alt: 'All members of GBDC' },
+  { img: '/assets/banner/banner-2.webp', alt: 'GBDC meet the volunteers' },
+  { img: '/assets/banner/banner-3.webp', alt: 'GBDC accepting awards' },
+  { img: '/assets/banner/banner-4.webp', alt: 'GBDC rally in Gourndadi' },
 ]
 
 export const achievementsData = [
