@@ -10,7 +10,7 @@ export default async function BlogSection() {
   const latestItem = data.reverse().slice(0, 1)
 
   return (
-    <Container>
+    <Container customStyle="py-20 ">
       <TypingTitle title={'Latest Stories'} />
       <div className="mb-5 mt-10">
         {Array.isArray(latestItem) &&

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply overflow-x-hidden bg-slate-50 text-slate-950;
+  @apply overflow-x-hidden  text-slate-950;
 }
 
 /* Color Platter */

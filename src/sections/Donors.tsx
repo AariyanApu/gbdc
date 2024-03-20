@@ -8,13 +8,21 @@ import { HiArrowTopRightOnSquare } from 'react-icons/hi2'
 
 export default function Donors() {
   return (
-    <Container customStyle="my-16 md:my-20 lg:my-20">
+    <Container customStyle="py-16 md:py-20 lg:py-20">
       <TypingTitle title={'Our Dedicated Donors'} />
-      <div className="flex items-center justify-center text-center sm:items-baseline sm:justify-between">
+      <div className="flex items-center justify-center text-center  sm:items-baseline sm:justify-between">
         <TypingText
-          title={['What', ' We', ' Got', ' For', ' Our', ' Performance']}
-          textStyles={`text-2xl font-bold tracking-tight text-slate-900 text-center lg:text-start  my-8`}
+          title={[
+            'Lifesaving ',
+            'Contributors ',
+            'of ',
+            'Our ',
+            'Donor ',
+            'Community ',
+          ]}
+          textStyles={`text-2xl font-bold tracking-tight text-slate-900 text-center lg:text-start  my-8 px-4 sm:px-0`}
         />
+
         <Button
           variants={fadeIn('left', 'tween', 1.1, 0.6)}
           text="Our All Donors "
