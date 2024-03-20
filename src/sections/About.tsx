@@ -37,10 +37,7 @@ export default function About() {
           >
             The Gournadi Blood Donors Club (GBDC) is a non-political and
             non-profit service organization. Embracing the slogan "A new world
-            for a new generation," it forges ahead with determination. So, come
-            join us, engage in humanitarian work, stand alongside and support
-            the impoverished, disadvantaged, and extremely underprivileged
-            members of society.
+            for a new generation," it forges ahead with determination.
           </MotionDiv>
         </div>
         <MotionDiv

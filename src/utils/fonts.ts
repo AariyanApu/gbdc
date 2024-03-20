@@ -1,4 +1,4 @@
-import { Quicksand } from 'next/font/google'
+import { Cantarell, Lato, Nunito, Quicksand } from 'next/font/google'
 import localFont from 'next/font/local'
 
 // export const titleFont = localFont({ src: "./balivia.ttf" });
@@ -12,7 +12,7 @@ export const banglaFont = localFont({
 })
 // Remove if no longer needed
 
-export const regularFont = Quicksand({
-  weight: ['400', '700'],
+export const regularFont = Nunito({
   subsets: ['latin'],
+  variable: '--font-regular',
 })

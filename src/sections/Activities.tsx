@@ -65,10 +65,10 @@ export default function Activities() {
         </div>
         <Button
           variants={fadeIn('left', 'tween', 1.1, 0.6)}
-          text="Our Activities "
+          text="View More"
           link="/activities"
           icon={<HiArrowTopRightOnSquare size={20} aria-hidden="true" />}
-          customStyle="flex sm:hidden w-40 mx-auto mt-5"
+          customStyle="flex sm:hidden w-[130px] mx-auto mt-5"
         />
       </div>
     </Container>
