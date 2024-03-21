@@ -1,9 +1,14 @@
 import { AchievementCardProps } from '@/types/randomTypes'
 import Image from 'next/image'
+import MotionDiv from './MotionDiv'
+import { fadeIn } from '@/utils/motion'
 
 export default function AchievementCard({ src }: AchievementCardProps) {
   return (
-    <div className="w-72 rounded-lg bg-white p-2 shadow-md">
+    <MotionDiv
+      variants={fadeIn('up', 'tween', 1.2, 0.7)}
+      customStyle="w-72 rounded-lg bg-white p-2 shadow-md"
+    >
       <div className="relative h-96 w-[270px] cursor-pointer overflow-hidden rounded-xl bg-black">
         <Image
           src={src}
@@ -13,6 +18,6 @@ export default function AchievementCard({ src }: AchievementCardProps) {
           className="absolute inset-0 h-96 w-[270px] rounded-xl object-cover object-center transition-all   duration-500 ease-in-out  hover:scale-105 hover:opacity-100 lg:opacity-70"
         />
       </div>
-    </div>
+    </MotionDiv>
   )
 }
