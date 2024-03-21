@@ -17,7 +17,7 @@ export default async function Activities({
 
   const start = (Number(page) - 1) * Number(per_page)
   const end = start + Number(per_page)
-  const filterData = data?.slice(start, end)
+  const filterData = data?.reverse().slice(start, end)
 
   return (
     <Container customStyle=" my-8 sm:my-16 max-w-7xl mx-auto">
