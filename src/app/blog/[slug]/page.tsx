@@ -1,10 +1,10 @@
 import CloudImage from '@/components/CloudImage'
 import { banglaFont } from '@/utils/fonts'
-import { getDataNoStore } from '@/utils/getData'
+import { getData } from '@/utils/getData'
 
 export default async function SingleBlog({ params }: any) {
   const { slug } = params
-  const data = await getDataNoStore(`posts/${slug}`)
+  const data = await getData(`posts/${slug}`)
 
   return (
     <div

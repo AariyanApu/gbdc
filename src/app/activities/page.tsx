@@ -3,14 +3,14 @@ import Container from '@/components/Container'
 import { TypingTitle } from '@/components/CustomText'
 import PaginationControls from '@/components/PaginationControls'
 import { activitiesData } from '@/types/randomTypes'
-import { getDataNoStore } from '@/utils/getData'
+import { getData } from '@/utils/getData'
 
 export default async function Activities({
   searchParams,
 }: {
   searchParams: { [key: string]: string | string[] | undefined }
 }) {
-  const data: activitiesData[] = await getDataNoStore('activities')
+  const data: activitiesData[] = await getData('activities')
 
   const page = searchParams['page'] ?? '1'
   const per_page = searchParams['per_page'] ?? '6'

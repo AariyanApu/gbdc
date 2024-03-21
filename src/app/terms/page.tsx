@@ -1,5 +1,4 @@
-import Container from '@/components/Container'
-import { TypingText, TypingTitle } from '@/components/CustomText'
+import { TypingTitle } from '@/components/CustomText'
 import { conditionData, membershipCancel, termsData } from '@/utils/data'
 import { banglaFont } from '@/utils/fonts'
 

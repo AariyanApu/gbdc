@@ -2,11 +2,11 @@ import Container from '@/components/Container'
 import { TypingTitle } from '@/components/CustomText'
 import { noticeProps } from '@/types/randomTypes'
 import { banglaFont } from '@/utils/fonts'
-import { getDataNoStore } from '@/utils/getData'
+import { getData, getDataNoStore } from '@/utils/getData'
 import Link from 'next/link'
 
 export default async function Notice() {
-  const data: noticeProps[] = await getDataNoStore('notice')
+  const data: noticeProps[] = await getData('notice')
   return (
     <Container
       customStyle={`mx-auto my-6 flex max-w-3xl flex-col gap-y-8 sm:gap-y-4 ${banglaFont.className}`}
