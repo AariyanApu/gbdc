@@ -90,7 +90,7 @@ export const reviews: Array<Review> = [
 export const footerLink: Array<LinkProps> = [
   { name: 'Contact Us', href: '/contact' },
   { name: 'Notice Board', href: '/notice' },
-  { name: 'All About Us', href: '/about-us' },
+  { name: 'All Donors', href: '/donors' },
 ]
 export const secondFooterLink: Array<LinkProps> = [
   {
