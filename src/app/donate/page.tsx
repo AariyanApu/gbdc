@@ -7,12 +7,8 @@ export default function Donate() {
     <Container>
       <div className="mx-auto my-12 max-w-7xl px-4 sm:px-6 lg:px-8">
         <TypingTitle title={"Support GBDC's Mission"} />
-        <div className="mt-12 flex flex-col items-start justify-around gap-y-6 text-gray-900 sm:gap-y-0 lg:flex-row">
+        <div className="mt-12 flex flex-col items-start justify-around gap-y-6 text-gray-900 sm:gap-y-0 lg:mt-16 lg:flex-row">
           <div>
-            <p className="w-full px-1  text-justify text-xl  lg:w-[500px] lg:file:text-left">
-              Your generosity fuels our work at GBDC. With your support, we can
-              continue empowering communities and changing lives.
-            </p>
             <p className=" mt-5 pl-1 text-xl ">
               You can Donate Money to GBDC By :
             </p>
