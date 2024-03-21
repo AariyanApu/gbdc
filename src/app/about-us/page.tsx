@@ -65,15 +65,16 @@ export default function AboutUs() {
         </div>
 
         {/* All members Picture  */}
-
-        <Image
-          src={'/assets/about-us.webp'}
-          alt="All members of GBDC"
-          height={600}
-          width={1200}
-          className="  my-20 w-full rounded-lg object-cover object-center px-4 shadow-md sm:h-[500px] lg:px-0"
-        />
-        {/* All member Introduction */}
+        <div className="px-4 lg:px-0">
+          <Image
+            src={'/assets/about-us.webp'}
+            alt="All members of GBDC"
+            height={600}
+            width={1200}
+            className=" my-20 w-full rounded-lg object-cover object-center shadow-md sm:h-[500px] "
+          />
+          {/* All member Introduction */}
+        </div>
         <div>
           {/* TODO: Add Title for Mobile  */}
           <TypingTitle title="The Admin Panel" />

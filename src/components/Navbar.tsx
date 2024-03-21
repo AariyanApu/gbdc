@@ -26,7 +26,7 @@ export default function NavBar() {
             variants={staggerContainer}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.25 }}
+            viewport={{ once: true, amount: 0.25 }}
             className={'mx-auto max-w-7xl'}
           >
             <div className="relative flex h-16 items-center justify-between">
