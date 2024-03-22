@@ -1,8 +1,11 @@
 import { activitiesData } from '@/types/randomTypes'
-import Link from 'next/link'
+import DOMPurify from 'isomorphic-dompurify'
 import CloudImage from './CloudImage'
-
 export default function BlogPostCard({ item }: { item: activitiesData }) {
+  const htmlContent = `${item.desc.substring(0, 200)} <a href="/blog/${
+    item.slug
+  }" class='link_styles'>...read more</a>`
+  const sanitizedHtmlContent = DOMPurify.sanitize(htmlContent)
   return (
     <div
       key={item.id}
@@ -20,12 +23,8 @@ export default function BlogPostCard({ item }: { item: activitiesData }) {
         <h1 className="text-3xl font-semibold md:text-2xl">{item.title}</h1>
         <div
           className="md:text-sm lg:text-base"
-          // Add a ... to the end of dangerouslySetInnerHTML
-
           dangerouslySetInnerHTML={{
-            __html: `${item.desc.substring(0, 200)} <a href="/blog/${
-              item.slug
-            }" class='link_styles'>...read more</a>`,
+            __html: sanitizedHtmlContent,
           }}
         />
       </div>

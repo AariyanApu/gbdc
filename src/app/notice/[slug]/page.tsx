@@ -2,11 +2,13 @@ import Container from '@/components/Container'
 import { TypingTitle } from '@/components/CustomText'
 import { noticeProps } from '@/types/randomTypes'
 import { banglaFont } from '@/utils/fonts'
-import { getData, getDataNoStore } from '@/utils/getData'
+import { getData } from '@/utils/getData'
+import DOMPurify from 'isomorphic-dompurify'
 
 export default async function SingleNotice({ params }: any) {
   const { slug } = params
   const data: noticeProps = await getData(`notice/${slug}`)
+  const sanitizedHtml = DOMPurify.sanitize(data.desc)
   return (
     <Container
       customStyle={`mx-auto my-4 max-w-4xl px-4 lg:px-0 ${banglaFont.className}`}
@@ -19,7 +21,7 @@ export default async function SingleNotice({ params }: any) {
         <div
           className="md:text-sm lg:text-lg"
           dangerouslySetInnerHTML={{
-            __html: data.desc,
+            __html: sanitizedHtml,
           }}
         />
       </div>
