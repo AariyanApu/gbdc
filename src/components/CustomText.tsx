@@ -9,7 +9,7 @@ export const TypingTitle = ({ title }: TypingTitleProps) => (
   <div>
     <motion.p
       variants={textContainer}
-      className={` mx-auto flex w-[340px] flex-wrap items-center justify-center text-center  text-3xl font-medium sm:w-full sm:text-5xl ${titleFont.className}`}
+      className={` mx-auto flex w-[340px] items-center justify-center text-center  text-3xl font-medium sm:w-full sm:text-5xl ${titleFont.className}`}
     >
       {Array.from(title).map((letter, index) => (
         <motion.span variants={textVariant2} key={index}>
