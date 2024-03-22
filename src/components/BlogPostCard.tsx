@@ -15,18 +15,19 @@ export default function BlogPostCard({ item }: { item: activitiesData }) {
         width={500}
         customStyles="h-72 w-[550px] rounded-t-md object-cover opacity-95 transition-opacity duration-300 ease-in-out hover:opacity-100 sm:rounded-s-md sm:rounded-tr-none md:h-80"
       />
-      <div className=" mt-8 flex flex-col gap-y-2  px-4 pb-1 sm:pl-8 ">
+      <div className=" mt-4 flex flex-col gap-y-2  px-4 pb-1 sm:pl-8 ">
         <p className="mt-4 text-sm">{item.createdAt.substring(0, 10)}</p>
         <h1 className="text-3xl font-semibold md:text-2xl">{item.title}</h1>
         <div
           className="md:text-sm lg:text-base"
+          // Add a ... to the end of dangerouslySetInnerHTML
+
           dangerouslySetInnerHTML={{
-            __html: item.desc.substring(0, 250),
+            __html: `${item.desc.substring(0, 200)} <a href="/blog/${
+              item.slug
+            }" class='link_styles'>...read more</a>`,
           }}
         />
-        <Link href={`/blog/${item.slug}`} className="link_styles mt-2">
-          ... Read More
-        </Link>
       </div>
     </div>
   )
