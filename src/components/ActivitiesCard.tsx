@@ -35,7 +35,10 @@ export default function ActivitiesCard({
               {title}
             </a>
           </h3>
-          <p aria-hidden="true" className="mt-1 text-base text-white">
+          <p
+            aria-hidden="true"
+            className="mt-1 hidden text-base text-white lg:flex"
+          >
             {description}
           </p>
         </div>
