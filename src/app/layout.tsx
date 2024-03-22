@@ -7,7 +7,7 @@ import AuthProvider from '@/utils/AuthProvider'
 import { Analytics } from '@vercel/analytics/react'
 
 export const metadata: Metadata = {
-  title: 'GBDC - Save Lives',
+  title: 'GBDC - Give Blood, Save Life',
   description:
     "GBDC is a dynamic web app revolutionizing blood donation, instantly linking heroes who give with lives that need saving. Seamlessly connecting donors and recipients, it's a beacon of hope in emergencies.",
   manifest: '/manifest.json',
