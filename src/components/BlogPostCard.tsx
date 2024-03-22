@@ -4,7 +4,7 @@ import CloudImage from './CloudImage'
 export default function BlogPostCard({ item }: { item: activitiesData }) {
   const htmlContent = `${item.desc.substring(0, 200)} <a href="/blog/${
     item.slug
-  }" class='link_styles'>...read more</a>`
+  }" class='link_styles'>...Read More</a>`
   const sanitizedHtmlContent = DOMPurify.sanitize(htmlContent)
   return (
     <div
