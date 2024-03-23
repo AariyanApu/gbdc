@@ -42,15 +42,17 @@ export default function About() {
         </div>
         <MotionDiv
           variants={fadeIn('up', 'tween', 1.2, 0.7)}
-          customStyle="mx-4 mt-5 sm:mx-0 md:mt-6 lg:mt-0"
+          customStyle="mx-4 mt-5 sm:mx-0 md:mt-6 lg:mt-0 relative md:h-[300px] md:w-[350px] lg:h-[250px] lg:w-[450px] w-full h-[250px]"
         >
           {' '}
           <Image
             src={'/assets/about.webp'}
             className=" mx-auto h-[250px] w-full rounded-md object-cover object-center drop-shadow md:h-[300px] md:w-[350px] lg:h-[250px] lg:w-[450px] "
             alt="Group Photo "
-            height={800}
-            width={800}
+            // height={800}
+            // width={800}
+            fill
+            priority
           />{' '}
         </MotionDiv>
       </div>
