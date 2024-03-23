@@ -17,17 +17,13 @@ export default function CounterCard({ end, imgSrc, desc }: counterCardProps) {
         <div
           className={`${titleFont.className} item-center mx-auto mt-8 flex w-full flex-col justify-center gap-y-1 rounded-md bg-slate-200 p-10 text-center  shadow-md sm:mt-16 md:h-64 md:w-[230px] lg:h-72 lg:w-[330px]`}
         >
-          <div className=" relative mx-auto mb-2 h-32 w-32 sm:h-24 md:w-24 lg:h-32 lg:w-32">
-            <Image
-              src={imgSrc}
-              // height={200}
-              // width={200}
-              fill
-              priority
-              alt={desc}
-              className=" object-cover object-center drop-shadow"
-            />
-          </div>
+          <Image
+            src={imgSrc}
+            height={200}
+            width={200}
+            alt={desc}
+            className="mx-auto mb-2 w-32 drop-shadow-md md:w-24 lg:w-32  "
+          />
           <div className="mx-auto flex gap-x-1">
             <span
               className="text-7xl text-red-700 md:text-4xl lg:text-7xl"

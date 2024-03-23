@@ -7,15 +7,15 @@ export default function AchievementCard({ src }: AchievementCardProps) {
   return (
     <MotionDiv
       variants={fadeIn('up', 'tween', 1.2, 0.7)}
-      customStyle="w-72 rounded-lg bg-white p-2 shadow-md"
+      customStyle="sm:w-72 w-64 rounded-lg bg-white p-2 shadow"
     >
-      <div className="relative h-96 w-[270px] cursor-pointer overflow-hidden rounded-xl bg-black">
+      <div className="relative h-72 w-60 cursor-pointer overflow-hidden rounded-xl bg-black sm:h-96 sm:w-[270px]">
         <Image
           src={src}
           alt="GBDC accepting award"
-          width={500}
-          height={500}
-          className="absolute inset-0 h-96 w-[270px] rounded-xl object-cover object-center transition-all   duration-500 ease-in-out  hover:scale-105 hover:opacity-100 lg:opacity-70"
+          fill
+          priority
+          className=" h-full w-full rounded-xl object-cover object-center transition-all duration-500 ease-in-out  hover:scale-105 hover:opacity-100 lg:opacity-70"
         />
       </div>
     </MotionDiv>

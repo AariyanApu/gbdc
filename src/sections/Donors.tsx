@@ -8,7 +8,7 @@ import { HiArrowTopRightOnSquare } from 'react-icons/hi2'
 
 export default function Donors() {
   return (
-    <Container customStyle="py-16 md:py-20 lg:py-20">
+    <Container customStyle="py-16 md:py-20 lg:py-20 px-4 sm:px-6 ">
       <TypingTitle title={'Our Dedicated Donors'} />
       <div className="flex items-center justify-center text-center  sm:items-baseline sm:justify-between">
         <TypingText
