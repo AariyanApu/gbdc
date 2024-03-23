@@ -81,8 +81,12 @@ export const reviews: Array<Review> = [
   { imgUrl: '/assets/testimonial/3.jpeg' },
   { imgUrl: '/assets/testimonial/4.jpeg' },
   { imgUrl: '/assets/testimonial/5.jpeg' },
+  { imgUrl: '/assets/testimonial/1.jpeg' },
   { imgUrl: '/assets/testimonial/6.jpeg' },
+  { imgUrl: '/assets/testimonial/4.jpeg' },
   { imgUrl: '/assets/testimonial/7.webp' },
+  { imgUrl: '/assets/testimonial/5.jpeg' },
+  { imgUrl: '/assets/testimonial/3.jpeg' },
 ]
 
 export const footerLink: Array<LinkProps> = [
