@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   manifest: '/manifest.json',
   viewport:
     'minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover',
-  metadataBase: new URL('https://next-dashboard.pinkjelly.org/'),
+  metadataBase: new URL('https://gbdc.vercel.app'),
 }
 
 export default function RootLayout({
