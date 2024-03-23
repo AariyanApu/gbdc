@@ -14,14 +14,16 @@ export default function ActivitiesCard({
   return (
     <motion.div
       variants={variants}
-      className={` group relative  overflow-hidden rounded-lg ${customStyle}  `}
+      className={` group relative  overflow-hidden rounded-lg ${customStyle} ${imgSize} w-full `}
     >
       <Image
         src={imgUrl}
-        height={800}
-        width={800}
+        // height={800}
+        // width={800}
         alt={title}
         className={`  object-cover object-center drop-shadow-sm group-hover:scale-105  group-hover:transition-transform group-hover:duration-300 group-hover:ease-in ${imgSize} sm:absolute sm:inset-0 sm:h-full sm:w-full `}
+        fill
+        priority
       />
       <div
         aria-hidden="true"

@@ -48,7 +48,6 @@ export default function Activities() {
               'We conduct free blood group determination camps at various times and locations.'
             }
             variants={fadeIn('left', 'tween', 1.1, 0.6)}
-            customStyle="h-full"
             imgSize="h-[300px]"
           />
 
@@ -59,7 +58,6 @@ export default function Activities() {
               'We provide wheelchairs and distribute warm clothing to the impoverished and needy individuals.'
             }
             variants={fadeIn('left', 'tween', 1.5, 0.7)}
-            customStyle="h-full"
             imgSize="h-[300px]"
           />
         </div>
