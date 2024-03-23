@@ -7,16 +7,18 @@ interface featuredCardProps {
 }
 export default function FeaturedCard({ imgUrl, link }: featuredCardProps) {
   return (
-    <div className=" h-24 w-72 cursor-pointer overflow-hidden rounded-lg bg-slate-200 p-2 drop-shadow">
-      <Link href={link} className="h-[80px] w-72">
-        <Image
-          src={imgUrl}
-          alt="GBDC Featured on Newspaper"
-          fill
-          priority
-          className=" rounded-xl object-fill grayscale filter transition-all duration-500 ease-in-out hover:scale-105 hover:grayscale-0"
-        />
-      </Link>
+    <div className=" flex h-28 w-80 cursor-pointer items-center justify-center  overflow-hidden rounded-lg bg-slate-200 shadow">
+      <div className="relative mx-auto my-auto h-24 w-72">
+        <Link href={link} className="">
+          <Image
+            src={imgUrl}
+            alt="GBDC Featured on Newspaper"
+            fill
+            priority
+            className=" rounded-xl object-fill grayscale filter transition-all duration-500 ease-in-out hover:scale-105 hover:grayscale-0"
+          />
+        </Link>
+      </div>
     </div>
   )
 }
