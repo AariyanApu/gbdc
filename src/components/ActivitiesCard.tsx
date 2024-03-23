@@ -14,7 +14,7 @@ export default function ActivitiesCard({
   return (
     <motion.div
       variants={variants}
-      className={` group relative  overflow-hidden rounded-lg ${customStyle} ${imgSize} w-full `}
+      className={` group relative  overflow-hidden rounded-lg ${customStyle} w-full ${imgSize} `}
     >
       <Image
         src={imgUrl}
