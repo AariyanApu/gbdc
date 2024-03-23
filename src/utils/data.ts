@@ -76,15 +76,13 @@ export const featuredData = [
 ]
 
 export const reviews: Array<Review> = [
+  { imgUrl: '/assets/testimonial/1.jpeg' },
+  { imgUrl: '/assets/testimonial/2.webp' },
+  { imgUrl: '/assets/testimonial/3.jpeg' },
+  { imgUrl: '/assets/testimonial/4.jpeg' },
   { imgUrl: '/assets/testimonial/5.jpeg' },
   { imgUrl: '/assets/testimonial/6.jpeg' },
-  { imgUrl: '/assets/testimonial/7.jpeg' },
-  { imgUrl: '/assets/testimonial/8.jpeg' },
-  { imgUrl: '/assets/testimonial/9.jpeg' },
-  { imgUrl: '/assets/testimonial/10.jpeg' },
-  { imgUrl: '/assets/testimonial/6.jpeg' },
-  { imgUrl: '/assets/testimonial/7.jpeg' },
-  { imgUrl: '/assets/testimonial/8.jpeg' },
+  { imgUrl: '/assets/testimonial/7.webp' },
 ]
 
 export const footerLink: Array<LinkProps> = [

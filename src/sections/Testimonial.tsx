@@ -33,10 +33,10 @@ function Review({
     >
       <Image
         src={imgUrl}
-        width={500}
-        height={500}
+        width={300}
+        height={200}
         alt="Review"
-        className="h-36 w-full rounded-4xl object-cover object-center"
+        className="h-36 w-full rounded-4xl object-fill"
       />
     </div>
   )
