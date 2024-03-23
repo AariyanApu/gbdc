@@ -35,7 +35,7 @@ export default function Footer() {
           <a
             href={'/contact'}
             className={
-              ' w-[150px]  rounded-md border border-slate-300/80 px-2 py-1.5 text-center text-sm transition-colors duration-500 ease-in-out  hover:border-sky-500 hover:text-sky-500 hover:shadow-md  sm:hidden sm:w-44 sm:px-4 sm:py-2'
+              ' animation_color  w-[150px] rounded-md border-b border-slate-300/80 px-2 py-1.5 text-center text-sm  hover:border-sky-500 hover:text-sky-500 hover:shadow-md  sm:hidden sm:w-44 sm:px-4 sm:py-2'
             }
           >
             Contact Us
