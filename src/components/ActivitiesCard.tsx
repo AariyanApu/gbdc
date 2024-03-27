@@ -18,10 +18,8 @@ export default function ActivitiesCard({
     >
       <Image
         src={imgUrl}
-        // height={800}
-        // width={800}
         alt={title}
-        className={`  object-cover object-center drop-shadow-sm group-hover:scale-105  group-hover:transition-transform group-hover:duration-300 group-hover:ease-in ${imgSize} sm:absolute sm:inset-0 sm:h-full sm:w-full `}
+        className={`object-cover object-center drop-shadow-sm group-hover:scale-105  group-hover:transition-transform group-hover:duration-300 group-hover:ease-in ${imgSize} sm:absolute sm:inset-0 sm:h-full sm:w-full `}
         fill
         priority
       />
@@ -31,12 +29,10 @@ export default function ActivitiesCard({
       />
       <div className="absolute inset-0 flex items-end p-6 ">
         <div>
-          <h3 className="text-2xl font-semibold text-white">
-            <a href="/activities">
-              <span className="absolute inset-0" />
-              {title}
-            </a>
-          </h3>
+          <div className="text-2xl font-semibold text-white">
+            <span className="absolute inset-0" />
+            {title}
+          </div>
           <p
             aria-hidden="true"
             className="mt-1 hidden text-base text-white lg:flex"
