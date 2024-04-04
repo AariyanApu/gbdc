@@ -3,14 +3,7 @@
 import { CldUploadButton } from 'next-cloudinary'
 import { useRouter } from 'next/navigation'
 import { ChangeEvent, useState } from 'react'
-import 'react-quill/dist/quill.bubble.css'
-import dynamic from 'next/dynamic'
-
-const ReactQuill: any = dynamic(() => import('react-quill'), { ssr: false })
-
-interface imgUrl {
-  imgUrl: string
-}
+import TextEditor from '../Editor'
 
 export default function AddBlog() {
   const [title, setTitle] = useState('')
@@ -64,17 +57,7 @@ export default function AddBlog() {
         onChange={(e) => setSlug(e.target.value)}
         type="text"
       />
-
-      <ReactQuill
-        className="w-full rounded-md border border-sky-400 px-4 py-2"
-        theme="bubble"
-        value={desc}
-        onChange={setDesc}
-        placeholder="Tell your story..."
-      />
-      <button type="submit" className="rounded-md bg-sky-400 px-4 py-2">
-        Submit Blog
-      </button>
+      <TextEditor desc={desc} setDesc={setDesc} height={500} />
     </form>
   )
 }

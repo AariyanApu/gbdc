@@ -1,10 +1,7 @@
 'use client'
 import { useRouter } from 'next/navigation'
 import { ChangeEvent, useState } from 'react'
-import 'react-quill/dist/quill.bubble.css'
-import dynamic from 'next/dynamic'
-
-const ReactQuill: any = dynamic(() => import('react-quill'), { ssr: false })
+import TextEditor from '../Editor'
 
 export default function AddNotice() {
   const [title, setTitle] = useState('')
@@ -52,13 +49,7 @@ export default function AddNotice() {
         onChange={(e) => setSlug(slugify(e.target.value))}
         type="text"
       />
-      <ReactQuill
-        className="w-full rounded-md border border-sky-400 px-4 py-2"
-        theme="bubble"
-        value={desc}
-        onChange={setDesc}
-        placeholder="Tell your story..."
-      />
+      <TextEditor desc={desc} setDesc={setDesc} height={300} />
       <button type="submit" className="rounded-md bg-sky-400 px-4 py-2">
         Submit Notice
       </button>
