@@ -3,14 +3,14 @@ import { LinkProps, Review } from '@/types/randomTypes'
 export const navigation: Array<LinkProps> = [
   { name: 'About Us', href: '/about-us', current: false },
   { name: 'Activities', href: '/activities', current: false },
-  { name: 'Achievements', href: '/achievements', current: false },
+  { name: 'Donate Us', href: '/donate', current: false },
   { name: 'Blog', href: '/blog', current: false },
 ]
 export const navigationForMobile: Array<LinkProps> = [
   { name: 'Home', href: '', current: false },
   { name: 'About Us', href: '/about-us', current: false },
   { name: 'Activities', href: '/activities', current: false },
-  { name: 'Achievements', href: '/achievements', current: false },
+  { name: 'Donate Us', href: '/donate', current: false },
   { name: 'Notice Board', href: '/notice', current: false },
   { name: 'Blog', href: '/blog', current: false },
 ]
