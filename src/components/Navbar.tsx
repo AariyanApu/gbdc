@@ -10,10 +10,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { RiMenu3Line } from 'react-icons/ri'
 
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
-}
-
 export default function NavBar() {
   return (
     <Disclosure
@@ -83,14 +79,14 @@ export default function NavBar() {
                         aria-current={item.current ? 'page' : undefined}
                         className="my-4 "
                       >
-                        <a
+                        <Link
                           href={item.href}
                           className={
-                            'animation_color rounded-md  border border-sky-400 px-2 py-1 text-lg font-medium text-sky-400 hover:border-white hover:bg-sky-400 hover:text-white '
+                            'animation_color rounded-md border-b  border-b-sky-400 px-2 py-1 text-lg font-medium text-sky-400 hover:border-white hover:bg-sky-400 hover:text-white '
                           }
                         >
                           {item.name}
-                        </a>
+                        </Link>
                       </motion.div>
                     ))}
                   </div>
