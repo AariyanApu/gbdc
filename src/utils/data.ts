@@ -1,16 +1,17 @@
 import { LinkProps, Review } from '@/types/randomTypes'
 
 export const navigation: Array<LinkProps> = [
+  { name: 'Donate Helpless People', href: '/donate', current: false },
+  { name: 'Upcoming Events', href: '/upevents', current: false },
+  { name: 'Current Events', href: '/events', current: false },
   { name: 'About Us', href: '/about-us', current: false },
-  { name: 'Activities', href: '/activities', current: false },
-  { name: 'Donate Us', href: '/donate', current: false },
-  { name: 'Blog', href: '/blog', current: false },
 ]
 export const navigationForMobile: Array<LinkProps> = [
   { name: 'Home', href: '', current: false },
+  { name: 'Donate Helpless People', href: '/donate', current: false },
+  { name: 'Upcoming Events', href: '/upevents', current: false },
+  { name: 'Current Events', href: '/events', current: false },
   { name: 'About Us', href: '/about-us', current: false },
-  { name: 'Activities', href: '/activities', current: false },
-  { name: 'Donate Us', href: '/donate', current: false },
   { name: 'Notice Board', href: '/notice', current: false },
   { name: 'Blog', href: '/blog', current: false },
 ]
