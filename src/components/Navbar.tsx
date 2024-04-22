@@ -14,7 +14,7 @@ export default function NavBar() {
   return (
     <Disclosure
       as="nav"
-      className=" mx-auto mt-2 max-w-7xl rounded-lg border-y-4 border-sky-400 px-2 shadow-lg"
+      className=" mx-auto mt-2 max-w-7xl rounded-lg border-y-2 border-sky-400 px-2 shadow-lg"
     >
       {({ open }) => (
         <>
