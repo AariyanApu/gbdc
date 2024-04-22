@@ -8,17 +8,17 @@ export default function Counter() {
       <TypingTitle title={'Our Organized Efforts'} />
       <div className="flex flex-col items-center justify-evenly px-6 sm:px-0 md:flex-row">
         <CounterCard
-          end={800}
+          end={5000}
           imgSrc="/assets/bloodBags.png"
           desc="Bags Blood"
         />
         <CounterCard
-          end={200}
+          end={800}
           imgSrc="/assets/donor.png"
           desc="Active Blood Donors"
         />
         <CounterCard
-          end={50}
+          end={200}
           imgSrc="/assets/camp.png"
           desc="Blood Donation Camps"
         />

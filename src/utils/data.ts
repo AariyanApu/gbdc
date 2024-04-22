@@ -100,7 +100,7 @@ export const secondFooterLink: Array<LinkProps> = [
     name: 'Volunteer to GBDC',
     href: 'https://docs.google.com/forms/d/e/1FAIpQLSdKqIpsTlYF7F5liN8-ftSN2VnSGDL-vPx18dmbWslMUhk3cg/viewform?usp=pp_url',
   },
-  { name: 'Donate to GBDC', href: '/donate' },
+  { name: 'Donate Helpless ', href: '/donate' },
   { name: 'Terms & Condition', href: '/terms' },
 ]
 export const adminPanel = [
