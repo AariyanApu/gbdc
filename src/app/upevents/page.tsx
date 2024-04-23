@@ -1,14 +1,14 @@
 import { TypingTitle } from '@/components/CustomText'
-import { eventsData } from '@/utils/data'
+import { upEventsData } from '@/utils/data'
 import Image from 'next/image'
 
-export default function Events() {
+export default function UpEvents() {
   return (
     <div className="container mx-auto my-8">
-      <TypingTitle title="On Going Events" />
+      <TypingTitle title="Upcoming Events" />
 
       <div className=" px-4 text-center lg:px-0">
-        {eventsData?.map((data) => (
+        {upEventsData?.map((data) => (
           <div key={data.name}>
             <div className="my-8">
               <div className="mb-2 text-3xl">{data.name}</div>

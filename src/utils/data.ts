@@ -351,3 +351,15 @@ export const eventsData: EventData[] = [
     },
   },
 ]
+
+export const upEventsData: EventData[] = [
+  {
+    name: 'Eid ul-Adha: Spreading Joy with Eid Gifts for the Needy',
+    desc: "As Eid ul-Adha draws near, we're not only gearing up for the festivities but also for an act of compassion. This year, we're distributing Eid gifts to the less fortunate, aiming to brighten their celebrations and remind them they're valued members of our community. From essential items to toys, each gift is chosen with care. Let's make this Eid memorable by spreading joy and showing kindness to those in need. Eid Mubarak!",
+    imgUrl: {
+      1: '/assets/upEvents/1.jpg',
+      2: '/assets/upEvents/2.jpg',
+      3: '/assets/upEvents/3.jpg',
+    },
+  },
+]
