@@ -68,3 +68,9 @@ export interface noticeProps {
   views: number
   createdAt: string
 }
+
+export interface EventData {
+  name: string
+  desc: string
+  imgUrl: { [key: string]: string }
+}
