@@ -60,7 +60,7 @@ export const achievementsData = [
 export const featuredData = [
   {
     imgUrl: '/assets/featured/sonaliSomoy.jpg',
-    link: 'http://sonalisomoy24.com/%E0%A6%97%E0%A7%8C%E0%A6%B0%E0%A6%A8%E0%A6%A6%E0%A7%80-%E0%A6%AC%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%A1-%E0%A6%A1%E0%A7%8B%E0%A6%A8%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%B8-%E0%A6%95%E0%A7%8D%E0%A6%B2/?fbclid=IwAR3KztrLQAtIgF-OtU3X4k3FEgXpZQ0C4CiYANqPX2XmxPLusZ9vtoULYTs',
+    link: 'https://www.youtube.com/watch?v=IKsz54zx23k',
   },
   {
     imgUrl: '/assets/featured/report71.png',
@@ -72,7 +72,7 @@ export const featuredData = [
   },
   {
     imgUrl: '/assets/featured/TBT-Logo.png',
-    link: 'https://www.facebook.com/photo/?fbid=835198967244209&set=pcb.1038287263318096',
+    link: 'https://www.youtube.com/watch?v=IKsz54zx23k',
   },
 ]
 
