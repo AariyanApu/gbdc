@@ -3,7 +3,7 @@ import { EventData, LinkProps, Review } from '@/types/randomTypes'
 export const navigation: Array<LinkProps> = [
   { name: 'Donate Helpless People', href: '/donate', current: false },
   { name: 'Upcoming Events', href: '/upevents', current: false },
-  { name: 'Current Events', href: '/events', current: false },
+  { name: 'Running Events', href: '/events', current: false },
   { name: 'About Us', href: '/about-us', current: false },
 ]
 export const navigationForMobile: Array<LinkProps> = [
