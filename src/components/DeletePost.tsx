@@ -13,7 +13,7 @@ export default function DeletePost() {
   )
   if (error) return <div>failed to load</div>
   if (!data) return <div>loading...</div>
-  console.log(data)
+
 
   const deletePost = async (slug: string) => {
     try {
