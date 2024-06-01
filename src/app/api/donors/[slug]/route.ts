@@ -37,7 +37,6 @@ export const DELETE = async (
 ) => {
   const { slug } = params
   const id = slug
-  console.log('id from route', id)
   try {
     // Delete the post by slug
     const deleteResult = await prisma.donor.delete({

@@ -10,6 +10,7 @@ import AddNotice from '@/components/dashboard/AddNotice'
 import AddDonor from '@/components/dashboard/AddDonor'
 import DeleteDonor from '@/components/dashboard/DeleteDonor'
 import DeleteAchievements from '@/components/dashboard/DeleteAchievements'
+import DeleteActivity from '@/components/dashboard/DeleteActivity'
 
 export default function Dasboard() {
   const { data: session }: any = useSession()
@@ -34,6 +35,7 @@ export default function Dasboard() {
               <DeletePost />
               <DeleteDonor />
               <DeleteAchievements />
+              <DeleteActivity />
             </>
           )}
           {!deleteButton && (

@@ -39,7 +39,7 @@ export const DELETE = async (
   const id = slug
   try {
     // Delete the post by slug
-    const deleteResult = await prisma.achievement.delete({
+    const deleteResult = await prisma.activity.delete({
       where: {
         id,
       },
