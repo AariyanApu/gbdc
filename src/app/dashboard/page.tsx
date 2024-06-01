@@ -8,6 +8,7 @@ import { useState } from 'react'
 import { useSession, signIn, signOut } from 'next-auth/react'
 import AddNotice from '@/components/dashboard/AddNotice'
 import AddDonor from '@/components/dashboard/AddDonor'
+import DeleteDonor from '@/components/dashboard/DeleteDonor'
 
 export default function Dasboard() {
   const { data: session }: any = useSession()
@@ -28,7 +29,10 @@ export default function Dasboard() {
               <AddNotice />
             </div>
           ) : (
-            <DeletePost />
+            <>
+              <DeletePost />
+              <DeleteDonor />
+            </>
           )}
           {!deleteButton && (
             <div className="flex flex-row flex-wrap items-center justify-center gap-6">

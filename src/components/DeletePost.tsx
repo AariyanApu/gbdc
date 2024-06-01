@@ -14,7 +14,6 @@ export default function DeletePost() {
   if (error) return <div>failed to load</div>
   if (!data) return <div>loading...</div>
 
-
   const deletePost = async (slug: string) => {
     try {
       const response = await fetch(`/api/posts/${slug}`, {
@@ -37,6 +36,7 @@ export default function DeletePost() {
 
   return (
     <div>
+      <h1 className="text-center text-3xl font-bold">Delete Blog Post</h1>
       {Array.isArray(data) &&
         data?.map((item: activitiesData) => (
           <div
