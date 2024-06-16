@@ -7,7 +7,7 @@ export default function DeleteActivity() {
     const res = await fetch(...args)
     return res.json()
   }
-  const { data, error, mutate }: SWRResponse<activitiesData, any> = useSWR(
+  const { data, error, mutate }: SWRResponse<any> = useSWR(
     '/api/activities',
     fetcher,
   )
@@ -37,7 +37,7 @@ export default function DeleteActivity() {
     <div className="mt-10 max-w-6xl font-bold">
       <h1 className="text-center text-3xl">Delete activities Image</h1>
       <div className="flex flex-row flex-wrap gap-2">
-        {data?.map((item) => (
+        {data?.map((item: any) => (
           <div
             className="flex h-32 w-32 flex-row items-center justify-center rounded-lg  p-2 shadow  "
             key={item.id}
