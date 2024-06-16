@@ -6,7 +6,7 @@ import { getData, getDataNoStore } from '@/utils/getData'
 import React from 'react'
 
 export default async function BlogSection() {
-  const data: activitiesData[] = await getData('posts')
+  const data: activitiesData[] = await getDataNoStore('posts')
   const latestItem = data.reverse().slice(0, 1)
 
   return (
