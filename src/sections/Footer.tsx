@@ -46,7 +46,7 @@ export default function Footer() {
       {/* Footer credits of developer */}
       <div className="mt-6 text-center text-xs tracking-wide md:mr-4 md:text-end">
         Design and Developed by{' '}
-        <a href="https://aariyanapu.com" className="link_styles">
+        <a href="https://aariyan.info" className="link_styles">
           Aariyan Apu
         </a>{' '}
       </div>
