@@ -1,8 +1,8 @@
 import BlogPostCard from '@/components/BlogPostCard'
 import Container from '@/components/Container'
 import { TypingTitle } from '@/components/CustomText'
+import { getDataNoStore } from '@/hooks/fetchData'
 import { activitiesData } from '@/types/randomTypes'
-import { getData, getDataNoStore } from '@/utils/getData'
 import React from 'react'
 
 export default async function BlogSection() {

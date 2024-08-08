@@ -1,4 +1,4 @@
-import prisma from '@/utils/connect'
+import prisma from '@/db/connect'
 import { NextResponse } from 'next/server'
 
 // Fetch All Post

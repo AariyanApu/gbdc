@@ -2,8 +2,8 @@ import CloudImage from '@/components/CloudImage'
 import Container from '@/components/Container'
 import { TypingTitle } from '@/components/CustomText'
 import PaginationControls from '@/components/PaginationControls'
+import { getDataNoStore } from '@/hooks/fetchData'
 import { activitiesData } from '@/types/randomTypes'
-import { getData, getDataNoStore } from '@/utils/getData'
 
 export default async function Activities({
   searchParams,

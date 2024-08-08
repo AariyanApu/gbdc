@@ -3,7 +3,7 @@
 import Container from '@/components/Container'
 import { TypingText, TypingTitle } from '@/components/CustomText'
 import MotionDiv from '@/components/MotionDiv'
-import { fadeIn } from '@/utils/motion'
+import { fadeIn } from '@/libs/motion'
 import Image from 'next/image'
 
 export default function About() {

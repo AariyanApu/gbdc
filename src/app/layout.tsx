@@ -3,8 +3,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Footer from '@/sections/Footer'
 import { regularFont } from '@/utils/fonts'
-import AuthProvider from '@/utils/AuthProvider'
 import { Analytics } from '@vercel/analytics/react'
+import AuthProvider from '@/auth/AuthProvider'
 
 export const metadata: Metadata = {
   title: 'GBDC - Give Blood, Save Life',

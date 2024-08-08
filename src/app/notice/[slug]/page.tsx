@@ -1,8 +1,8 @@
 import Container from '@/components/Container'
 import { TypingTitle } from '@/components/CustomText'
+import { getData } from '@/hooks/fetchData'
 import { noticeProps } from '@/types/randomTypes'
 import { banglaFont } from '@/utils/fonts'
-import { getData } from '@/utils/getData'
 import DOMPurify from 'isomorphic-dompurify'
 
 export default async function SingleNotice({ params }: any) {

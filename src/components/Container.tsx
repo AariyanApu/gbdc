@@ -1,5 +1,5 @@
 'use client'
-import { staggerContainer } from '@/utils/motion'
+import { staggerContainer } from '@/libs/motion'
 import { motion } from 'framer-motion'
 
 export default function Container({

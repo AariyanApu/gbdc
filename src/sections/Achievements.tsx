@@ -3,7 +3,7 @@ import Button from '@/components/Button'
 import Container from '@/components/Container'
 import { TypingText, TypingTitle } from '@/components/CustomText'
 import { achievementsData } from '@/utils/data'
-import { fadeIn } from '@/utils/motion'
+import { fadeIn } from '@/libs/motion'
 import { HiArrowTopRightOnSquare } from 'react-icons/hi2'
 
 export default function Achievements() {

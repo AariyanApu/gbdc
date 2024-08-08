@@ -3,7 +3,7 @@ import Container from '@/components/Container'
 import { TypingText, TypingTitle } from '@/components/CustomText'
 import DonorCard from '@/components/DonorCard'
 import { donorData } from '@/utils/data'
-import { fadeIn } from '@/utils/motion'
+import { fadeIn } from '@/libs/motion'
 import { HiArrowTopRightOnSquare } from 'react-icons/hi2'
 
 export default function Donors() {

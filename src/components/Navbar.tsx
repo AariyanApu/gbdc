@@ -2,7 +2,7 @@
 
 import { navigation, navigationForMobile } from '@/utils/data'
 import { titleFont } from '@/utils/fonts'
-import { staggerContainer, textContainer, textVariant2 } from '@/utils/motion'
+import { staggerContainer, textContainer, textVariant2 } from '@/libs/motion'
 import { Disclosure } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { motion } from 'framer-motion'

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import MotionDiv from './MotionDiv'
-import { fadeIn } from '@/utils/motion'
+import { fadeIn } from '@/libs/motion'
 
 export default function DonorCard({ imgUrl }: { imgUrl: string }) {
   return (

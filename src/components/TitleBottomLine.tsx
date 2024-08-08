@@ -1,7 +1,7 @@
-import { zoomIn } from "@/utils/motion";
-import { motion } from "framer-motion";
-import { BiDonateBlood } from "react-icons/bi";
-import Dash from "./Dash";
+import { zoomIn } from '@/libs/motion'
+import { motion } from 'framer-motion'
+import { BiDonateBlood } from 'react-icons/bi'
+import Dash from './Dash'
 
 export default function TitleBottomLine() {
   return (
@@ -16,5 +16,5 @@ export default function TitleBottomLine() {
       </div>
       <Dash />
     </motion.div>
-  );
+  )
 }
