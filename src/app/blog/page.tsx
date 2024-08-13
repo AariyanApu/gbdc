@@ -1,10 +1,10 @@
 import BlogPostCard from '@/components/BlogPostCard'
-import { getDataNoStore } from '@/hooks/fetchData'
+import { getData } from '@/hooks/fetchData'
 import { activitiesData } from '@/types/randomTypes'
 import { banglaFont } from '@/utils/fonts'
 
 export default async function Blog() {
-  const data: activitiesData[] = await getDataNoStore('posts')
+  const data: activitiesData[] = await getData('posts')
 
   return (
     <div

@@ -92,10 +92,16 @@ export const reviews: Array<Review> = [
 
 export const footerLink: Array<LinkProps> = [
   { name: 'Contact Us', href: '/contact' },
+  { name: 'Blog', href: '/blog' },
   { name: 'Notice Board', href: '/notice' },
-  { name: 'All Donors', href: '/donors' },
 ]
-export const secondFooterLink: Array<LinkProps> = [
+
+export const footerLink2: Array<LinkProps> = [
+  { name: 'All Donors', href: '/donors' },
+  { name: 'About Us', href: '/about-us' },
+  { name: 'All Achivements', href: '/achievements' },
+]
+export const footerLink3: Array<LinkProps> = [
   {
     name: 'Volunteer to GBDC',
     href: 'https://docs.google.com/forms/d/e/1FAIpQLSdKqIpsTlYF7F5liN8-ftSN2VnSGDL-vPx18dmbWslMUhk3cg/viewform?usp=pp_url',

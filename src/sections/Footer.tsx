@@ -1,12 +1,12 @@
 import FooterCards from '@/components/FooterCards'
 import { FooterLinkCard } from '@/components/FooterLinkCard'
-import { footerLink, secondFooterLink } from '@/utils/data'
+import { footerLink, footerLink2, footerLink3 } from '@/utils/data'
 import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <div className="mb-5 mt-10 text-slate-800">
-      <div className="ml-4 flex flex-row justify-between text-base sm:justify-around">
+    <div className="mx-auto mb-5 mt-10 max-w-7xl text-slate-800">
+      <div className="ml-4 flex flex-row justify-between text-base sm:ml-0 sm:justify-between">
         <div
           className={
             ' flex flex-col items-start  justify-start gap-y-2 text-start sm:w-60 sm:text-start '
@@ -26,9 +26,10 @@ export default function Footer() {
         </div>
         {/* Footer links */}
         <FooterLinkCard footerLink={footerLink} hiddenItem="hidden sm:flex" />
+        <FooterLinkCard footerLink={footerLink2} hiddenItem="hidden sm:flex" />
         <div className=" mr-2 flex flex-col items-center justify-end gap-y-2 sm:mr-0">
           <FooterLinkCard
-            footerLink={secondFooterLink}
+            footerLink={footerLink3}
             customStyles="first:border-sky-400  first:text-sky-400 first:font-semibold"
           />
           {/* Footer for Only Mobile */}
@@ -44,7 +45,7 @@ export default function Footer() {
       </div>
 
       {/* Footer credits of developer */}
-      <div className="mt-6 text-center text-xs tracking-wide md:mr-4 md:text-end">
+      <div className="mt-6 text-center text-xs tracking-wide md:text-end">
         Design and Developed by{' '}
         <a href="https://aariyan.info" className="link_styles">
           Aariyan Apu

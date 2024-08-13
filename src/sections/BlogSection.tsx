@@ -1,12 +1,11 @@
 import BlogPostCard from '@/components/BlogPostCard'
 import Container from '@/components/Container'
 import { TypingTitle } from '@/components/CustomText'
-import { getDataNoStore } from '@/hooks/fetchData'
+import { getData } from '@/hooks/fetchData'
 import { activitiesData } from '@/types/randomTypes'
-import React from 'react'
 
 export default async function BlogSection() {
-  const data: activitiesData[] = await getDataNoStore('posts')
+  const data: activitiesData[] = await getData('posts')
   const latestItem = data.reverse().slice(0, 1)
 
   return (
