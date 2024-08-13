@@ -1,5 +1,6 @@
 import prisma from '@/db/connect'
 import { NextResponse } from 'next/server'
+import { getAuthSession } from '../../auth/[...nextauth]/options'
 
 interface ExtendedPostUpdateInput {
   views: {
@@ -29,39 +30,43 @@ export const GET = async (
   }
 }
 
-// // Delete a post by slug
-// export const DELETE = async (
-//   req: Request,
-//   { params }: { params: { slug: string } },
-// ) => {
-//   const { slug } = params
+// Delete a post by slug
+export const DELETE = async (
+  req: Request,
+  { params }: { params: { slug: string } },
+) => {
+  const { slug } = params
+  const session = await getAuthSession()
 
-//   try {
-//     // Delete the post by slug
-//     const deleteResult = await prisma.post.delete({
-//       where: {
-//         slug,
-//       },
-//     })
+  if (!session) {
+    return new NextResponse(JSON.stringify({ message: 'Not Authenticated!' }))
+  }
+  try {
+    // Delete the post by slug
+    const deleteResult = await prisma.notice.delete({
+      where: {
+        slug,
+      },
+    })
 
-//     // Check if the post was successfully deleted
-//     if (!deleteResult) {
-//       return new NextResponse('Post not found', { status: 404 })
-//     }
+    // Check if the post was successfully deleted
+    if (!deleteResult) {
+      return new NextResponse('Post not found', { status: 404 })
+    }
 
-//     return new NextResponse(
-//       JSON.stringify({ message: 'Post deleted successfully' }),
-//     )
-//   } catch (error) {
-//     console.error('Error deleting post:', error)
+    return new NextResponse(
+      JSON.stringify({ message: 'Post deleted successfully' }),
+    )
+  } catch (error) {
+    console.error('Error deleting post:', error)
 
-//     // Log the complete error object
-//     console.error('Complete error object:', error)
+    // Log the complete error object
+    console.error('Complete error object:', error)
 
-//     // Return a more detailed error response
-//     return new NextResponse(
-//       JSON.stringify({ error: 'Database Error', details: error }),
-//       { status: 500 },
-//     )
-//   }
-// }
+    // Return a more detailed error response
+    return new NextResponse(
+      JSON.stringify({ error: 'Database Error', details: error }),
+      { status: 500 },
+    )
+  }
+}

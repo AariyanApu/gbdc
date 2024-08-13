@@ -1,5 +1,6 @@
 import prisma from '@/db/connect'
 import { NextResponse } from 'next/server'
+import { getAuthSession } from '../../auth/[...nextauth]/options'
 
 interface ExtendedPostUpdateInput {
   views: {
@@ -37,6 +38,11 @@ export const DELETE = async (
 ) => {
   const { slug } = params
   const id = slug
+  const session = await getAuthSession()
+
+  if (!session) {
+    return new NextResponse(JSON.stringify({ message: 'Not Authenticated!' }))
+  }
   try {
     // Delete the post by slug
     const deleteResult = await prisma.activity.delete({
