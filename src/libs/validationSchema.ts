@@ -7,6 +7,12 @@ export const validationSchemaForPost = yup.object().shape({
   imgUrl: yup.string().required('Image URL is required'),
 })
 
+export const validationSchemaForNotice = yup.object().shape({
+  title: yup.string().required('Title is required'),
+  slug: yup.string().required('Slug is required'),
+  desc: yup.string().required('Description is required'),
+})
+
 // export const validationSchemaForProject = yup.object().shape({
 //   title: yup.string().required("Title is required"),
 //   description: yup.string().required("Description is required"),

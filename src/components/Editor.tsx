@@ -68,7 +68,7 @@ export default function TextEditor({
         className="rounded-md bg-sky-400 px-4 py-2"
         disabled={isSubmitting}
       >
-        Submit Blog
+        Submit
       </button>
     </>
   )
