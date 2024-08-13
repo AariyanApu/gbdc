@@ -74,3 +74,9 @@ export interface EventData {
   desc: string
   imgUrl: { [key: string]: string }
 }
+
+export interface UploadResult {
+  info: {
+    public_id: string
+  }
+}

@@ -1,21 +1,25 @@
 'use client'
 import { Editor } from '@tinymce/tinymce-react'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 
 export default function TextEditor({
-  desc,
-  setDesc,
+  input,
+  setInput,
   height,
 }: {
-  desc: string
-  setDesc: any
   height: number
+  input: any
+  setInput: any
 }) {
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const editorRef = useRef(null)
+
   const log = () => {
     if (editorRef.current) {
-      //   console.log((editorRef.current as any).getContent());
-      setDesc((editorRef.current as any).getContent())
+      setIsSubmitting(true)
+      setInput({ ...input, desc: (editorRef.current as any).getContent() })
+      ;(editorRef.current as any).setContent('') // Clear the editor content
+      setIsSubmitting(false)
     }
   }
 
@@ -25,11 +29,11 @@ export default function TextEditor({
       <Editor
         apiKey={apikey}
         onInit={(evt, editor) => (editorRef.current = editor as any)}
-        initialValue={desc}
+        initialValue={''}
         init={{
           height: height,
           width: '100%',
-          menubar: false,
+          menubar: true,
           plugins: [
             'advlist',
             'autolink',
@@ -59,7 +63,11 @@ export default function TextEditor({
             'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
         }}
       />
-      <button onClick={log} className="rounded-md bg-sky-400 px-4 py-2">
+      <button
+        onClick={log}
+        className="rounded-md bg-sky-400 px-4 py-2"
+        disabled={isSubmitting}
+      >
         Submit Blog
       </button>
     </>
