@@ -25,7 +25,7 @@ export const banner = [
     alt: 'GBDC giving people wheelchairs',
   },
   { img: '/assets/banner/banner-2.webp', alt: 'GBDC meet the volunteers' },
-  { img: '/assets/banner/banner-3.webp', alt: 'GBDC accepting awards' },
+  // { img: '/assets/banner/banner-3.webp', alt: 'GBDC accepting awards' },
   { img: '/assets/banner/banner-4.webp', alt: 'GBDC rally in Gourndadi' },
 ]
 
@@ -60,7 +60,7 @@ export const achievementsData = [
 export const featuredData = [
   {
     imgUrl: '/assets/featured/sonaliSomoy.jpg',
-    link: 'https://www.youtube.com/watch?v=IKsz54zx23k',
+    link: 'https://report71.com/2024/06/07/%E0%A6%97%E0%A7%8C%E0%A6%B0%E0%A6%A8%E0%A6%A6%E0%A7%80%E0%A6%A4%E0%A7%87-%E0%A6%AC%E0%A7%83%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%B0%E0%A7%8B%E0%A6%AA%E0%A6%A3-%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%AE-2/',
   },
   {
     imgUrl: '/assets/featured/report71.png',
@@ -72,7 +72,7 @@ export const featuredData = [
   },
   {
     imgUrl: '/assets/featured/TBT-Logo.png',
-    link: 'https://www.youtube.com/watch?v=IKsz54zx23k',
+    link: 'https://www.crimenewstv24.com/archives/5545',
   },
 ]
 
