@@ -1,5 +1,6 @@
 'use client'
 import { activitiesData } from '@/types/randomTypes'
+import { toast } from 'react-hot-toast'
 import useSWR, { SWRResponse } from 'swr'
 
 export default function DeletePost() {
@@ -23,6 +24,7 @@ export default function DeletePost() {
       if (response.ok) {
         const result = await response.json()
         // setDeleteMessage(result.message)
+        toast.success('Post deleted successfully')
       } else {
         const errorResult = await response.json()
         console.error('Error deleting post:', errorResult)

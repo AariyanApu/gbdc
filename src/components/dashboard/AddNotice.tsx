@@ -6,6 +6,7 @@ import { mutate } from 'swr'
 import { slugify } from '@/libs/slugify'
 import TextEditor from '../Editor'
 import { validationSchemaForNotice } from '@/libs/validationSchema'
+import { toast } from 'react-hot-toast'
 
 export default function AddNotice() {
   const handleSubmit = async (values: any, { resetForm }: any) => {
@@ -20,6 +21,7 @@ export default function AddNotice() {
       })
       resetForm()
       // Send Success message
+      toast.success('Notice has been added successfully')
     } catch (error) {
       console.error('Error Posting Notice', error)
     } finally {

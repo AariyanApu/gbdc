@@ -1,6 +1,7 @@
 'use client'
 import useSWR, { SWRResponse } from 'swr'
 import CloudImage from '@/components/CloudImage'
+import { toast } from 'react-hot-toast'
 
 export default function DeleteActivity() {
   const fetcher = async (...args: Parameters<typeof fetch>) => {
@@ -23,6 +24,7 @@ export default function DeleteActivity() {
       if (response.ok) {
         const result = await response.json()
         // setDeleteMessage(result.message)
+        toast.success('Image deleted successfully')
       } else {
         const errorResult = await response.json()
         console.error('Error deleting post:', errorResult)

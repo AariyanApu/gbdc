@@ -1,17 +1,13 @@
 'use client'
 
 import { CldUploadButton } from 'next-cloudinary'
-import { useRouter } from 'next/navigation'
 import { ChangeEvent, useState } from 'react'
+import { toast } from 'react-hot-toast'
 
-interface imgUrl {
-  imgUrl: string
-}
 export default function AddAchievement() {
   const [title, setTitle] = useState('')
   const [imgUrl, setImgUrl] = useState(' ')
 
-  const router = useRouter()
   const handleSubmit = async (e: ChangeEvent<HTMLFormElement>) => {
     e.preventDefault()
 
@@ -24,7 +20,7 @@ export default function AddAchievement() {
     })
     setTitle('')
     setImgUrl('')
-    router.push('/achievements')
+    toast.success('Achievement Image Added Successfully')
   }
 
   const handleUpload = (result: any) => {

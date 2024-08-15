@@ -1,13 +1,12 @@
 'use client'
 
 import { CldUploadButton } from 'next-cloudinary'
-import { useRouter } from 'next/navigation'
 import { ChangeEvent, useState } from 'react'
+import { toast } from 'react-hot-toast'
 
 export default function AddDonor() {
   const [imgUrl, setImgUrl] = useState(' ')
 
-  const router = useRouter()
   const handleSubmit = async (e: ChangeEvent<HTMLFormElement>) => {
     e.preventDefault()
 
@@ -18,7 +17,7 @@ export default function AddDonor() {
       }),
     })
     setImgUrl('')
-    router.push('/donors')
+    toast.success('Donor Image Added Successfully')
   }
 
   const handleUpload = (result: any) => {

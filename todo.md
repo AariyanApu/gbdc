@@ -8,7 +8,7 @@
 - [ ] add event database
 - [ ] Redesign Dashboard
 - [ ] Add Partypaper
-- [ ] Add react hot toast
+- [x] Add react hot toast
 - [ ] add daisy ui
 - [ ] remove heroicons and replace react-icons
 - [ ] redesign pwa

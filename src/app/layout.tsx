@@ -5,6 +5,7 @@ import Footer from '@/sections/Footer'
 import { regularFont } from '@/utils/fonts'
 import { Analytics } from '@vercel/analytics/react'
 import AuthProvider from '@/auth/AuthProvider'
+import { Toaster } from 'react-hot-toast'
 
 export const metadata: Metadata = {
   title: 'GBDC - Give Blood, Save Life',
@@ -27,6 +28,7 @@ export default function RootLayout({
         <AuthProvider>
           <NavBar />
           {children}
+          <Toaster />
           <Footer />
           <Analytics />
         </AuthProvider>

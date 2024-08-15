@@ -1,18 +1,13 @@
 'use client'
 
 import { CldUploadButton } from 'next-cloudinary'
-import { useRouter } from 'next/navigation'
 import { ChangeEvent, useState } from 'react'
-
-interface imgUrl {
-  imgUrl: string
-}
+import { toast } from 'react-hot-toast'
 
 export default function AddActivity() {
   const [title, setTitle] = useState('')
   const [imgUrl, setImgUrl] = useState(' ')
 
-  const router = useRouter()
   const handleSubmit = async (e: ChangeEvent<HTMLFormElement>) => {
     e.preventDefault()
 
@@ -25,7 +20,7 @@ export default function AddActivity() {
     })
     setTitle('')
     setImgUrl('')
-    router.push('/activities')
+    toast.success('Activity Added Successfully')
   }
 
   const handleUpload = (result: any) => {

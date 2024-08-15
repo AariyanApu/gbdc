@@ -6,13 +6,13 @@ import { useSession, signIn, signOut } from 'next-auth/react'
 import AddAchievement from '@/components/dashboard/AddAchievement'
 import AddActivity from '@/components/dashboard/AddActivity'
 import AddSingleBlog from '@/components/dashboard/AddSingleBlog'
-import DeletePost from '@/components/DeletePost'
 import AddNotice from '@/components/dashboard/AddNotice'
 import AddDonor from '@/components/dashboard/AddDonor'
 import DeleteDonor from '@/components/dashboard/DeleteDonor'
 import DeleteAchievements from '@/components/dashboard/DeleteAchievements'
 import DeleteActivity from '@/components/dashboard/DeleteActivity'
 import DeleteNotice from '@/components/dashboard/DeleteNotice'
+import DeletePost from '@/components/dashboard/DeletePost'
 
 export default function Dasboard() {
   const { data: session }: any = useSession()

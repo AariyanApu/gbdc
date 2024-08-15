@@ -4,6 +4,7 @@ import { CldUploadButton } from 'next-cloudinary'
 import { useState } from 'react'
 import { mutate } from 'swr'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
+import toast from 'react-hot-toast'
 
 import { validationSchemaForPost } from '@/libs/validationSchema'
 import { UploadResult } from '@/types/randomTypes'
@@ -29,6 +30,7 @@ export default function AddBlog() {
       // Clear Form
       resetForm()
       // Send Success Message
+      toast.success('Blog Added Successfully')
     } catch (error) {
       console.error('Error Posting Blog', error)
     } finally {
