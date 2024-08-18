@@ -12,4 +12,4 @@
 - [ ] add daisy ui
 - [ ] remove heroicons and replace react-icons
 - [ ] redesign pwa
-- [ ]
+- [ ] add validation to donor,achievement,activity

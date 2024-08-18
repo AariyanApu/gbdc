@@ -1,5 +1,9 @@
 import * as yup from 'yup'
 
+export const validationSchema = yup.object().shape({
+  imgUrl: yup.string().required('Image URL is required'),
+})
+
 export const validationSchemaForPost = yup.object().shape({
   title: yup.string().required('Title is required'),
   slug: yup.string().required('Slug is required'),

@@ -65,7 +65,7 @@ export default function TextEditor({
       />
       <button
         onClick={log}
-        className="rounded-md bg-sky-400 px-4 py-2"
+        className="rounded-md bg-sky-400 px-4 py-2 disabled:bg-sky-100"
         disabled={isSubmitting}
       >
         Submit
