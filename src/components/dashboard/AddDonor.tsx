@@ -4,6 +4,8 @@ import { CldUploadButton } from 'next-cloudinary'
 import { useState } from 'react'
 import { toast } from 'react-hot-toast'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
+import { mutate } from 'swr'
+
 import { UploadResult } from '@/types/randomTypes'
 import { validationSchema } from '@/libs/validationSchema'
 
@@ -21,13 +23,13 @@ export default function AddDonor() {
           imgUrl: values.imgUrl,
         }),
       })
-
       toast.success('Donor Image Added Successfully')
       resetForm()
     } catch (error) {
       console.error('Error Posting Donor Image', error)
     } finally {
       setIsSubmitting(false)
+      mutate('/api/donors')
     }
   }
 

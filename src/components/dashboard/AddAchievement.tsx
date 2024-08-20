@@ -11,7 +11,6 @@ import { validationSchema } from '@/libs/validationSchema'
 
 export default function AddAchievement() {
   const [imgUrl, setImgUrl] = useState(' ')
-
   const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleSubmit = async (values: any, { resetForm }: any) => {
@@ -26,12 +25,12 @@ export default function AddAchievement() {
         }),
       })
       resetForm()
-      setIsSubmitting(false)
 
       toast.success('Achievement Image Added Successfully')
     } catch (error) {
       console.error('Error Posting Image', error)
     } finally {
+      setIsSubmitting(false)
       mutate('/api/achievements')
     }
   }
