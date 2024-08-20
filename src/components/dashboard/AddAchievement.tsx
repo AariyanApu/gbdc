@@ -3,10 +3,10 @@
 import { CldUploadButton } from 'next-cloudinary'
 import { useState } from 'react'
 import { toast } from 'react-hot-toast'
-
 import { Formik, Form, Field, ErrorMessage } from 'formik'
-import { UploadResult } from '@/types/randomTypes'
 import { mutate } from 'swr'
+
+import { UploadResult } from '@/types/randomTypes'
 import { validationSchema } from '@/libs/validationSchema'
 
 export default function AddAchievement() {
@@ -77,7 +77,7 @@ export default function AddAchievement() {
 
           <button
             type="submit"
-            className="rounded-md bg-sky-400 px-4 py-2"
+            className="rounded-md bg-sky-400 px-4 py-2 disabled:opacity-20"
             disabled={isSubmitting}
           >
             Submit Achivments
