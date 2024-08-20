@@ -46,6 +46,7 @@
   },
   "devDependencies": {
     "@prisma/client": "^5.11.0",
+    "daisyui": "^4.12.10",
     "npm": "^10.5.0",
     "prettier": "^3.0.1",
     "prettier-plugin-tailwindcss": "^0.4.1",
