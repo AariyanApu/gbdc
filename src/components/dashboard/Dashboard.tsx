@@ -9,6 +9,7 @@ import DeleteDonor from './DeleteDonor'
 import DeleteAchievements from './DeleteAchievements'
 import AddActivity from './AddActivity'
 import DeleteActivity from './DeleteActivity'
+import { dashboardMenu } from '@/utils/data'
 
 export default function Dashboard() {
   const [activeComponent, setActiveComponent] = useState('post')
@@ -55,20 +56,13 @@ export default function Dashboard() {
     }
   }
   return (
-    <div className="my-10 flex flex-row">
+    <div className="my-10 flex flex-row gap-x-2">
       <ul className="menu w-56 rounded-box bg-base-200">
-        <li>
-          <a onClick={() => handleButtonClick('post')}>Blog</a>
-        </li>
-        <li>
-          <a onClick={() => handleButtonClick('notice')}> Notice</a>
-        </li>
-        <li>
-          <a onClick={() => handleButtonClick('donor')}>Donor</a>
-        </li>
-        <li>
-          <a onClick={() => handleButtonClick('achievement')}>Achievements</a>
-        </li>
+        {dashboardMenu.map((menu) => (
+          <li key={menu.value}>
+            <a onClick={() => handleButtonClick(menu.value)}>{menu.name}</a>
+          </li>
+        ))}
       </ul>
       {renderComponent()}
     </div>

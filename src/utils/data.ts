@@ -369,3 +369,12 @@ export const upEventsData: EventData[] = [
     },
   },
 ]
+
+
+export const dashboardMenu =[
+  {name:"Blog",value:"post"},
+  {name:"Notice",value:"notice"},
+  {name:"Donor",value:"donor"},
+  {name:"Achievement",value:"achievement"},
+  {name:"Activity",value:"activity"},
+]
