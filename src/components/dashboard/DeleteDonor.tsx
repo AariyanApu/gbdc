@@ -36,9 +36,9 @@ export default function DeleteDonor() {
     }
   }
   return (
-    <div className="mt-10 max-w-6xl font-bold">
+    <div className="mt-2 max-w-6xl rounded-box bg-base-200 pt-5  font-bold">
       <h1 className="text-center text-3xl">Delete Donor Image</h1>
-      <div className="flex flex-row flex-wrap gap-2">
+      <div className="mt-4 flex flex-row flex-wrap gap-2">
         {data?.map((item: any) => (
           <div
             className="flex h-32 w-32 flex-row items-center justify-center rounded-lg  p-2 shadow  "

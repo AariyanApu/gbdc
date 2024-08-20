@@ -48,18 +48,18 @@ export default function AddAchievement() {
       validationSchema={validationSchema}
     >
       {({ setFieldValue }) => (
-        <Form className=" flex w-96 flex-col items-center justify-center gap-4 rounded-md border border-sky-400 p-4">
+        <Form className=" flex w-96 flex-col items-center justify-center gap-4 rounded-box bg-base-200 p-4">
           <h1 className="text-3xl ">Add Achivments</h1>
           <Field
             name="title"
             placeholder="Enter Image Title...."
-            className="mt-4 rounded-md bg-gray-200 px-4 py-2 text-black "
+            className="input input-bordered mt-4 w-full "
           />
           <ErrorMessage name="title" component="div" className="text-red-500" />
 
           <CldUploadButton
             uploadPreset="izet8iap"
-            className=" rounded-md  bg-sky-600 px-4 py-2"
+            className=" btn btn-outline btn-neutral"
             onUpload={(result: any) => {
               const uploadResult = result as UploadResult
               setFieldValue('imgUrl', uploadResult.info.public_id)
@@ -76,7 +76,7 @@ export default function AddAchievement() {
 
           <button
             type="submit"
-            className="rounded-md bg-sky-400 px-4 py-2 disabled:opacity-20"
+            className="btn btn-outline btn-neutral disabled:opacity-20"
             disabled={isSubmitting}
           >
             Submit Achivments

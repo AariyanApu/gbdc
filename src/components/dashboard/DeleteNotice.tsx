@@ -37,7 +37,7 @@ export default function DeleteNotice() {
   }
 
   return (
-    <div>
+    <div className="rounded-box bg-base-200  pt-5">
       <h1 className="text-center text-3xl font-bold">Delete Notice</h1>
       {Array.isArray(data) &&
         data?.map((item: activitiesData) => (

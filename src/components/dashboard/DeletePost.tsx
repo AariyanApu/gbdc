@@ -37,7 +37,7 @@ export default function DeletePost() {
   }
 
   return (
-    <div>
+    <div className="rounded-box bg-base-200  pt-5">
       <h1 className="text-center text-3xl font-bold">Delete Blog Post</h1>
       {Array.isArray(data) &&
         data?.map((item: activitiesData) => (

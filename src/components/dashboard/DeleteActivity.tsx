@@ -36,7 +36,7 @@ export default function DeleteActivity() {
     }
   }
   return (
-    <div className="mt-10 max-w-6xl font-bold">
+    <div className="mt-2 max-w-6xl rounded-box bg-base-200 pt-5  font-bold">
       <h1 className="text-center text-3xl">Delete activities Image</h1>
       <div className="flex flex-row flex-wrap gap-2">
         {data?.map((item: any) => (

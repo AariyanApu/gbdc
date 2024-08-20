@@ -46,11 +46,11 @@ export default function AddDonor() {
       validationSchema={validationSchema}
     >
       {({ setFieldValue }) => (
-        <Form className=" flex w-96 flex-col items-center justify-center gap-4 rounded-md border border-sky-400 p-4">
+        <Form className=" flex w-96 flex-col items-center justify-center gap-4 rounded-box  bg-base-200 p-4  py-8">
           <h1 className="text-3xl ">Add Donor Image</h1>
           <CldUploadButton
             uploadPreset="izet8iap"
-            className=" rounded-md  bg-sky-600 px-4 py-2"
+            className=" btn btn-outline btn-neutral"
             onUpload={(result: any) => {
               const uploadResult = result as UploadResult
               setFieldValue('imgUrl', uploadResult.info.public_id)
@@ -67,7 +67,7 @@ export default function AddDonor() {
 
           <button
             type="submit"
-            className="rounded-md bg-sky-400 px-4 py-2 disabled:opacity-20"
+            className="btn btn-outline btn-neutral disabled:opacity-20"
             disabled={isSubmitting}
           >
             Submit Donor Image

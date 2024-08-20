@@ -39,20 +39,20 @@ export default function AddNotice() {
       validationSchema={validationSchemaForNotice}
     >
       {({ setFieldValue }) => (
-        <Form className="mx-auto mb-20 flex w-[800px] flex-col items-start justify-start gap-4 rounded-md border border-sky-400 p-4">
+        <Form className="mx-auto mb-2 flex w-[800px] flex-col items-start justify-start gap-4 rounded-box bg-base-200 p-4">
           <h1 className="text-3xl ">Add Notice</h1>
 
           <Field
             name="title"
             placeholder="Enter Notice Title...."
-            className="mt-4 w-full rounded-md border border-sky-400 px-4 py-2 text-black"
+            className="input input-bordered mt-4 w-full "
           />
 
           <ErrorMessage name="title" component="div" className="text-red-500" />
 
           <Field
             placeholder="Enter Notice Slug...."
-            className="mt-4 w-full rounded-md border border-sky-400 px-4 py-2 text-black"
+            className="input input-bordered mt-4 w-full "
             name="slug"
           />
 

@@ -53,13 +53,13 @@ export default function AddBlog() {
       onSubmit={handleSubmit}
     >
       {({ setFieldValue }) => (
-        <Form className="mx-auto mb-20 flex w-[800px] flex-col items-start justify-start gap-4 rounded-md border border-sky-400 p-4">
+        <Form className="mx-auto mb-2 flex w-[800px] flex-col items-start justify-start gap-4 rounded-box bg-base-200 p-4">
           <h1 className="text-3xl ">Add Blog</h1>
 
           {/* You have to add your upload preset from Cloudinary */}
           <CldUploadButton
             uploadPreset="izet8iap"
-            className=" rounded-md  bg-sky-600 px-4 py-2"
+            className=" btn btn-outline btn-neutral"
             onUpload={(result: any) => {
               const uploadResult = result as UploadResult
               setFieldValue('imgUrl', uploadResult.info.public_id)
@@ -77,13 +77,13 @@ export default function AddBlog() {
           <Field
             name="title"
             placeholder="Enter Blog Title...."
-            className="mt-4 w-full rounded-md border border-sky-400 px-4 py-2 text-black"
+            className="input input-bordered mt-4 w-full "
           />
           <ErrorMessage name="title" component="div" className="text-red-500" />
           <Field
             name="slug"
             placeholder="Enter Slug"
-            className="mt-4 w-full rounded-md border border-sky-400 px-4 py-2 text-black"
+            className="input input-bordered mt-4 w-full "
           />
           <ErrorMessage name="slug" component="div" className="text-red-500" />
 
