@@ -1,10 +1,9 @@
-import BlogPostCard from '@/components/BlogPostCard'
+import PostCard from '@/components/PostCard'
 import { getData } from '@/hooks/fetchData'
-import { activitiesData } from '@/types/randomTypes'
 import { banglaFont } from '@/utils/fonts'
 
 export default async function Events() {
-  const data: activitiesData[] = await getData('events')
+  const data = await getData('events')
 
   return (
     <div
@@ -13,8 +12,8 @@ export default async function Events() {
       {Array.isArray(data) &&
         data
           ?.reverse()
-          .map((item: activitiesData) => (
-            <BlogPostCard item={item} key={item.id} />
+          .map((item) => (
+            <PostCard item={item} key={item.id} section="events" />
           ))}
     </div>
   )

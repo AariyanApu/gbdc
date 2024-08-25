@@ -38,11 +38,11 @@ export interface LinkProps {
   customStyles?: string
   current?: boolean
 }
-export interface activitiesData {
-  id: number
-  title: string
-  imgUrl: string
-}
+// export interface activitiesData {
+//   id: number
+//   title: string
+//   imgUrl: string
+// }
 
 export interface activitiesData {
   id: number
@@ -68,7 +68,16 @@ export interface noticeProps {
   views: number
   createdAt: string
 }
-
+export interface PostProps {
+  id: number
+  title: string
+  imgUrl: string
+  desc: string
+  createdAt: string
+  slug: string
+  views: number
+  section: string
+}
 export interface EventData {
   name: string
   desc: string

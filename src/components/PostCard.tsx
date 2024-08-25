@@ -1,8 +1,13 @@
-import { activitiesData } from '@/types/randomTypes'
 import DOMPurify from 'isomorphic-dompurify'
 import CloudImage from './CloudImage'
-export default function BlogPostCard({ item }: { item: activitiesData }) {
-  const htmlContent = `${item.desc.substring(0, 200)} <a href="/blog/${
+import { PostProps } from '@/types/randomTypes'
+
+interface PostCardProps {
+  item: PostProps
+  section: string
+}
+export default function PostCard({ item, section }: PostCardProps) {
+  const htmlContent = `${item.desc.substring(0, 200)} <a href="/${section}/${
     item.slug
   }" class='link_styles'>...Read More</a>`
   const sanitizedHtmlContent = DOMPurify.sanitize(htmlContent)

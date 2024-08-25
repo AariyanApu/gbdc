@@ -1,10 +1,10 @@
-import BlogPostCard from '@/components/BlogPostCard'
+import PostCard from '@/components/PostCard'
 import { getData } from '@/hooks/fetchData'
-import { activitiesData } from '@/types/randomTypes'
+import { PostProps } from '@/types/randomTypes'
 import { banglaFont } from '@/utils/fonts'
 
 export default async function Blog() {
-  const data: activitiesData[] = await getData('posts')
+  const data: PostProps[] = await getData('posts')
 
   return (
     <div
@@ -15,9 +15,7 @@ export default async function Blog() {
       {Array.isArray(data) &&
         data
           ?.reverse()
-          .map((item: activitiesData) => (
-            <BlogPostCard item={item} key={item.id} />
-          ))}
+          .map((item) => <PostCard item={item} key={item.id} section="blog" />)}
     </div>
   )
 }
