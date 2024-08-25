@@ -10,6 +10,8 @@ import DeleteAchievements from './DeleteAchievements'
 import AddActivity from './AddActivity'
 import DeleteActivity from './DeleteActivity'
 import { dashboardMenu } from '@/utils/data'
+import AddEvent from './AddEvent'
+import DeleteEvent from './DeleteEvent'
 
 export default function Dashboard() {
   const [activeComponent, setActiveComponent] = useState('post')
@@ -19,6 +21,13 @@ export default function Dashboard() {
   }
   const renderComponent = () => {
     switch (activeComponent) {
+      case 'event':
+        return (
+          <div>
+            <AddEvent />
+            <DeleteEvent />
+          </div>
+        )
       case 'notice':
         return (
           <div>
