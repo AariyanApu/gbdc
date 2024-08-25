@@ -5,7 +5,7 @@
 - [ ] single post store
 - [ ] single post social share
 - [ ] clean code
-- [ ] add event database
+- [x] add event database
 - [x] Redesign Dashboard
 - [ ] Add Partypaper
 - [x] Add react hot toast
@@ -14,4 +14,5 @@
 - [ ] redesign pwa
 - [x] add validation to donor,achievement,activity
 - [ ] Responsive Dashboard
-- [ ] Redesign Home
+- [x] Redesign Home
+- [ ] Add Dynamic metadata
