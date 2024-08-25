@@ -2,12 +2,9 @@
 import useSWR, { SWRResponse } from 'swr'
 import { toast } from 'react-hot-toast'
 import DeleteComponent from './DeleteComponent'
+import { fetcher } from '@/hooks/useFetcher'
 
 export default function DeleteDonor() {
-  const fetcher = async (...args: Parameters<typeof fetch>) => {
-    const res = await fetch(...args)
-    return res.json()
-  }
   const { data, error, mutate }: SWRResponse<any> = useSWR(
     '/api/donors',
     fetcher,
