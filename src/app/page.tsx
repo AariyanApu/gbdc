@@ -5,6 +5,7 @@ import Activities from '@/sections/Activities'
 import BlogSection from '@/sections/BlogSection'
 import Counter from '@/sections/Counter'
 import Donors from '@/sections/Donors'
+import EventSection from '@/sections/EventSection'
 import Featured from '@/sections/Featured'
 import { Testimonial } from '@/sections/Testimonial'
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Donors />
       <Featured />
       <BlogSection />
+      <EventSection />
       <Testimonial />
     </div>
   )
