@@ -343,21 +343,6 @@ export const donorData = [
   { imgUrl: '/assets/about/6.webp' },
 ]
 
-export const eventsData: EventData[] = [
-  {
-    name: 'Spreading Joy: A Heartwarming Mehedi Festival for Underprivileged Children',
-    desc: 'In a world often overshadowed by challenges and hardships, there are moments of pure joy that remind us of the beauty of humanity. Recently, we had the privilege of organizing a Mehedi festival for underprivileged children, a day filled with laughter, colors, and the spirit of giving.',
-    imgUrl: {
-      1: '/assets/events/1.jpg',
-      2: '/assets/events/2.jpg',
-      3: '/assets/events/3.jpg',
-      4: '/assets/events/4.jpg',
-      5: '/assets/events/5.jpg',
-      6: '/assets/events/6.jpg',
-    },
-  },
-]
-
 export const upEventsData: EventData[] = [
   {
     name: 'Eid ul-Adha: Spreading Joy with Eid Gifts for the Needy',

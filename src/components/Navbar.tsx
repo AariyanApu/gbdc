@@ -4,11 +4,11 @@ import { navigation, navigationForMobile } from '@/utils/data'
 import { titleFont } from '@/utils/fonts'
 import { staggerContainer, textContainer, textVariant2 } from '@/libs/motion'
 import { Disclosure } from '@headlessui/react'
-import { XMarkIcon } from '@heroicons/react/24/outline'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import { RiMenu3Line } from 'react-icons/ri'
+import { FaXmark } from "react-icons/fa6";
 
 export default function NavBar() {
   return (
@@ -31,7 +31,7 @@ export default function NavBar() {
                 <Disclosure.Button className="animation_color inline-flex items-center justify-center rounded-md p-2 text-sky-400   focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                    <FaXmark className="block h-6 w-6" aria-hidden="true" />
                   ) : (
                     <RiMenu3Line className="block h-6 w-6" aria-hidden="true" />
                   )}
