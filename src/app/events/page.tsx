@@ -4,6 +4,7 @@ import { banglaFont } from '@/utils/fonts'
 
 export default async function Events() {
   const data = await getData('events')
+  console.log("EventData",data)
 
   return (
     <div

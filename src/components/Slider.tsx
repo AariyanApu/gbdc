@@ -14,7 +14,7 @@ import 'swiper/css/effect-fade'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
-export default function SlideBar() {
+export default function Slider() {
   return (
     <Swiper
       // install Swiper modules

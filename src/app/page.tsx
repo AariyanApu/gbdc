@@ -1,4 +1,4 @@
-import SlideBar from '@/components/SlideBar'
+import Slider from '@/components/Slider'
 import About from '@/sections/About'
 import Achievements from '@/sections/Achievements'
 import Activities from '@/sections/Activities'
@@ -12,7 +12,7 @@ import { Testimonial } from '@/sections/Testimonial'
 export default function Home() {
   return (
     <div className="mx-auto max-w-7xl overflow-x-hidden">
-      <SlideBar />
+      <Slider />
       <About />
       <Activities />
       <Counter />
