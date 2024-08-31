@@ -82,7 +82,7 @@ export default function NavBar() {
                         <Link
                           href={item.href}
                           className={
-                            'animation_color rounded-btn border-b px-4 py-2 text-lg font-medium hover:border-white hover:border-b-sky-400 hover:text-sky-400 '
+                            'animation_color rounded-btn border-b px-4 py-2 text-lg  hover:border-white hover:border-b-sky-400 hover:text-sky-400 '
                           }
                         >
                           {item.name}
@@ -114,7 +114,7 @@ export default function NavBar() {
                   key={item.name}
                   as="a"
                   href={item.href}
-                  className="block rounded-btn border-b  px-8  py-4 text-3xl font-bold uppercase text-base-content "
+                  className="block rounded-btn border-b  px-8  py-4 text-3xl font-semibold uppercase  text-base-content"
                 >
                   {item.name}
                 </Disclosure.Button>
