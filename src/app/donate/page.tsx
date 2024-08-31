@@ -20,19 +20,19 @@ export default function Donate() {
                     <th scope="row" className="table_header">
                       Bkash
                     </th>
-                    <td className="px-6 py-4">+8801234567890</td>
+                    <td className="px-6 py-4">+8801647627561</td>
                   </tr>
                   <tr className="border-b bg-white ">
                     <th scope="row" className="table_header">
                       Nagad
                     </th>
-                    <td className="px-6 py-4">+8801234567890</td>
+                    <td className="px-6 py-4">+8801647627561</td>
                   </tr>
                   <tr className="bg-white ">
                     <th scope="row" className="table_header ">
                       Rocket
                     </th>
-                    <td className="px-6 py-4">+8801234567890</td>
+                    <td className="px-6 py-4">+8801647627561</td>
                   </tr>
                 </tbody>
               </table>
