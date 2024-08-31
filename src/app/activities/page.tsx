@@ -23,12 +23,12 @@ export default async function Activities({
     <Container customStyle=" my-8 sm:my-16 max-w-7xl mx-auto">
       <TypingTitle title={'Our Activities'} />
 
-      <div className="mt-8 flex flex-row flex-wrap items-center justify-center gap-4 px-8 shadow-md sm:px-0">
+      <div className="mt-8 flex flex-row flex-wrap items-center justify-center gap-4 rounded-box px-8 pb-4 shadow-md sm:px-0">
         {Array.isArray(data) &&
           filterData?.map((item: any) => (
             <div
               key={item.id}
-              className="flex w-96 flex-col items-center rounded-lg bg-slate-300 px-2 pt-2 text-center"
+              className="flex w-96 flex-col items-center rounded-box bg-base-300 px-2 pt-2 text-center"
             >
               <CloudImage
                 width={800}

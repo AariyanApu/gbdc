@@ -28,7 +28,7 @@ export default async function Achievements({
           filterData?.map((item: activitiesData) => (
             <div
               key={item.id}
-              className="flex w-96 flex-col items-center rounded-lg bg-slate-300 px-2 pt-2 text-center shadow-md lg:px-0"
+              className="flex w-96 flex-col items-center rounded-box bg-base-300 px-2 pt-2 text-center shadow-md lg:px-0"
             >
               <CloudImage
                 width={800}

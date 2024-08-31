@@ -3,7 +3,7 @@
 import cn from '@/libs/cn'
 import { useRouter, useSearchParams, usePathname } from 'next/navigation'
 import { FC } from 'react'
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa6'
+import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6'
 
 interface PaginationControlsProps {
   hasNextPage: boolean
@@ -29,11 +29,10 @@ const PaginationControls: FC<PaginationControlsProps> = ({
   }
 
   return (
-    <div className="mt-8 flex items-center justify-center gap-x-2 ">
+    <div className="join mt-8 flex items-center justify-center  ">
       <button
-        className={cn('rounded-lg bg-sky-400 p-3 text-white', {
-          'bg-slate-200': !hasPrevPage,
-          'text-slate-400': !hasPrevPage,
+        className={cn('btn join-item', {
+          'btn-disabled': !hasPrevPage,
         })}
         onClick={() => {
           router.push(
@@ -42,7 +41,7 @@ const PaginationControls: FC<PaginationControlsProps> = ({
         }}
         disabled={!hasPrevPage}
       >
-        <FaArrowLeft className="text-lg" />
+        <FaAngleLeft className="text-lg" />
       </button>
 
       {allPages
@@ -50,13 +49,9 @@ const PaginationControls: FC<PaginationControlsProps> = ({
         .map((item) => (
           <div
             key={item}
-            className={cn(
-              'cursor-pointer rounded-lg px-4 py-1.5 text-center text-sky-400 ring ring-sky-400 transition-colors duration-500 ease-in-out hover:bg-sky-400 hover:text-white',
-              {
-                'bg-sky-400': item === Number(page),
-                'text-white': item === Number(page),
-              },
-            )}
+            className={cn('btn join-item', {
+              'btn-active': item === Number(page),
+            })}
             onClick={() => {
               router.push(`${pathname}?page=${item}&per_page=${per_page}`)
             }}
@@ -66,9 +61,8 @@ const PaginationControls: FC<PaginationControlsProps> = ({
         ))}
 
       <button
-        className={cn('rounded-lg bg-sky-400 p-3 text-white', {
-          'bg-slate-200': !hasNextPage,
-          'text-slate-400': !hasNextPage,
+        className={cn('btn join-item', {
+          'btn-disabled': !hasNextPage,
         })}
         onClick={() => {
           router.push(
@@ -77,7 +71,7 @@ const PaginationControls: FC<PaginationControlsProps> = ({
         }}
         disabled={!hasNextPage}
       >
-        <FaArrowRight className="text-lg" />
+        <FaAngleRight className="text-lg" />
       </button>
     </div>
   )
