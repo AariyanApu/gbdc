@@ -12,7 +12,7 @@ export default function DonorCard({ imgUrl }: { imgUrl: string }) {
         src={imgUrl}
         alt="donors"
         fill
-        className="h-full w-full rounded-badge object-cover p-2"
+        className="h-full w-full rounded-box object-cover p-2"
       />
     </MotionDiv>
   )
