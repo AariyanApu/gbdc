@@ -28,7 +28,7 @@ export interface counterCardProps {
 export interface AchievementCardProps {
   src: string
 }
-export interface Review {
+export interface ReviewProps {
   imgUrl: string
 }
 

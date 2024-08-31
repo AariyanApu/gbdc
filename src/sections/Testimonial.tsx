@@ -2,7 +2,7 @@
 
 import Container from '@/components/Container'
 import { TypingText, TypingTitle } from '@/components/CustomText'
-import { Review } from '@/types/randomTypes'
+import { ReviewProps } from '@/types/randomTypes'
 import { reviews } from '@/utils/data'
 import clsx from 'clsx'
 import { useInView } from 'framer-motion'
@@ -13,7 +13,8 @@ function Review({
   imgUrl,
   className,
   ...props
-}: Omit<React.ComponentPropsWithoutRef<'figure'>, keyof Review> & Review) {
+}: Omit<React.ComponentPropsWithoutRef<'figure'>, keyof ReviewProps> &
+  ReviewProps) {
   let animationDelay = useMemo(() => {
     let possibleAnimationDelays = ['0s', '0.1s', '0.2s', '0.3s', '0.4s', '0.5s']
     return possibleAnimationDelays[
@@ -59,7 +60,7 @@ function ReviewColumn({
   reviewClassName,
   msPerPixel = 0,
 }: {
-  reviews: Array<Review>
+  reviews: Array<ReviewProps>
   className?: string
   reviewClassName?: (reviewIndex: number) => string
   msPerPixel?: number
@@ -143,8 +144,8 @@ function ReviewGrid() {
           />
         </>
       )}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-slate-100" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-slate-100" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-base-200" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-base-200" />
     </div>
   )
 }
@@ -156,7 +157,7 @@ export function Testimonial() {
       aria-labelledby="reviews-title"
       className="bg-cover bg-scroll  "
     >
-      <Container customStyle="rounded-lg bg-slate-100 px-4 py-16 md:py-20 lg:px-8">
+      <Container customStyle="rounded-lg bg-base-200 px-4 py-16 md:py-20 lg:px-8">
         <TypingTitle title={'Voices of Appreciation'} />
         <TypingText
           title={[
