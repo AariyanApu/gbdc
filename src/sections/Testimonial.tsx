@@ -157,7 +157,7 @@ export function Testimonial() {
       aria-labelledby="reviews-title"
       className="bg-cover bg-scroll  "
     >
-      <Container customStyle="rounded-lg bg-base-200 px-4 py-16 md:py-20 lg:px-8">
+      <Container customStyle="rounded-box bg-base-200 px-4 py-16 md:py-20 lg:px-8">
         <TypingTitle title={'Voices of Appreciation'} />
         <TypingText
           title={[
