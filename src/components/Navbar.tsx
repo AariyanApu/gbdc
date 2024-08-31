@@ -114,7 +114,7 @@ export default function NavBar() {
                   key={item.name}
                   as="a"
                   href={item.href}
-                  className="block rounded-btn px-8 py-4 text-3xl  font-bold uppercase text-base-content shadow "
+                  className="block rounded-btn border-b  px-8  py-4 text-3xl font-bold uppercase text-base-content "
                 >
                   {item.name}
                 </Disclosure.Button>

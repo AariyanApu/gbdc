@@ -2,11 +2,12 @@ import NavBar from '@/components/Navbar'
 import type { Metadata } from 'next'
 import './globals.css'
 import Footer from '@/sections/Footer'
-import { regularFont } from '@/utils/fonts'
 import { Analytics } from '@vercel/analytics/react'
 import AuthProvider from '@/auth/AuthProvider'
 import { Toaster } from 'react-hot-toast'
+import { Inter } from 'next/font/google'
 
+const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'GBDC - Give Blood, Save Life',
   description:
@@ -24,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={regularFont.className}>
+      <body className={inter.className}>
         <AuthProvider>
           <NavBar />
           {children}
