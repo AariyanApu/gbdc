@@ -39,11 +39,8 @@ export default function Slider() {
             <Image
               src={item.img}
               alt={item.alt}
-              // width={1300}
-              // height={600}
               fill
-              priority
-              className="h-[310px] w-full rounded-lg object-cover object-center sm:h-[520px]"
+              className="h-full w-full rounded-box object-cover object-center"
             />
           </div>
         </SwiperSlide>
