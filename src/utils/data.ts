@@ -2,18 +2,17 @@ import { EventData, LinkProps, ReviewProps } from '@/types/randomTypes'
 
 export const navigation: Array<LinkProps> = [
   { name: 'Donate Helpless People', href: '/donate', current: false },
-  { name: 'Upcoming Events', href: '/upevents', current: false },
+  { name: 'Our Stories', href: '/blog', current: false },
   { name: 'Running Events', href: '/events', current: false },
   { name: 'About Us', href: '/about-us', current: false },
 ]
 export const navigationForMobile: Array<LinkProps> = [
-  { name: 'Home', href: '', current: false },
+  { name: 'Home', href: '/', current: false },
   { name: 'Donate Helpless', href: '/donate', current: false },
-  { name: 'Upcoming Events', href: '/upevents', current: false },
+  { name: 'Our Stories', href: '/blog', current: false },
   { name: 'Current Events', href: '/events', current: false },
   { name: 'About Us', href: '/about-us', current: false },
   { name: 'Notice Board', href: '/notice', current: false },
-  { name: 'Blog', href: '/blog', current: false },
 ]
 export const banner = [
   {
