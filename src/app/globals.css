@@ -26,13 +26,6 @@ body {
   @apply transition-colors duration-300 ease-in;
 }
 
-.ql-container {
-  font-size: 20px !important;
-}
-.quill > .ql-container > .ql-editor.ql-blank::before {
-  color: #b3b3b1;
-}
-
 .table_header {
   @apply whitespace-nowrap px-6 py-4 font-medium;
 }

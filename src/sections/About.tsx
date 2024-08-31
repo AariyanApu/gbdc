@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-//  spell-checker: disable
 import Container from '@/components/Container'
 import { TypingText, TypingTitle } from '@/components/CustomText'
 import MotionDiv from '@/components/MotionDiv'
@@ -47,13 +46,10 @@ export default function About() {
           <div className="h-[250px] w-full md:h-[300px] md:w-[350px] lg:h-[250px] lg:w-[450px]">
             <Image
               src={'/assets/about.webp'}
-              className=" mx-auto h-[250px] w-full rounded-md object-cover object-center drop-shadow md:h-[300px] md:w-[350px] lg:h-[250px] lg:w-[450px] "
-              alt="Group Photo "
-              // height={800}
-              // width={800}
+              className="h-full w-full rounded-box object-cover object-center"
+              alt="Group Photo"
               fill
-              priority
-            />{' '}
+            />
           </div>
         </MotionDiv>
       </div>

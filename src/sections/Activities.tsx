@@ -7,10 +7,10 @@ import { fadeIn } from '@/libs/motion'
 import { HiArrowTopRightOnSquare } from 'react-icons/hi2'
 export default function Activities() {
   return (
-    <Container customStyle="overflow-x-hidden rounded  bg-slate-100 pt-8  lg:pt-20 ">
+    <Container customStyle="overflow-x-hidden rounded-box  bg-base-200 pt-8  lg:pt-20 ">
       <TypingTitle title={'Life-Sustaining Projects'} />
 
-      <div className={'  w-full px-4 py-8 sm:px-6 lg:px-8'}>
+      <div className={'w-full px-4 py-8 sm:px-6 lg:px-8'}>
         {/* Activities Headline */}
         <div className="flex items-center justify-center text-center sm:items-baseline sm:justify-between">
           <TypingText
@@ -38,7 +38,6 @@ export default function Activities() {
             }
             variants={fadeIn('right', 'tween', 0.8, 0.7)}
             customStyle={'h-[400px] sm:h-[550px] sm:row-span-2'}
-            imgSize="h-[400px] sm:h-[550px]"
           />
 
           <ActivitiesCard
@@ -48,7 +47,7 @@ export default function Activities() {
               'We conduct free blood group determination camps at various times and locations.'
             }
             variants={fadeIn('left', 'tween', 1.1, 0.6)}
-            imgSize="h-[300px] sm:h-full"
+            customStyle="h-[300px] sm:h-full"
           />
 
           <ActivitiesCard
@@ -58,7 +57,7 @@ export default function Activities() {
               'We provide wheelchairs and distribute warm clothing to the impoverished and needy individuals.'
             }
             variants={fadeIn('left', 'tween', 1.5, 0.7)}
-            imgSize="h-[300px] sm:h-full"
+            customStyle="h-[300px] sm:h-full"
           />
         </div>
         <Button
