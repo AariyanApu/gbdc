@@ -38,10 +38,10 @@ export default function Donors() {
       </div>
       <Button
         variants={fadeIn('left', 'tween', 1.1, 0.6)}
-        text="View More"
+        text="View Recent Donors "
         link="/donors"
         icon={<HiArrowTopRightOnSquare size={20} aria-hidden="true" />}
-        customStyle="flex sm:hidden w-[133px] mx-auto mt-5"
+        customStyle="sm:hidden w-[250px] mx-auto mt-5"
       />
     </Container>
   )

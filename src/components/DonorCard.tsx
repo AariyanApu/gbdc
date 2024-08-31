@@ -6,16 +6,13 @@ export default function DonorCard({ imgUrl }: { imgUrl: string }) {
   return (
     <MotionDiv
       variants={fadeIn('left', 'tween', 1.2, 0.7)}
-      customStyle=" relative h-60 w-40 rounded-xl bg-slate-200 p-2 shadow  sm:h-72 sm:w-48"
+      customStyle=" relative h-60 w-40 rounded-box bg-base-200 sm:h-72 sm:w-48"
     >
       <Image
         src={imgUrl}
         alt="donors"
-        // width={400}
-        // height={400}
         fill
-        priority
-        className="h-full w-full rounded-xl bg-gray-900/5 object-cover shadow-lg "
+        className="h-full w-full rounded-badge object-cover p-2"
       />
     </MotionDiv>
   )
