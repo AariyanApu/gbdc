@@ -9,9 +9,9 @@ export default async function EventSection() {
   const latestItem = data.reverse().slice(0, 1)
 
   return (
-    <Container customStyle="py-20 ">
+    <Container customStyle="pb-20 ">
       <TypingTitle title={'Latest Event'} />
-      <div className="mb-5">
+      <div className="mb-5 mt-10">
         {Array.isArray(latestItem) &&
           latestItem?.map((item) => (
             <PostCard item={item} key={item.id} section="events" />
