@@ -11,7 +11,7 @@ export default async function EventSection() {
   return (
     <Container customStyle="py-20 ">
       <TypingTitle title={'Latest Event'} />
-      <div className="mb-5 mt-10">
+      <div className="mb-5 mt-5">
         {Array.isArray(latestItem) &&
           latestItem?.map((item) => (
             <PostCard item={item} key={item.id} section="events" />
