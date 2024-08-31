@@ -16,8 +16,11 @@
 - [ ] Responsive Dashboard
 - [x] Redesign Home
 - [ ] Add Dynamic metadata
-- [ ] Change Navbar design
-- [ ] Change color scheme of home page
-- [ ] Change slide and move to daisyUI
+- [x] Change Navbar design
+- [x] Change color scheme of home page
+- [x] Change slide and move to daisyUI
 - [ ] Redesign pagination bar
 - [ ] Redesign skletion
+- [x] Make animation little bit faster
+- [ ] Redesign activity,achievement,donor
+- [ ] redesign Notice

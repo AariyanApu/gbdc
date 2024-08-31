@@ -1,11 +1,11 @@
-import { slides, staggerChild } from "@/types/motionTypes";
+import { slides, staggerChild } from '@/types/motionTypes'
 
 export const navVariants = {
   hidden: {
     opacity: 0,
     y: -50,
     transition: {
-      type: "spring",
+      type: 'spring',
       stiffness: 300,
       damping: 140,
     },
@@ -14,17 +14,17 @@ export const navVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      type: "spring",
+      type: 'spring',
       stiffness: 80,
       delay: 1,
     },
   },
-};
+}
 
 export const slideIn = ({ direction, type, delay, duration }: slides) => ({
   hidden: {
-    x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
-    y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
+    x: direction === 'left' ? '-100%' : direction === 'right' ? '100%' : 0,
+    y: direction === 'up' ? '100%' : direction === 'down' ? '100%' : 0,
   },
   show: {
     x: 0,
@@ -33,10 +33,10 @@ export const slideIn = ({ direction, type, delay, duration }: slides) => ({
       type,
       delay,
       duration,
-      ease: "easeOut",
+      ease: 'easeOut',
     },
   },
-});
+})
 
 export const staggerContainer: any = ({
   staggerChildren,
@@ -49,7 +49,7 @@ export const staggerContainer: any = ({
       delayChildren,
     },
   },
-});
+})
 
 export const textVariant = (delay: number) => ({
   hidden: {
@@ -60,12 +60,12 @@ export const textVariant = (delay: number) => ({
     y: 0,
     opacity: 1,
     transition: {
-      type: "spring",
+      type: 'spring',
       duration: 1.25,
       delay,
     },
   },
-});
+})
 
 export const textContainer = {
   hidden: {
@@ -73,18 +73,18 @@ export const textContainer = {
   },
   show: (i = 1) => ({
     opacity: 1,
-    transition: { staggerChildren: 0.1, delayChildren: i * 0.09 },
+    transition: { staggerChildren: 0.05, delayChildren: i * 0.05 },
   }),
-};
+}
 export const textContainer2 = {
   hidden: {
     opacity: 0,
   },
   show: (i = 1) => ({
     opacity: 1,
-    transition: { staggerChildren: 0.1, delayChildren: i * 0.9 },
+    transition: { staggerChildren: 0.05, delayChildren: i * 0.05 },
   }),
-};
+}
 export const textVariant2 = {
   hidden: {
     opacity: 0,
@@ -94,20 +94,20 @@ export const textVariant2 = {
     opacity: 1,
     y: 0,
     transition: {
-      type: "tween",
-      ease: "easeIn",
+      type: 'tween',
+      ease: 'easeIn',
     },
   },
-};
+}
 export const imageContainer = {
   hidden: {
     opacity: 0,
   },
   show: (i = 1) => ({
     opacity: 1,
-    transition: { staggerChildren: 0.3, delayChildren: i * 1 },
+    transition: { staggerChildren: 0.05, delayChildren: i * 0.05 },
   }),
-};
+}
 
 export const imageVariant = {
   hidden: {
@@ -118,11 +118,11 @@ export const imageVariant = {
     opacity: 1,
     y: 0,
     transition: {
-      type: "tween",
-      ease: "easeOut",
+      type: 'tween',
+      ease: 'easeOut',
     },
   },
-};
+}
 export const fadeIn = (
   direction: string,
   type: string,
@@ -130,8 +130,8 @@ export const fadeIn = (
   duration: number,
 ) => ({
   hidden: {
-    x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
-    y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
+    x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
+    y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
     opacity: 0,
   },
   show: {
@@ -142,26 +142,26 @@ export const fadeIn = (
       type,
       delay,
       duration,
-      ease: "easeOut",
+      ease: 'easeOut',
     },
   },
-});
+})
 
-export const planetVariants = (direction: "left" | "right") => ({
+export const planetVariants = (direction: 'left' | 'right') => ({
   hidden: {
-    x: direction === "left" ? "-100%" : "100%",
+    x: direction === 'left' ? '-100%' : '100%',
     rotate: 120,
   },
   show: {
     x: 0,
     rotate: 0,
     transition: {
-      type: "spring",
+      type: 'spring',
       duration: 1.8,
       delay: 0.5,
     },
   },
-});
+})
 
 export const zoomIn = (delay: number, duration: number) => ({
   hidden: {
@@ -172,20 +172,20 @@ export const zoomIn = (delay: number, duration: number) => ({
     scale: 1,
     opacity: 1,
     transition: {
-      type: "tween",
+      type: 'tween',
       delay,
       duration,
-      ease: "easeOut",
+      ease: 'easeOut',
     },
   },
-});
+})
 
 export const footerVariants = {
   hidden: {
     opacity: 0,
     y: 50,
     transition: {
-      type: "spring",
+      type: 'spring',
       stiffness: 300,
       damping: 140,
     },
@@ -194,9 +194,9 @@ export const footerVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      type: "spring",
+      type: 'spring',
       stiffness: 80,
       delay: 0.5,
     },
   },
-};
+}
