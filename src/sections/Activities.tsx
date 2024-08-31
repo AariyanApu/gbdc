@@ -65,7 +65,7 @@ export default function Activities() {
           text="View More"
           link="/activities"
           icon={<HiArrowTopRightOnSquare size={20} aria-hidden="true" />}
-          customStyle="flex sm:hidden w-[160px] mx-auto  items-center justify-center mt-5"
+          customStyle="sm:hidden mt-5 w-[200px] mx-auto"
         />
       </div>
     </Container>

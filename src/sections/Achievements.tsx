@@ -8,7 +8,7 @@ import { HiArrowTopRightOnSquare } from 'react-icons/hi2'
 
 export default function Achievements() {
   return (
-    <Container customStyle=" rounded bg-slate-100 py-16 md:my-20 lg:my-20">
+    <Container customStyle=" rounded-box bg-base-200 py-16 md:my-20 lg:my-20">
       <TypingTitle title={'Notable Achievements'} />
       <div className=" w-full px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-center text-center sm:items-baseline sm:justify-between">
@@ -34,7 +34,7 @@ export default function Achievements() {
           text="View More"
           link="/achievements"
           icon={<HiArrowTopRightOnSquare size={20} aria-hidden="true" />}
-          customStyle="flex sm:hidden w-[133px] mx-auto mt-5"
+          customStyle="sm:hidden mt-5 w-[200px] mx-auto"
         />
       </div>
     </Container>
