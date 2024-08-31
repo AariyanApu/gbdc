@@ -23,4 +23,4 @@
 - [ ] Redesign skletion
 - [x] Make animation little bit faster
 - [ ] Redesign activity,achievement,donor
-- [ ] redesign Notice
+- [x] redesign Notice

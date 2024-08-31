@@ -9,7 +9,7 @@ import Image from 'next/image'
 
 export default function AboutUs() {
   return (
-    <Container customStyle="bg-white">
+    <Container customStyle="bg-white mt-2">
       <main className="isolate mx-auto max-w-7xl">
         {/* Hero section */}
         <div className="relative isolate -z-10">

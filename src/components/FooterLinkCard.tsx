@@ -17,7 +17,7 @@ export const FooterLinkCard = ({
         <a
           key={index}
           href={link.href}
-          className={` ${customStyles} animation_color w-[150px] rounded-md border-b border-slate-300/80 px-2 py-1.5 text-center text-sm   hover:border-sky-500 hover:text-sky-500 hover:shadow-md  sm:w-44 sm:px-4 sm:py-2`}
+          className={` ${customStyles} animation_color w-[150px] rounded-btn border-b border-slate-300/80 px-2 py-1.5 text-center text-sm   hover:border-sky-500 hover:text-sky-500 hover:shadow-md  sm:w-44 sm:px-4 sm:py-2`}
         >
           {link.name}
         </a>
