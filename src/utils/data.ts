@@ -1,4 +1,4 @@
-import { EventData, LinkProps, Review } from '@/types/randomTypes'
+import { EventData, LinkProps, ReviewProps } from '@/types/randomTypes'
 
 export const navigation: Array<LinkProps> = [
   { name: 'Donate Helpless People', href: '/donate', current: false },
@@ -76,7 +76,7 @@ export const featuredData = [
   },
 ]
 
-export const reviews: Array<Review> = [
+export const reviews: Array<ReviewProps> = [
   { imgUrl: '/assets/testimonial/1.jpeg' },
   { imgUrl: '/assets/testimonial/2.webp' },
   { imgUrl: '/assets/testimonial/3.jpeg' },
