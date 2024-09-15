@@ -5,7 +5,7 @@ import { featuredData } from '@/utils/data'
 
 export default function Featured() {
   return (
-    <Container customStyle=" py-16 rounded-lg bg-slate-100">
+    <Container customStyle=" py-16 rounded-lg bg-base-200">
       <TypingTitle title={' We are featured on'} />
 
       <div className="mt-8 flex flex-col items-center justify-center gap-x-4 gap-y-3 px-4  md:mt-10 md:flex-row lg:pb-20">

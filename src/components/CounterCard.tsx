@@ -15,7 +15,7 @@ export default function CounterCard({ end, imgSrc, desc }: counterCardProps) {
     <CountUp enableScrollSpy start={0} end={end} delay={0} duration={2.75}>
       {({ countUpRef }) => (
         <div
-          className={`${titleFont.className} item-center mx-auto mt-8 flex w-full flex-col justify-center gap-y-1 rounded-badge bg-white p-10 text-center  shadow-md sm:mt-16 md:h-64 md:w-[230px] lg:h-72 lg:w-[330px]`}
+          className={`${titleFont.className} item-center mx-auto mt-8 flex w-full flex-col justify-center gap-y-1 rounded-badge bg-white p-10 text-center  shadow shadow-primary sm:mt-16 md:h-64 md:w-[230px] lg:h-72 lg:w-[330px]`}
         >
           <Image
             src={imgSrc}
@@ -26,11 +26,11 @@ export default function CounterCard({ end, imgSrc, desc }: counterCardProps) {
           />
           <div className="mx-auto flex gap-x-1">
             <span
-              className="text-7xl text-red-700 md:text-4xl lg:text-7xl"
+              className="text-7xl text-primary md:text-4xl lg:text-7xl"
               ref={countUpRef}
             />
 
-            <span className="text-7xl text-red-700 md:text-4xl lg:text-7xl">
+            <span className="text-7xl text-primary md:text-4xl lg:text-7xl">
               +
             </span>
           </div>

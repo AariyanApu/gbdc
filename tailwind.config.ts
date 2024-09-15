@@ -3,7 +3,51 @@ import type { Config } from 'tailwindcss'
 const config: Config = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   daisyui: {
-    themes: ['light'],
+    themes: [
+      {
+        mytheme: {
+          primary: '#780606',
+
+          'primary-content': '#ffffff',
+
+          secondary: '#770228',
+
+          'secondary-content': '#f5f5f5',
+
+          accent: '#6b0e54',
+
+          'accent-content': '#ffffff',
+
+          neutral: '#ff00ff',
+
+          'neutral-content': '#160016',
+
+          'base-100': '#ffffff',
+
+          'base-200': '#fcf9f9',
+
+          'base-300': '#f6eaea',
+
+          'base-content': '#161616',
+
+          info: '#0000ff',
+
+          'info-content': '#c6dbff',
+
+          success: '#00ff00',
+
+          'success-content': '#001600',
+
+          warning: '#00ff00',
+
+          'warning-content': '#001600',
+
+          error: '#ff0000',
+
+          'error-content': '#160000',
+        },
+      },
+    ],
     logs: false,
   },
 

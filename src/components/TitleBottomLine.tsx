@@ -12,7 +12,7 @@ export default function TitleBottomLine() {
       <Dash />
 
       <div className="px-2">
-        <BiDonateBlood size={20} color="#880808" />
+        <BiDonateBlood className="text-xl text-primary" />
       </div>
       <Dash />
     </motion.div>

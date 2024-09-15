@@ -25,18 +25,20 @@ export default function Footer() {
           <FooterCards />
         </div>
         {/* Footer links */}
+
+        {/* TODO: Need to convert the btn to daisyUI */}
         <FooterLinkCard footerLink={footerLink} hiddenItem="hidden sm:flex" />
         <FooterLinkCard footerLink={footerLink2} hiddenItem="hidden sm:flex" />
         <div className=" mr-2 flex flex-col items-center justify-end gap-y-2 sm:mr-0">
           <FooterLinkCard
             footerLink={footerLink3}
-            customStyles="first:border-sky-400  first:text-sky-400 first:font-semibold"
+            customStyles="first:border-primary  first:text-primary first:font-semibold"
           />
           {/* Footer for Only Mobile */}
           <a
             href={'/contact'}
             className={
-              ' animation_color  w-[150px] rounded-md border-b border-slate-300/80 px-2 py-1.5 text-center text-sm  hover:border-sky-500 hover:text-sky-500 hover:shadow-md  sm:hidden sm:w-44 sm:px-4 sm:py-2'
+              ' animation_color  w-[150px] rounded-md border-b border-slate-300/80 px-2 py-1.5 text-center  text-sm hover:border-primary hover:text-primary  hover:shadow-md sm:hidden sm:w-44 sm:px-4 sm:py-2'
             }
           >
             Contact Us

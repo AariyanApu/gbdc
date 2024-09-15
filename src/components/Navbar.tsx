@@ -14,7 +14,7 @@ export default function NavBar() {
   return (
     <Disclosure
       as="nav"
-      className=" mx-auto mt-2 max-w-7xl rounded-box px-2 shadow-lg"
+      className=" mx-auto mt-2 max-w-7xl rounded-box px-2 shadow shadow-primary"
     >
       {({ open }) => (
         <>
@@ -57,7 +57,7 @@ export default function NavBar() {
                     height={200}
                   />
                   <div
-                    className={` ml-1 mt-1 items-center text-center text-4xl   ${titleFont.className}`}
+                    className={` ml-1 mt-1 items-center text-center text-4xl  text-primary  ${titleFont.className}`}
                   >
                     GBDC
                   </div>
@@ -82,7 +82,7 @@ export default function NavBar() {
                         <Link
                           href={item.href}
                           className={
-                            'animation_color rounded-btn border-b px-4 py-2 text-lg  hover:border-white hover:border-b-sky-400 hover:text-sky-400 '
+                            'animation_color rounded-btn border-b px-4 py-2 text-lg  hover:border-white hover:border-b-primary hover:text-primary  '
                           }
                         >
                           {item.name}

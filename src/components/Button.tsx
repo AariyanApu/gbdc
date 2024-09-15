@@ -14,7 +14,7 @@ export default function Button({
       variants={variants}
       whileTap={{ scale: 0.9 }}
       href={link}
-      className={`btn btn-outline flex  items-center justify-center ${customStyle}`}
+      className={`btn btn-outline btn-primary flex  items-center justify-center ${customStyle}`}
     >
       <button className=" text-center">{text}</button>
       {icon}
