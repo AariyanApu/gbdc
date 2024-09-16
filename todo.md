@@ -24,3 +24,4 @@
 - [x] Make animation little bit faster
 - [ ] Redesign activity,achievement,donor
 - [x] redesign Notice
+- [ ] Slice Footer

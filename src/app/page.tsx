@@ -11,7 +11,7 @@ import { Testimonial } from '@/sections/Testimonial'
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-7xl overflow-x-hidden">
+    <div className=" mx-2 lg:mx-auto max-w-7xl overflow-x-hidden">
       <Slider />
       <About />
       <Activities />

@@ -7,7 +7,7 @@ interface featuredCardProps {
 }
 export default function FeaturedCard({ imgUrl, link }: featuredCardProps) {
   return (
-    <div className=" flex h-28 w-80 cursor-pointer items-center justify-center  overflow-hidden rounded-2xl bg-base-300 hover:shadow hover:shadow-primary">
+    <div className=" flex h-28 w-80 cursor-pointer items-center justify-center  overflow-hidden rounded-2xl bg-base-300 hover:shadow ">
       <div className="relative mx-auto my-auto h-24 w-72">
         <Link href={link}>
           <Image
