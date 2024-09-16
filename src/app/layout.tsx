@@ -29,7 +29,6 @@ export default function RootLayout({
       <body className={inter.className}>
         <AuthProvider>
           <NavBar />
-
           <AppBar />
           {children}
           <Toaster />

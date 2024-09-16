@@ -6,7 +6,6 @@ import { staggerContainer, textContainer, textVariant2 } from '@/libs/motion'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
-import AppBar from './AppBar'
 
 export default function NavBar() {
   return (
