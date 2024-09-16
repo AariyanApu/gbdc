@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <div className="mx-auto mb-5 mt-10 max-w-7xl text-slate-800">
+    <div className="mx-auto mb-20 mt-10 max-w-7xl text-slate-800 lg:mb-5">
       <div className="ml-4 flex flex-row justify-between text-base sm:ml-0 sm:justify-between">
         <div
           className={

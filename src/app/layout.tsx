@@ -6,6 +6,7 @@ import { Analytics } from '@vercel/analytics/react'
 import AuthProvider from '@/auth/AuthProvider'
 import { Toaster } from 'react-hot-toast'
 import { Inter } from 'next/font/google'
+import AppBar from '@/components/AppBar'
 
 const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
@@ -28,6 +29,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <AuthProvider>
           <NavBar />
+
+          <AppBar />
           {children}
           <Toaster />
           <Footer />

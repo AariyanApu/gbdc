@@ -1,15 +1,16 @@
 'use client'
 
-import { navigation, navigationForMobile } from '@/utils/data'
+import { navigation } from '@/utils/data'
 import { titleFont } from '@/utils/fonts'
 import { staggerContainer, textContainer, textVariant2 } from '@/libs/motion'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
+import AppBar from './AppBar'
 
 export default function NavBar() {
   return (
-    <div className=" mx-2 mt-2 max-w-7xl rounded-box  shadow-sm shadow-primary lg:mx-auto lg:px-0">
+    <div className=" mx-2 mt-2 max-w-7xl  rounded-box  border border-primary lg:mx-auto lg:px-0">
       <>
         <motion.nav
           variants={staggerContainer}
@@ -71,22 +72,6 @@ export default function NavBar() {
             </div>
           </div>
         </motion.nav>
-
-        {/* NavLink for Mobile */}
-
-        {/* <div className=" lg:hidden"> */}
-        {/*   <div className="-mt-20 flex  flex-col items-center justify-center space-y-4  px-2 pb-3 text-center"> */}
-        {/*     {navigationForMobile.map((item) => ( */}
-        {/*       <a */}
-        {/*         key={item.name} */}
-        {/*         href={item.href} */}
-        {/*         className="block rounded-btn border-b  px-8  py-4 text-3xl font-semibold uppercase  text-base-content" */}
-        {/*       > */}
-        {/*         {item.name} */}
-        {/*       </a> */}
-        {/*     ))} */}
-        {/*   </div> */}
-        {/* </div> */}
       </>
     </div>
   )

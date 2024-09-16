@@ -29,3 +29,7 @@ body {
 .table_header {
   @apply whitespace-nowrap px-6 py-4 font-medium;
 }
+
+.app_bar_icon {
+  @apply h-7 w-7 text-neutral/90 sm:h-8 sm:w-8;
+}

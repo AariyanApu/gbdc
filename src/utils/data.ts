@@ -6,14 +6,7 @@ export const navigation: Array<LinkProps> = [
   { name: 'Running Events', href: '/events', current: false },
   { name: 'About Us', href: '/about-us', current: false },
 ]
-export const navigationForMobile: Array<LinkProps> = [
-  { name: 'Home', href: '/', current: false },
-  { name: 'Donate Helpless', href: '/donate', current: false },
-  { name: 'Our Stories', href: '/blog', current: false },
-  { name: 'Current Events', href: '/events', current: false },
-  { name: 'About Us', href: '/about-us', current: false },
-  { name: 'Notice Board', href: '/notice', current: false },
-]
+
 export const banner = [
   {
     img: '/assets/banner/banner.webp',
