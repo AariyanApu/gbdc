@@ -31,5 +31,5 @@ body {
 }
 
 .app_bar_icon {
-  @apply h-7 w-7 text-neutral/90 sm:h-8 sm:w-8;
+  @apply h-7 w-7 text-neutral/80 sm:h-8 sm:w-8;
 }

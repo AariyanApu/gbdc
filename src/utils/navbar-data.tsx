@@ -31,6 +31,19 @@ export const appBarItems = [
   //   outlineIcon: <RiArticleLine className="app_bar_icon" />,
   // },
   {
+    href: '/donate',
+    outlineIcon: (
+      <span className=" rounded-box border border-neutral/50 p-1.5">
+        <BiDonateHeart className=" h-9 w-9 text-neutral/80" />
+      </span>
+    ),
+    filledIcon: (
+      <span className="rounded-box  border border-primary p-1.5 ">
+        <BiSolidDonateHeart className="h-9 w-9  text-neutral/80" />
+      </span>
+    ),
+  },
+  {
     href: '/events',
     label: 'Events',
     filledIcon: <AiFillCalendar className="app_bar_icon" />,
@@ -42,13 +55,6 @@ export const appBarItems = [
 
     outlineIcon: <MdOutlineCampaign className="app_bar_icon" />,
     filledIcon: <MdCampaign className="app_bar_icon" />,
-  },
-  {
-    href: '/donate',
-    label: 'Donate',
-
-    outlineIcon: <BiDonateHeart className="app_bar_icon" />,
-    filledIcon: <BiSolidDonateHeart className="app_bar_icon" />,
   },
 ]
 
