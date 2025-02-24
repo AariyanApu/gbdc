@@ -36,6 +36,13 @@ export default function Donate() {
                   </tr>
                 </tbody>
               </table>
+              <div className="">
+                <div className=" text-xl">Bank Transfer</div>
+                <div className="mt-2 pl-4">
+                  Account No. <span className="font-bold">0220328651811</span>
+                  <br /> IFIC Torki Bondor Sub-Branch, <br /> Gournadi, Barishal
+                </div>
+              </div>
             </div>
           </div>
           <div className=" flex w-full flex-col items-center justify-center text-center  lg:w-96">
