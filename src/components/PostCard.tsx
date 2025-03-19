@@ -8,7 +8,7 @@ interface PostCardProps {
   section: string
 }
 export default function PostCard({ item, section }: PostCardProps) {
-  const htmlContent = `${item.desc.substring(0, 300)} <a href="/${section}/${
+  const htmlContent = `${item.desc.substring(0, 280)} <a href="/${section}/${
     item.slug
   }" class='link_styles'>...Read More</a>`
   const sanitizedHtmlContent = DOMPurify.sanitize(htmlContent)
