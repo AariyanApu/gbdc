@@ -4,6 +4,25 @@ import { TypingTitle } from '@/components/CustomText'
 import PaginationControls from '@/components/PaginationControls'
 import { getDataNoStore } from '@/hooks/fetchData'
 import { activitiesData } from '@/types/randomTypes'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Blood Donors - Meet Our Lifesaving Heroes',
+  description: 'Meet the dedicated blood donors who make GBDC\'s mission possible. These lifesaving contributors help save lives across Bangladesh through voluntary blood donation.',
+  keywords: [
+    'blood donors',
+    'lifesaving contributors',
+    'blood donation heroes',
+    'voluntary blood donors',
+    'GBDC donors',
+    'Bangladesh blood donors',
+    'blood donation community'
+  ],
+  openGraph: {
+    title: 'GBDC Blood Donors - Lifesaving Heroes of Bangladesh',
+    description: 'Meet the amazing volunteers who donate blood to save lives. Join our community of lifesaving contributors in Bangladesh.',
+  },
+}
 
 export default async function AllDonors({
   searchParams,

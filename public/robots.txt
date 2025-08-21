@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.gbdcbd.org/sitemap.xml
+
+# Important pages for blood donation
+Allow: /donate
+Allow: /donors
+Allow: /events
+Allow: /about-us
+Allow: /contact
+Allow: /activities
+Allow: /achievements
+Allow: /blog
+Allow: /notice
+
+# Disallow admin and API routes
+Disallow: /dashboard
+Disallow: /api/
+Disallow: /admin
+
+# Allow search engines to crawl static assets
+Allow: /assets/
+Allow: /icons/
+Allow: /*.webp$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+
+# Crawl delay (optional - helps prevent overloading)
+Crawl-delay: 1

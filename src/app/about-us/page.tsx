@@ -1,4 +1,3 @@
-'use client'
 import AboutUsBgSvg from '@/components/AboutUsBgSvg'
 import AboutUsImageCard from '@/components/AboutUsImageCard'
 import { Admin } from '@/components/Admin'
@@ -6,6 +5,26 @@ import Container from '@/components/Container'
 import { TypingTitle } from '@/components/CustomText'
 import { banglaFont, titleFont } from '@/utils/fonts'
 import Image from 'next/image'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About Us - Our Mission to Save Lives',
+  description: 'Learn about GBDC (Gournadi Blood Donors Club), a non-political voluntary organization dedicated to changing the way blood donation works in Bangladesh. Meet our team and discover our mission.',
+  keywords: [
+    'about GBDC',
+    'blood donation organization',
+    'voluntary blood donation',
+    'Bangladesh blood donors',
+    'Gournadi blood donors club',
+    'non-profit organization',
+    'humanitarian work'
+  ],
+  openGraph: {
+    title: 'About GBDC - Blood Donation Organization Bangladesh',
+    description: 'Meet GBDC, a non-political voluntary organization changing the way blood donation works in Bangladesh. Learn about our mission to save lives.',
+    images: ['/assets/about-us.webp'],
+  },
+}
 
 export default function AboutUs() {
   return (

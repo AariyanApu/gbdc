@@ -1,6 +1,27 @@
 import Container from '@/components/Container'
 import { TypingTitle } from '@/components/CustomText'
 import Image from 'next/image'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Donate - Support Our Blood Donation Mission',
+  description: 'Support GBDC\'s life-saving mission through donations. Help us continue connecting blood donors with recipients in emergencies across Bangladesh.',
+  keywords: [
+    'donate to GBDC',
+    'support blood donation',
+    'blood donation charity',
+    'donate money',
+    'support humanitarian work',
+    'bkash donation',
+    'nagad donation',
+    'bank transfer donation'
+  ],
+  openGraph: {
+    title: 'Donate to GBDC - Support Blood Donation in Bangladesh',
+    description: 'Your donation helps GBDC continue its mission of connecting blood donors with recipients in emergencies. Support us through Bkash, Nagad, or bank transfer.',
+    images: ['/assets/bkash.webp'],
+  },
+}
 
 export default function Donate() {
   return (
