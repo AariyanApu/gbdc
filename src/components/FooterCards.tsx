@@ -9,10 +9,10 @@ export default function FooterCards() {
         +8801918184091
       </Link>
       <Link
-        href={{ pathname: 'mailto:gbdc2018@gmail' }}
+        href={{ pathname: 'mailto:info@gbdcbd.org' }}
         className="link_styles cursor-pointer"
       >
-        Gbdc2018@gmail.com
+        info@gbdcbd.org
       </Link>
       <Link
         className="link_styles"
